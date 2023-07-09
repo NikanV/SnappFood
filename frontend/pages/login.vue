@@ -1,6 +1,50 @@
 <template>
   <div class="login-class">
-
+    <TFA v-if="isGoogleLogin" ref="tfa" :is-submitting="isSubmitting" @send-tfa="sendGoogleTfa" />
+    <template v-else>
+      <div class="d-flex flex-column justify-content-around align-items-center">
+        <h1 class="text-center fw-bold fs-19-sm fs-22 mb-0">
+          {{ $t('loginToAccount') }}
+        </h1>
+        <p class="text-subtitle text-center fs-12 mt-24">
+          {{ $t('domainWarning') }}
+        </p>
+        <div
+            class="current-url border btn-pill ltr text-title">
+          <base-icon
+              icon-name="lock"
+              icon-color="#15D1C6"
+              class="mt-1" />
+          {{ origin }}
+        </div>
+      </div>
+      <form @submit.prevent="loginForm">
+        <div class="d-flex flex-column justify-content-around align-items-stretch my-8">
+          <div class="input-wrapper d-flex flex-column align-items-stretch my-8">
+            <label
+                class="fs-15 fs-12-sm text-aligned"
+                for="email-mobile-input">
+              {{ $t(`user.${isMobileActive ? 'emailOrMobile' : 'email'}`) }}></label>
+            <input
+                id="email-mobile-input"
+                v-model.trim="$v.username.$model"
+                v-focus
+                name="username"
+                class="form-control shadow-none ltr"
+                :class="{
+                'border-default': !$v.username.$dirty,
+                'border-danger': $v.username.$error,
+                'border-primary': !$v.username.$invalid,
+              }"
+                aria-describedby="sign-in-username"
+                autocomplete="email"
+                tabindex="1"
+                :placeholder="$t(isMobileActive ? 'usernameInputEmailAndMobile' : 'usernameInputEmail')"
+            />
+          </div>
+        </div>
+      </form>
+    </template>
   </div>
 </template>
 
@@ -12,6 +56,11 @@ import GoogleSignIn from '../components/shared/GoogleSignIn'
 import SubmitButton from '../components/shared/SubmitButton'
 import BaseCaptcha from '../components/shared/BaseCaptcha'
 import pageView from '../mixins/pageView'
+import {
+  DEFAULT_LOGIN,
+  CHECKED_LOGIN,
+  GOOGLE_SIGN_IN
+} from '../utils/endpoints'
 import TFA from '../components/pages/Tfa'
 import BaseIcon from '../components/shared/baseIcon'
 import CheckBox from '../components/shared/CheckBox'
@@ -64,6 +113,14 @@ export default {
   methods: {
     ...mapActions('users', ['userLogin', 'setUsernameToLocalStorage']),
     ...mapMutations('app', ['setCaptchaTypes']),
+    manageGoogleAccountTfa (googleLogin) {
+      this.googleUser = googleLogin
+      this.isGoogleLogin = true
+    },
+    sendGoogleTfa (tfaCode) {
+      this.loginHeaders = { 'x-totp': tfaCode }
+      this.loginUser({ token: this.googleUser }, GOOGLE_SIGN_IN)
+    },
     loginUser(loginData, endpoint) {
       this.isSubmitting = true
       const device = this.$storage.getItem('device')
