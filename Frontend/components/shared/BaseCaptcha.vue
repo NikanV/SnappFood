@@ -43,10 +43,10 @@
 
 <script>
 import { mapState, mapMutations, mapActions } from 'vuex'
-import NobitexArcaptcha from 'arcaptcha'
-import GoogleRecaptcha from 'googleRecaptcha'
-import NobitexHcaptcha from 'hcaptcha'
-import NobitexCaptcha from 'captcha'
+import SnappfoodArcaptcha from 'SnappfoodArcaptcha'
+import GoogleRecaptcha from 'GoogleRecaptcha'
+import SnappfoodHcaptcha from 'SnappfoodHcaptcha'
+import SnappfoodCaptcha from 'SnappfoodCaptcha'
 import BaseIcon from 'baseIcon'
 import { asyncTimeout } from '../../utils/general'
 
@@ -78,9 +78,9 @@ export default {
     captchaComponent() {
       return {
         recaptcha: GoogleRecaptcha,
-        hcaptcha: NobitexHcaptcha,
-        arcaptcha: NobitexArcaptcha,
-        'django-captcha': NobitexCaptcha
+        hcaptcha: SnappfoodHcaptcha,
+        arcaptcha: SnappfoodArcaptcha,
+        'django-captcha': SnappfoodCaptcha
       }[this.captchaType]
     },
     config() {

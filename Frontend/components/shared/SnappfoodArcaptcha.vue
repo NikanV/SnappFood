@@ -23,7 +23,7 @@ import ArcaptchaVue from 'arcaptcha-vue'
 import { ARCAPTCHA_TESTNET_SITEKEY, ARCAPTCHA_MAINNET_SITEKEY } from '../../utils/constants'
 
 export default {
-  name: 'Arcaptcha',
+  name: 'SnappfoodArcaptcha',
   components: { ArcaptchaVue },
   props: {
     tabindex: {
