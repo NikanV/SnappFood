@@ -9,6 +9,7 @@
         <p class="text-subtitle text-center fs-12 mt-24">
           {{ $t('domainWarning') }}
         </p>
+        <!--lock icon-->
         <div
             class="current-url border btn-pill ltr text-title">
           <base-icon
@@ -41,7 +42,19 @@
                 tabindex="1"
                 :placeholder="$t(isMobileActive ? 'usernameInputEmailAndMobile' : 'usernameInputEmail')"
             />
+
+            <p
+                v-show="$v.username.$dirty"
+                class="validation-feedback text-aligned fs-10 fs-12-md mt-8 mb-0">
+              <span v-if="!$v.username.required" class="text-danger">
+                {{ $t('messages.validation.required.field', { field: $t(`user.${isMobileActive ? 'emailOrMobile' : 'email'}`) }) }}
+              </span>
+              <span v-if="!$v.username.pattern" class="text-danger">
+                {{ $t(`messages.validation.${isMobileActive ? 'emailOrMobile' : 'email'}`) }}
+              </span>
+            </p>
           </div>
+
         </div>
       </form>
     </template>
