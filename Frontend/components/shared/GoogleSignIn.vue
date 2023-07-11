@@ -100,14 +100,8 @@ export default {
 </script>
 
 <i18n>
-{
-  "fa":{
-    "signInWithGoogle": "با گوگل وارد شوید",
-    "successfulLogin":"لاگین با استفاده از گوگل با موفقیت انجام شد."
-  },
   "en":{
     "signInWithGoogle": "Sign in with Google ",
     "successfulLogin":"Successful Sign In with Google"
   }
-}
 </i18n>

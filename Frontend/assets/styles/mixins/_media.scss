@@ -1,0 +1,37 @@
+/*stylelint-disable*/
+@function bp2px($bp){
+  $val: map.get($breakpoints, $bp);
+  @if(not $val){
+    @return $bp;
+  }
+  @return $val;
+}
+
+@mixin down($bp) {
+  @media only screen and (max-width: #{bp2px($bp) - 0.02}) {
+    @content;
+  }
+}
+@mixin up($bp) {
+  @media only screen and (min-width: bp2px($bp)) {
+    @content;
+  }
+}
+@mixin between($bp-min, $bp-max) {
+  @media only screen and (min-width: bp2px($bp-min)) and (max-width: #{bp2px($bp-max) - 0.02}) {
+    @content;
+  }
+}
+
+@mixin device($bp) {
+  @if ($bp == 'sm' or $bp == 'xs') {
+    @include down($bp) {
+      @content
+    }
+  } @else {
+    $i:  index(map-keys($breakpoints), $bp);
+    @include up(nth(map-keys($breakpoints), $i - 1)) {
+      @content
+    }
+  }
+}

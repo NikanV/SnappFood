@@ -1,0 +1,158 @@
+/*stylelint-disable*/
+
+// Margin & Padding
+// "...-multi" is for the multi-language
+@each $breakpoint, $_ in $breakpoints {
+
+
+  @each $size,
+  $value in $spacing {
+
+    // margin and padding (default and ltr)
+    @each $letter,
+    $direction in $directions {
+      .m-#{$size} {
+        margin: #{$value};
+      }
+
+      .p-#{$size} {
+        padding: #{$value};
+      }
+
+      .m#{$letter}-#{$size},
+      html[dir="ltr"] .m#{$letter}-#{$size}-multi {
+        margin-#{$direction}: #{$value} !important;
+      }
+
+      .p#{$letter}-#{$size},
+      html[dir="ltr"] .p#{$letter}-#{$size}-multi {
+        padding-#{$direction}: #{$value} !important;
+      }
+
+      // margin (rtl)
+      html[dir="rtl"] .m#{$letter}-#{$size}-multi {
+        @if($direction==left) {
+          margin-right: #{$value};
+        }
+
+        @else if($direction==right) {
+          margin-left: #{$value};
+        }
+
+        @else {
+          margin-#{$direction}: #{$value};
+        }
+      }
+
+      // padding (rtl)
+      html[dir="rtl"] .p#{$letter}-#{$size}-multi {
+        @if($direction==left) {
+          padding-right: #{$value};
+        }
+
+        @else if($direction==right) {
+          padding-left: #{$value};
+        }
+
+        @else {
+          padding-#{$direction}: #{$value};
+        }
+      }
+
+      @include device($breakpoint) {
+
+        .m#{$letter}-#{$size}-#{$breakpoint},
+        html[dir="ltr"] .m#{$letter}-#{$size}-multi-#{$breakpoint} {
+          margin-#{$direction}: #{$value} !important;
+        }
+
+        .p#{$letter}-#{$size}-#{$breakpoint},
+        html[dir="ltr"] .p#{$letter}-#{$size}-multi-#{$breakpoint} {
+          padding-#{$direction}: #{$value} !important;
+        }
+
+        // margin (rtl)
+        html[dir="rtl"] .m#{$letter}-#{$size}-multi-#{$breakpoint} {
+          @if($direction==left) {
+            margin-right: #{$value};
+          }
+
+          @else if($direction==right) {
+            margin-left: #{$value};
+          }
+
+          @else {
+            margin-#{$direction}: #{$value};
+          }
+        }
+
+        // padding (rtl)
+        html[dir="rtl"] .p#{$letter}-#{$size}-multi-#{$breakpoint} {
+          @if($direction==left) {
+            padding-right: #{$value};
+          }
+
+          @else if($direction==right) {
+            padding-left: #{$value};
+          }
+
+          @else {
+            padding-#{$direction}: #{$value};
+          }
+        }
+      }
+
+    }
+
+    // X & Y
+    .px-#{$size} {
+      padding-left: #{$value};
+      padding-right: #{$value};
+    }
+
+    .py-#{$size} {
+      padding-top: #{$value};
+      padding-bottom: #{$value};
+    }
+
+    .mx-#{$size} {
+      margin-left: #{$value};
+      margin-right: #{$value};
+    }
+
+    .my-#{$size} {
+      margin-bottom: #{$value};
+      margin-top: #{$value};
+    }
+
+    @include device($breakpoint) {
+      .m-#{$size}-#{$breakpoint} {
+        margin: #{$value} !important;
+      }
+
+      .p-#{$size}-#{$breakpoint} {
+        padding: #{$value} !important;
+      }
+
+      .px-#{$size}-#{$breakpoint} {
+        padding-left: #{$value};
+        padding-right: #{$value};
+      }
+
+      .py-#{$size}-#{$breakpoint} {
+        padding-top: #{$value};
+        padding-bottom: #{$value};
+      }
+
+      .mx-#{$size}-#{$breakpoint} {
+        margin-left: #{$value};
+        margin-right: #{$value};
+      }
+
+      .my-#{$size}-#{$breakpoint} {
+        margin-bottom: #{$value};
+        margin-top: #{$value};
+      }
+    }
+  }
+}

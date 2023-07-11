@@ -1,0 +1,59 @@
+#nobitex-panel[theme="dark"] {
+  .vs__actions {
+    svg {
+      filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(81deg) brightness(115%) contrast(101%);
+    }
+  }
+}
+
+.custom-select-box {
+  .vs__search {
+    text-align: left !important;
+    height: 100%;
+  }
+
+  .vs__search::placeholder {
+    color: $grey-400 !important;
+  }
+
+  .vs__dropdown-toggle {
+    height: (48/16) + rem !important;
+    border-color: var(--border-color);
+    background: var(--card-background-color);
+
+    @include down("lg") {
+      height: (38/16) + rem !important;
+    }
+  }
+
+  .vs__actions {
+    @extend .pr-8-multi;
+
+    svg {
+      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(295deg) brightness(97%) contrast(103%);
+    }
+  }
+
+  .vs__selected {
+    height: 100%;
+  }
+
+  .vs__dropdown-option {
+    padding: 3px 10px;
+  }
+
+  .vs__dropdown-option.vs__dropdown-option--highlight {
+    background-color: var(--hover-color);
+  }
+
+  .vs__dropdown-menu {
+    background: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    box-shadow: $light-shadow;
+
+    li:hover {
+      background-color: var(--hover-color);
+    }
+  }
+}

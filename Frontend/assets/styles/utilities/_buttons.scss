@@ -1,0 +1,255 @@
+.btn {
+  font-size: (15/16) + rem;
+  height: (36/16) + rem;
+  padding: (6/16) + rem (24/16) + rem;
+
+  @extend .no-wrap;
+
+  &-sm {
+    font-size: (12/16) + rem;
+    height: (24/16) + rem;
+    padding: (2/16) + rem 1rem;
+  }
+
+  &-lg {
+    font-size: (19/16) + rem;
+    height: (48/16) + rem;
+    padding: (7/16) + rem 2rem;
+  }
+
+  &-block {
+    font-size: (19/16) + rem;
+    height: (48/16) + rem;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &.inactive {
+    cursor: default !important;
+
+    &:hover {
+      color: $white !important;
+    }
+  }
+}
+
+// default btn
+@each $color, $value in $colors {
+  .btn-#{$color} {
+    color: $white !important;
+    background-color: #{$value} !important;
+    border-color: #{$value} !important;
+
+    &.inactive {
+      color: var(--btn-inactive-color) !important;
+      background-color: var(--btn-inactive-fill) !important;
+      border-color: var(--btn-inactive-fill) !important;
+
+      svg path {
+        fill: var(--btn-inactive-color) !important;
+      }
+    }
+
+    svg path {
+      fill: $white !important;
+    }
+  }
+}
+
+@each $color, $value in $dark-colors {
+  .btn-#{$color}:hover,
+  .btn-#{$color}:active {
+    background-color: #{$value} !important;
+    border-color: #{$value} !important;
+  }
+}
+
+// outline btn
+@each $color, $value in $colors {
+  .btn-outline-#{$color} {
+    color: #{$value} !important;
+    border-color: #{$value} !important;
+    background-color: $transparent !important;
+
+    &:hover,
+    &:active {
+      color: $white !important;
+      background-color: #{$value} !important;
+      border-color: #{$value} !important;
+
+      svg path {
+        fill: $white !important;
+      }
+    }
+
+    &.inactive {
+      color: var(--btn-inactive-color) !important;
+      background-color: $transparent !important;
+      border-color: var(--btn-inactive-fill) !important;
+
+      svg path {
+        fill: var(--btn-inactive-color) !important;
+      }
+
+      &:hover {
+        color: var(--btn-inactive-color) !important;
+      }
+    }
+
+    svg path {
+      fill: #{$value} !important;
+    }
+  }
+}
+
+// ghost btn
+@each $color, $value in $colors {
+  .btn-ghost-#{$color} {
+    color: var(--text-primary) !important;
+    border: none !important;
+    background-color: $transparent !important;
+
+    &:hover,
+    &:active {
+      color: $white !important;
+      background-color: #{$value} !important;
+      border-color: #{$value} !important;
+
+      svg path {
+        fill: $white !important;
+      }
+    }
+
+    &.inactive {
+      color: var(--btn-inactive-color) !important;
+      background-color: $transparent !important;
+      border: none !important;
+
+      svg path {
+        fill: var(--btn-inactive-color) !important;
+      }
+    }
+
+    svg path {
+      fill: var(--text-primary) !important;
+    }
+  }
+}
+
+// text btn
+@each $color, $value in $colors {
+  .btn-text-#{$color} {
+    color: #{$value} !important;
+    border: none !important;
+    background-color: $transparent !important;
+
+    &.inactive {
+      color: var(--btn-inactive-color) !important;
+      background-color: $transparent !important;
+      border: none !important;
+
+      svg path {
+        fill: var(--btn-inactive-color) !important;
+      }
+    }
+
+    svg path {
+      fill: #{$value} !important;
+    }
+  }
+}
+
+@each $color, $value in $dark-colors {
+  .btn-text-#{$color} {
+    &:hover,
+    &:active {
+      color: #{$value} !important;
+      border: none !important;
+      background-color: $transparent !important;
+
+      svg path {
+        fill: #{$value} !important;
+      }
+    }
+  }
+}
+
+// pill btn
+.btn-pill {
+  border-radius: 24px;
+}
+
+//special cases
+.border-flat-right {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.border-flat-left {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.btn-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: (12/16) + rem;
+  height: 32px;
+  background-color: var(--tab-background-color);
+
+  @extend .text-title;
+}
+
+html {
+  &[dir="ltr"] {
+    .one-side-flat:first-child {
+      @extend .border-flat-right;
+    }
+
+    .one-side-flat:last-child {
+      @extend .border-flat-left;
+    }
+  }
+
+  &[dir="rtl"] {
+    .one-side-flat:first-child {
+      @extend .border-flat-left;
+    }
+
+    .one-side-flat:last-child {
+      @extend .border-flat-right;
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
+
+  .cursor-default {
+    cursor: default;
+  }
+
+  .cursor-help {
+    cursor: help;
+  }
+}
+
+.btn-visibility {
+  &:hover {
+    background-color: $transparent !important;
+
+    svg path {
+      fill: var(--text-purple) !important;
+    }
+  }
+
+  @include down("xs") {
+    padding: 0.1875rem 0.3rem 0.125rem;
+    outline: none !important;
+  }
+}

@@ -1,9 +1,3 @@
-export const paymentGateways = { // availability of payment gateways
-    shetab: true,
-    bank: true,
-    jibit: true
-}
-
 export const supportedCaptcha = [ // client's supported captcha types will be intersected with server acceptable captcha types
     'recaptcha',
     'hcaptcha',

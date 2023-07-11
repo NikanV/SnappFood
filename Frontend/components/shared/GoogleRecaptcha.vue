@@ -63,9 +63,6 @@ export default {
 
 <i18n>
 {
-  "fa": {
-    "replacingReCaptcha": "گوگل-کپچا به مشکل خورد. در حال جایگزینی..."
-  },
   "en": {
     "replacingReCaptcha": "reCaptcha failed. Replacing..."
   }

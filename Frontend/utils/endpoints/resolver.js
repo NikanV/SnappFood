@@ -6,8 +6,8 @@
 export const environments = {
     localhost: {
         hostname: 'localhost',
-        host: 'localhost:4000',
-        origin: 'http://localhost:4000/',
+        host: 'localhost:6969',
+        origin: 'http://localhost:6969/',
         isProduction: false,
         target: 'test',
         type: 'dev',

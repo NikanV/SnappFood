@@ -90,10 +90,6 @@ export default {
 
 <i18n>
 {
-  "fa": {
-    "tfaSubtitle": "برای محافظت از دارایی شما لطفا کد شناسایی دوعاملی خود را وارد کنید.",
-    "lossTfa": "کد شناسایی دوعاملی خود را از دست دادید؟"
-  },
   "en": {
     "tfaSubtitle": "To protect your assets, please enter your two-factor identification code.",
     "lossTfa": "Lost your two-factor ID?"
