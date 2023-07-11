@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<html {{HTML_ATTRS}}>
+<head {{HEAD_ATTRS}}>
+    {{ HEAD }}
 </head>
-<body>
-
+<body {{ BODY_ATTRS }}>
+{% if (process.env.NODE_ENV === 'production') { %}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ENV.GTM}}" height="0" width="0"
+                  style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{% } %}
+{{ APP }}
 </body>
 </html>
