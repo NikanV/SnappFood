@@ -1,0 +1,232 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  @media (pointer: fine) {
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--main-scroll-bar-color);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: $transparent;
+    }
+  }
+  font-family: 'Vazir-EnNum', serif;
+}
+
+html[dir="rtl"][digits="fa"] body {
+  font-family: 'Vazir-FaNum', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+td,
+th {
+  color: var(--text-primary);
+}
+
+p,
+span {
+  color: var(--text-secondary);
+}
+
+a.text-info {
+  color: $info;
+
+  &:hover,
+  &:focus {
+    color: $dark-info !important;
+  }
+}
+
+.card-box {
+  background-color: var(--card-background-color);
+  transition: background-color 0.26s ease;
+
+  @extend .box-border;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .responsive-boxes {
+    margin-left: -2rem;
+    margin-right: -2rem;
+
+    &__box {
+      padding-left: 0;
+      padding-right: 0;
+
+      &:first-child {
+        border-top: 1px solid var(--border-color);
+      }
+
+      &:last-child {
+        border-bottom: 1px solid var(--border-color);
+      }
+    }
+  }
+
+  .card-box {
+    border: none !important;
+    border-radius: initial;
+  }
+}
+
+svg.svg-inline--fa {
+  color: $grey-400;
+}
+
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.light-shadow {
+  box-shadow: $light-shadow;
+}
+
+.medium-shadow {
+  box-shadow: $medium-shadow;
+}
+
+.coin-image {
+  width: 36px;
+  height: 36px;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+
+.color-inherit {
+  color: inherit;
+}
+
+ul.list-style-none {
+  list-style: none;
+}
+
+.keep-align-items-left {
+  html[dir="rtl"] & {
+    align-items: end;
+  }
+
+  html[dir="ltr"] & {
+    align-items: start;
+  }
+}
+
+.nuxt__build_indicator {
+  @extend .colorful-loading;
+  color: white !important;
+}
+
+#webpack-hot-middleware-clientOverlay {
+  direction: ltr;
+  z-index: $very-high-index + 10 !important;
+
+  &::after {
+    position: fixed;
+    bottom: 24px;
+    width: 160px;
+    left: calc(50% - 80px);
+    display: inline-block;
+    background-color: $dark-danger;
+    padding: 6px;
+    text-align: center;
+    content: 'Nobitex';
+    color: $black;
+    font-size: 21px;
+  }
+}
+
+.disabled-content {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vpd-day:hover {
+  span {
+    color: white;
+  }
+}
+
+.no-border {
+  border: none !important;
+}
+
+.full-x-absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.opacity-zero {
+  opacity: 0;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+
+.arrow-icon {
+  transition: all 0.3s ease;
+
+  &.rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.h-48 {
+  height: 48px;
+}
+
+.text-initial {
+  text-align: initial;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
+}

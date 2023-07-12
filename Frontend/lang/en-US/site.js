@@ -1,0 +1,25 @@
+export default {
+    blog: 'Blog',
+    apiDocument: 'API Docs',
+    changelog: 'Changelog',
+    goToDashboard: 'Go To Dashboard',
+    snappfoodFees: 'Pricing & Fees',
+    abbreviationName: 'Abbreviation Name',
+    network: 'Network',
+    depositCost: 'Deposit Cost',
+    minimumDepositable: 'Minimum Depositable',
+    termsAndConditions: 'Terms and Conditions',
+    inviteFriends: 'Invite friends',
+    maxAmountPrecision: 'Max Amount Precision',
+    minTransactionValue: 'Minimum transaction value',
+    reportTechnicalBug: 'Report Bug',
+    title: 'Snappfood: Iran\'s largest food ordering website',
+    faq: {
+        title_1: 'What is Snappfood?',
+        content_1: 'If you are planning to order food online, Snappfood will help you achieve this as quickly as possible. Snappfood is the first and most reputable Iranian food ordering website for those who are looking for a safe, secure, fast, convenient and cheap way to order their food online.',
+        title_2: 'What is authentication?',
+        content_2: 'According to the rules of the worlds food markets, customer authentication is required to prevent any possible abuse. There are a number of limitations to getting started with Snappfood. ',
+        title_3: 'What information do I need to provide for authentication?',
+        content_3: 'It will be possible to start registration using a valid email. Then, according to the required user level, the user must complete his profile information. In level one, the user is required to provide a mobile phone number, color scan of the national card, new passport or identity card, bank card number, account and night in the users own name. Also, to upgrade to a dual-user level, an address and a landline phone with a bill containing the address, a selfie image according to the site template and a mobile number in the users own name are required. For more information on the different user levels and conditions of each, see the {0} page. ',
+    }
+}

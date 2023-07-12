@@ -1,0 +1,109 @@
+.custom-tabs {
+  .tab {
+    background-color: $grey-300;
+    border-color: $grey-300;
+    color: $grey-400;
+    border-radius: 0;
+    padding: 2px 1rem;
+    min-width: (100/16) + rem;
+    height: (36/16) + rem;
+    font-size: $card-paragraph;
+
+    &:first-child {
+      border-radius: 3px 0 0 3px;
+    }
+
+    &:last-child {
+      border-radius: 0 3px 3px 0;
+    }
+
+    @include down("sm") {
+      min-width: (76/16) + rem;
+      height: (24/16) + rem;
+      font-size: $paragraph;
+    }
+
+    &.btn-outline-default:hover {
+      background-color: $grey-600 !important;
+      border-color: $grey-600 !important;
+    }
+  }
+
+  .active {
+    background-color: $grey-500;
+    border-color: $grey-500;
+    color: $white;
+  }
+}
+
+.custom-tabs.min-width-auto {
+  .tab {
+    min-width: auto;
+  }
+}
+
+html[dir="rtl"] {
+  .custom-tabs {
+    .tab {
+      &:first-child {
+        border-radius: 0 3px 3px 0;
+      }
+
+      &:last-child {
+        border-radius: 3px 0 0 3px;
+      }
+    }
+  }
+}
+
+.custom-tabs-2 {
+  .btn {
+    position: relative;
+    transition: color 320ms ease-in;
+
+    &::after {
+      transition: all 250ms ease-out;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 0;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+    }
+
+    .rows-length {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      padding-top: 2px;
+      border: 2px solid var(--text-secondary);
+      color: var(--text-secondary);
+
+      @extend .ml-8-multi !optional;
+      @extend .fs-10 !optional;
+      @extend .fw-bold !optional;
+      @extend .ltr;
+    }
+
+    &.active-tab {
+      @each $color, $value in $colors {
+        &.text-#{$color}::after {
+          background-color: #{$value} !important;
+        }
+      }
+
+      &::after {
+        height: 2px;
+      }
+
+      & .rows-length {
+        border: 2px solid var(--text-purple);
+        color: var(--text-purple) !important;
+      }
+    }
+  }
+}

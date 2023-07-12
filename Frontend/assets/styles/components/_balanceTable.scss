@@ -1,0 +1,68 @@
+/*stylelint-disable*/
+
+#balance-table {
+  padding: 0 24px 16px 24px;
+
+  & > div:first-of-type {
+    height: 368px;
+  }
+
+  table {
+
+    thead tr {
+      background-color: var(--hover-color);
+
+      th {
+        padding: 8px 39px 12px;
+      }
+    }
+
+    tbody tr {
+      td {
+        padding: 13px 15px;
+        vertical-align: middle;
+      }
+
+      .crypto-operation {
+        .btn {
+          border-color: $grey-300;
+        }
+
+        .btn:hover {
+          background: $grey-400;
+          border-color: $grey-400;
+        }
+      }
+    }
+  }
+}
+
+.balance-table__body, #balance-table {
+  tbody tr:hover {
+    .crypto-operation {
+      .btn {
+        color: $white;
+      }
+
+      .btn.btn-deposit {
+        background: $secondary;
+        border-color: $secondary;
+
+        &:hover {
+          background: $dark-secondary;
+          border-color: $dark-secondary;
+        }
+      }
+
+      .btn.btn-withdraw {
+        background: $danger;
+        border-color: $danger;
+
+        &:hover {
+          background: $dark-danger;
+          border-color: $dark-danger;
+        }
+      }
+    }
+  }
+}

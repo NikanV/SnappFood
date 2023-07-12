@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "corporation",
+  "url": "https://nobitex.ir/",
+  "description": "Nobitex is a professional cryptocurrency exchange market. Easily buy and sell bitcoin and other cryptocurrencies - we ensure your security and guarantee transfer of the coins!",
+  "name": "Nobitex",
+  "email": "support@nobitex.ir",
+  "foundingDate": "2017",
+  "logo": "/cdn/logo/nobitex.png",
+  "sameAs": [
+    "https://twitter.com/nobitexmarket",
+    "https://t.me/nobitexmarket",
+    "https://www.linkedin.com/company/nobitexmarket/",
+    "https://www.instagram.com/nobitex_market/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+982191009925",
+    "contactType": "Customer service"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tehran",
+    "streetAddress": "Floor 2, No 7, Balavar St, Valiasr Ave, Tehran, Iran",
+    "addressCountry": { "@type": "country", "name": "Iran" }
+  },
+  "founders": [
+    { "@type": "person", "name": "Amir Hossein rad" },
+    { "@type": "person", "name": "Sayed Mohammad Ali Aghamirmohammadali" }
+  ]
+}

@@ -1,0 +1,56 @@
+.badge {
+  font-size: (12/16) + rem;
+  font-weight: 500;
+  line-height: 12px;
+  height: 1rem;
+  padding: (4/16) + rem;
+  border-radius: 3px;
+
+  // custom badges :|
+  &-alert-secondary {
+    background-color: var(--confirm-background-color);
+    color: #62d6ce;
+  }
+
+  &-alert-danger {
+    background-color: var(--error-background-color);
+    color: #f17981;
+  }
+
+  &-alert-info {
+    background-color: $alert-info;
+    color: $ultra-light-info;
+  }
+}
+
+.badge-rounded {
+  font-weight: 500;
+  height: (24/16) + rem;
+  border-radius: 12px;
+  padding: (5/16) + rem 1rem;
+}
+
+.badge-sm {
+  height: (19/16) + rem;
+  font-size: (12/16) + rem;
+  padding: 3px 8px;
+}
+
+@each $color, $value in $colors {
+  .badge-#{$color} {
+    color: $white;
+    background-color: #{$value};
+  }
+}
+
+@each $color, $value in $colors {
+  .badge-light-#{$color} {
+    background-color: rgba($value, 0.2);
+  }
+}
+
+@each $color, $value in $colors {
+  .badge-light-#{$color} {
+    color: #{$value};
+  }
+}

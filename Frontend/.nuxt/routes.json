@@ -1,8 +1,9 @@
 [
   {
-    "name": "",
-    "path": "",
-    "component": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/Frontend/node_modules/@nuxt/vue-app/template/pages/index.vue",
-    "_name": "_4b36c8e4"
+    "name": "login",
+    "path": "/login",
+    "component": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/Frontend/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_70aedd74"
   }
 ]

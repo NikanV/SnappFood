@@ -1,0 +1,45 @@
+@mixin dir($pixel, $reverse: false, $property: false) {
+  @if ($reverse) {
+    @if ($property) {
+      html[dir="rtl"] & {
+        #{$property}-right: $pixel;
+      }
+
+      html[dir="ltr"] & {
+        #{$property}-left: $pixel;
+      }
+    }
+
+    @else {
+      html[dir="rtl"] & {
+        right: $pixel;
+      }
+
+      html[dir="ltr"] & {
+        left: $pixel;
+      }
+    }
+  }
+
+  @else {
+    @if ($property) {
+      html[dir="rtl"] & {
+        #{$property}-left: $pixel;
+      }
+
+      html[dir="ltr"] & {
+        #{$property}-right: $pixel;
+      }
+    }
+
+    @else {
+      html[dir="rtl"] & {
+        left: $pixel;
+      }
+
+      html[dir="ltr"] & {
+        right: $pixel;
+      }
+    }
+  }
+}

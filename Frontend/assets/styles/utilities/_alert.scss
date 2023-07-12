@@ -1,0 +1,7 @@
+@each $color, $value in $alert-colors {
+  .alert-#{$color} {
+    color: $white;
+    background-color: #{$value};
+    border-color: #{$value};
+  }
+}

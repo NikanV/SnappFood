@@ -1,0 +1,81 @@
+{
+  "title": {
+    "title": "ییلد\u200Cفارمینگ نوبیتکس",
+    "desc": "با نگهداری دارایی های خود علاوه بر کمک به بهبود عملکرد شبکه های بلاکچین، پاداش دریافت کنید.",
+    "actions": [
+      {
+        "link": "stake/",
+        "linkType": "internal",
+        "target": "_self",
+        "caption": "ییلد\u200Cفارمینگ نوبیتکس",
+        "customClass": "btn-outline-light"
+      },
+      {
+        "link": "https://nobitex.ir/mag/what-is-staking/",
+        "linkType": "external",
+        "target": "_blank",
+        "caption": "اطلاعات بیشتر",
+        "customClass": "btn-primary ml-16-multi-sm ml-32-multi-md"
+      }
+    ]
+  },
+  "subject": {
+    "url": "https://nobitex.ir/mag/what-is-staking/",
+    "title": "ییلد\u200Cفارمینگ چیست؟",
+    "desc": "استیکینگ فرآیندی است که در آن کاربران می توانند با قفل کردن دارایی های خود نزد شبکه های اثبات سهام، به عملکرد بلاکچین کمک کنند. با این کار علاوه بر کمک به پردازش تراکنش ها، امنیت شبکه نیز تأمین می شود. کاربران به ازای قفل کردن دارایی خود، پاداشی را از شبکه دریافت می کنند.",
+    "img": "staking-landing/staking-landing-what-is-staking-img-desktop.png",
+    "imgAlt": "what is staking"
+  },
+  "video": {
+    "link1": "https://videos.nobitex.ir/sdfslekrw/stakingbasicfinalc.mp4",
+    "link2": "https://videos.nobitex.ir/jujoloii/stakingpartfinaaal.mp4",
+    "poster1": "home/staking-poster-1.jpg",
+    "poster2": "home/staking-poster-2.jpg",
+    "title1": "آشنایی با مفاهیم پایه‌ای ییلد\u200Cفارمینگ",
+    "title2": "آموزش ییلد\u200Cفارمینگ در نوبیتکس",
+    "videoIcon": "home/videos-icon.png"
+  },
+  "sakeOf": {
+    "title": "چرا ییلد\u200Cفارمینگ روش مناسبی برای انتخاب است؟",
+    "desc": "چرا ییلد\u200Cفارمینگ می‌تواند برای گروهی از افراد انتخاب مناسبی باشد؟",
+    "cards": []
+  },
+  "profits": {
+    "title": "ییلد\u200Cفارمینگ نوبیتکس و مزایای آن",
+    "desc": "قابلیت استیکینگ نوبیتکس، پلتفرمی برای استیک کردن توکن\u200Cهای شبکه\u200Cهای اثبات سهام است. شما به عنوان کاربر نوبیتکس می\u200Cتوانید با استفاده از طرح\u200Cهای متنوع این پلتفرم، رمزارز موردنظر خود را در بستری یکپارچه استیک کنید و در ازای آن پاداش دریافت کنید.",
+    "cards": [
+      {
+        "icon": "userHeart",
+        "viewbox": "0 0 42 32",
+        "title": "درگیر نشدن کاربر با پیچیدگی‌های فنی ییلد\u200Cفارمینگ"
+      },
+      {
+        "icon": "bitcoin",
+        "viewbox": "0 0 32 32",
+        "title": "ییلد کردن چند رمزارز در پلتفرمی یکپارچه"
+      },
+      {
+        "icon": "profit",
+        "viewbox": "0 0 32 32",
+        "title": "کسب پاداش از ییلد‌فارمینگ"
+      },
+      {
+        "icon": "decreaseRisk",
+        "viewbox": "0 0 32 32",
+        "title": "کاهش ریسک اسلشینگ"
+      }
+    ]
+  },
+  "calculator": {
+    "title": "ماشین حساب سود استخر مشارکت",
+    "desc": "با استفاده از این ماشین حساب تخمینی از اینکه در چه بازه زمانی چه میزان پاداش دریافت می‌کنید، خواهید داشت.",
+    "type": "liquidity-pool"
+  },
+  "currencyList": {
+    "title": "ارزهای قابل ییلد در نوبیتکس",
+    "plansGetter": "stake/plans"
+  },
+  "faq": {
+    "subject": "yield-farming"
+  }
+}

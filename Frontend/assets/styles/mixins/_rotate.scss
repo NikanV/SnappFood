@@ -1,0 +1,16 @@
+@mixin rotate {
+  @keyframes spinning {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.spinning {
+  @include rotate;
+  animation: spinning 2s linear infinite;
+}
