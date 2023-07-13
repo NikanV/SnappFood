@@ -1,4 +1,4 @@
-# snappfood-proj
+# frontend
 
 ## Project setup
 ```
