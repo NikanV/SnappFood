@@ -13,7 +13,9 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
+  resolveStoreModules(require('../store/app.js'), 'app.js')
   resolveStoreModules(require('../store/notification.js'), 'notification.js')
+  resolveStoreModules(require('../store/users.js'), 'users.js')
 
   // If the environment supports hot reloading...
 })()

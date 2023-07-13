@@ -6,6 +6,8 @@ export const DEFAULT_LOGIN = baseUrl + 'auth/login/'
 export const CHECKED_LOGIN = baseUrl + 'auth/checked-login/'
 export const GOOGLE_SIGN_IN = baseUrl + 'auth/google/'
 export const APPLICATION_LINK = baseUrl + 'app/request-link'
+export const USER_REGISTRATION = baseUrl + 'auth/registration/'
+
 export const GIFT_CARD = baseUrl + 'gift/'
 export const V2OPTIONS = baseUrl + 'v2/options'
 export const SELECT_CAPTCHA = baseUrl + 'captcha/select'
