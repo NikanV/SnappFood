@@ -1,8 +1,0 @@
-[
-  {
-    "name": "login",
-    "path": "/login",
-    "component": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/Frontend/pages/login.vue",
-    "chunkName": "pages/login"
-  }
-]
