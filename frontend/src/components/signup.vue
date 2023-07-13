@@ -9,25 +9,27 @@
             for="email-mobile-input">
           input email or mobile
         </label>
-        <input
-            id="email-mobile-input"
-            v-model="username"
-            v-focus
-            name="username"
-            autofocus
-            list="useremail"
-            tabindex="1"
-            autocomplete="off"
-            @focus="isUsernameFocus=true"
-            @blur="isUsernameFocus=false"
-        />
+        <div>
+          <input
+              id="email-mobile-input"
+              v-model="username"
+              v-focus
+              name="username"
+              autofocus
+              list="useremail"
+              tabindex="1"
+              autocomplete="off"
+              @focus="isUsernameFocus=true"
+              @blur="isUsernameFocus=false"
+          />
+        </div>
         <p v-show=" username.$dirty">
           <span v-if="!username.required">dirty username</span>
           <span v-if="!username.pattern">wrong pattern</span>
         </p>
         <ul v-show="showSuggests" class="position-absolute suggestion p-0" dir="ltr">
           <li v-for="(item,index) in emailArray" :key="index" @mousedown="setUsername(item)">
-            <span id="sp" class="text-subtitle">{{ emailUserPart }}</span>{{ item }}
+            <span id="sp">{{ emailUserPart }}</span>{{ item }}
           </li>
         </ul>
       </div>
@@ -54,7 +56,7 @@
                     :icon-name="isPasswordHidden ? 'visibility': 'visibility_off'"
                     icon-color="#A3A5A8"
                     size="large"/>
-              </span>
+            </span>
         </div>
         <p
             v-show="password.$dirty">

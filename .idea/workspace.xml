@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b137270-9cb3-4013-996b-61ced702f543" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/forgotPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/shared/checkBox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/configs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/signup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/signup.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/plugins/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/plugins/routers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/plugins/submitButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/shared/submitButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/endpoints/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/endpoints/resolver.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +102,23 @@
       <recent name="$PROJECT_DIR$/frontend/src/components/shared" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -122,7 +132,7 @@
       <workItem from="1689144484525" duration="7535000" />
       <workItem from="1689237553076" duration="5217000" />
       <workItem from="1689242852631" duration="641000" />
-      <workItem from="1689247027213" duration="14196000" />
+      <workItem from="1689247027213" duration="15049000" />
     </task>
     <servers />
   </component>

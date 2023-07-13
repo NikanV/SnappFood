@@ -9,18 +9,19 @@
             for="email-mobile-input">
           input email or mobile
         </label>
-        <input
-            id="email-mobile-input"
-            v-model="username"
-            v-focus
-            name="username"
-            list="useremail"
-            aria-describedby="sign-in-username"
-            tabindex="1"
-            autocomplete="email"
+        <div>
+          <input
+              id="email-mobile-input"
+              v-model="username"
+              v-focus
+              name="username"
+              list="useremail"
+              aria-describedby="sign-in-username"
+              tabindex="1"
+              autocomplete="email"
 
-        />
-
+          />
+        </div>
         <p v-show="username.$dirty">
           <span v-if="!username.required">
             username required

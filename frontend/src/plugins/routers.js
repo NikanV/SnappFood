@@ -2,7 +2,8 @@ import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/components/home.vue"
 import Signup from "@/components/signup"
 import Login from "@/components/login"
-import Profile from "@/components/profile";
+import Profile from "@/components/profile"
+import ForgotPassword from "@/components/forgotPassword"
 const routes = [
     {
         name:"HomePage",
@@ -18,7 +19,7 @@ const routes = [
         path:"/login"
     },{
         name:"ForgotPasswordPage",
-        component:Login,
+        component:ForgotPassword,
         path:"/forgot-password"
     },{
         name:"ProfilePage",
