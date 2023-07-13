@@ -4,7 +4,7 @@
     <div>
 
 
-      <div >
+      <div>
         <label
             for="email-mobile-input">
           input email or mobile
@@ -22,16 +22,15 @@
             @blur="isUsernameFocus=false"
         />
         <p v-show=" username.$dirty">
-              <span v-if="!username.required" >dirty username</span>
+          <span v-if="!username.required">dirty username</span>
           <span v-if="!username.pattern">wrong pattern</span>
         </p>
         <ul v-show="showSuggests" class="position-absolute suggestion p-0" dir="ltr">
           <li v-for="(item,index) in emailArray" :key="index" @mousedown="setUsername(item)">
-            <span id="sp" class="text-subtitle">{{ emailUserPart }}</span>{{ item }}</li>
+            <span id="sp" class="text-subtitle">{{ emailUserPart }}</span>{{ item }}
+          </li>
         </ul>
       </div>
-
-
 
 
       <div>
@@ -54,12 +53,12 @@
                 <base-icon
                     :icon-name="isPasswordHidden ? 'visibility': 'visibility_off'"
                     icon-color="#A3A5A8"
-                    size="large" />
+                    size="large"/>
               </span>
         </div>
         <p
             v-show="password.$dirty">
-              <span v-if="password.required" class="text-danger">password required</span>
+          <span v-if="password.required" class="text-danger">password required</span>
         </p>
         <ul
             v-show="password.$dirty">
@@ -69,14 +68,14 @@
               class="text-subtitle">
             <base-icon
                 :icon-name="requirement.isMet ? 'tick' : 'close'"
-                :icon-color="requirement.isMet ? '#15D1C6' : '#FC3C55'" />
+                :icon-color="requirement.isMet ? '#15D1C6' : '#FC3C55'"/>
             {{ requirement.caption }}
           </li>
         </ul>
       </div>
 
 
-      <div >
+      <div>
         <submit-button
             :is-submitting="isSubmitting"
             type="submit"
@@ -92,7 +91,8 @@
 
 <script>
 import BaseIcon from "@/components/shared/baseIcon"
-import SubmitButton from "@/plugins/submitButton";
+import SubmitButton from "@/components/shared/submitButton.vue";
+import {signupMethods} from '@/utils/configs'
 
 export default {
   name: "SignupPage",
@@ -111,9 +111,9 @@ export default {
       isSubmitting: false,
     }
   },
-  methods:{
+  methods: {
     submit() {
-    //   implement submit logic
+      //  todo: handle signup logic
       this.$router.push({name: 'LoginPage'})
     },
     setUsername(domain) {
@@ -124,7 +124,7 @@ export default {
       })
     },
   },
-  computed:{
+  computed: {
     domain() {
       return this.username.toLowerCase().split('@')[1] || ''
     },
@@ -136,11 +136,11 @@ export default {
           ? this.emailSuggestion
           : []
     },
-    showSuggests () {
+    showSuggests() {
       return this.username && this.isUsernameFocus && this.emailArray.length > 0
     },
 
-    passwordRequirements () {
+    passwordRequirements() {
       return [
         {
           caption: 'atLeastOneLetter',
@@ -156,9 +156,11 @@ export default {
         }
       ]
     },
-    isPasswordRequirementsMet () {
+    isPasswordRequirementsMet() {
       return this.passwordRequirements.every(item => item.isMet)
-    },
+    }, isMobileActive() {
+      return signupMethods.mobile
+    }
   }
 }
 </script>
