@@ -5,623 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b137270-9cb3-4013-996b-61ced702f543" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontend/.nuxt/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/fonts/Vazir-EnNum-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/fonts/Vazir-EnNum-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/fonts/Vazir-FaNum-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/fonts/Vazir-FaNum-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/AppStore.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/academy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/address-book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/alarm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/alert.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/antifishing.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/arrow-back.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/auth-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/authentication.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/ansar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/ayandeh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/dey.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/eghtesad_novin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/etebari_tose.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/gardeshgari.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/gharzolhasane_mehr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/ghavamin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/hekmat_iranian.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/iran_venezuela.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/iran_zamin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/jibit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/karafarin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/keshavarzi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/khavarmianeh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/kosar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/markazi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/maskan.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/mehr_eghtesad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/melal.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/mellat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/melli.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/noor.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/parsian.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/pasargad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/pay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/postbank.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/refah.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/resalat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/saderat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/saman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/sanat_madan.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/sarmaye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/sepah.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/shahr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/sina.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/tejarat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/tose_saderat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/tose_teavon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/unknown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/banks/vandar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/bolt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/chevron-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/copy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/dashboard.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/dropDown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/empty-list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/empty-wallet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/emptyNotif.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/gift-card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/help.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/hide-password.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/invite-friend.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/iran-flag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/lang-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/login.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/mag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/nobitex-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/nobitex-value-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/nobitex-value-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/nobitex-value-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/nobitex.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/people.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/play.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/posts.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/questions.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/rate-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/rate-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/rate-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/rate-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/rate-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/security.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/show-password.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/smsNotif.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/stats.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/swap_vert.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/time.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/trade.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/tryAgain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/user-manual.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/verification/national-card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/verification/photo-camera.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/icon/verification/video-camera.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/about/header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/about/team.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/annual-report/2021.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/3d-bitcoin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/3d-etherium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/3d-litecoin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/3d-monero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/anardooni.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/bazar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/device-frame.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/device-main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/device-navigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/device.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/googleplay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/iapps.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/ios.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/myket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/shabihsaz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/sibapp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/sibche.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/star-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/application/star-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/1000shib.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/100k_floki.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/1b_babydoge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/1inch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/1m_btt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/1m_nft.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/aave.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ada.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/algo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ant.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ape.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/api3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/apt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/arb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/atom.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/avax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/axs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/bal.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/bat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/bch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/blur.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/bnb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/btc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/busd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/celr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/chz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/comp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/crv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/cvc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/cvx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/dai.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/dao.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/dash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/doge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/dot.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/dydx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/egala.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/egld.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/elf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/enj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ens.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/eos.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/etc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/eth.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/fallback-coin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/fil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/flow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/flr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ftm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/gala.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/glm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/gmt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/grt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/hbar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/imx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/iota.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/irt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ldo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/lpt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/lrc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/ltc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/luna.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/mana.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/mask.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/matic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/mkr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/near.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/neo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/nmr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/one.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/others.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/pmn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/qnt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/qtum.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/rls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/sand.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/security.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/shib.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/slp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/snt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/snx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/sol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/storj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/sushi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/t.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/trx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/uni.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/usdc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/usdt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/wbtc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/xem.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/xlm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/xmr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/xrp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/yfi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/zec.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/coins/zrx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/Logo_FA-Dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/Logo_FA-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/Nobitex Logo_FA-Dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/hamburger-menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/hamburger-menu.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/header-background.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/nobitex-logo-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/nobitex-logo-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/nobitex-wordmark-en.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/stake-empty-state-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/stake-empty-state-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/under-development.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/white-with-wordmark-en.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/white-with-wordmark-en.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/white-with-wordmark-en.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/white-with-wordmark-fa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/common/white-with-wordmark-fa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/call-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/mail-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma--soalat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma--soalat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma--soalat.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-chat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-chat.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-edari.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-edari.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-edari.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-feedback.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-telegram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/contact-us/tamas-ba-ma-telegram.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/current-prices/header-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/current-prices/tabadol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/current-prices/tabadol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/current-prices/tabadol.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/Cute.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/Grand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/Light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/Mind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/bastebandi-slider-size4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/block-slider-size4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/direct-download.b18563c.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/download-from-bazar.c31e7c3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/download-from-myket.5271d95.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/fantezi-slider-size4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/golden-slider-size4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/malih-slider-size4-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/redeemBackground2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/giftcard/redeemImage-transparent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/10-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/11-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/12-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/13-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/14-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/15-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/16-2-min-min.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/17-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/18-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/19-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/2-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/20-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/21-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/3-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/4-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/5-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/6-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/7-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/8-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/help-giftcard/9-1-min-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/GooglePlay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/app-screenshot-mobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/app-screenshot-tablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/app-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/app-screenshot.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/by-numbers-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/by-numbers-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/by-numbers-bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/direct-download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/download-from-bazar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/download-from-myket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/download-simulator-market.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/facilitiesIcon4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/jumbotron-mobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/jumbotron-tablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/jumbotron.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/learnMoreIcon4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/news-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/news-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/news-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/news-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/pattern.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/profit-img-mobile.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/profit-img-tablet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/profit-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/profit-img.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/staking-hero-desktop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/staking-hero-mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/staking-poster-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/staking-poster-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/videos-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/home/why3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/authenticationPhoto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/classic-structure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/emptyNotification.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/identityInfoPic-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/pro-structure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/rocket-icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/under-construction.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/panel/welcome-msg-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/policies/invite-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/policies/invite-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/policies/invite-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/policies/referral-img.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/policies/user-statistics.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/position-help/w9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/picture1-android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/picture2-android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/picture3-android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/picture4-android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/picture5-android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/portfolio/a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/portfolio/b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/portfolio/c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/portfolio/d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/portfolio/e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/product/portfolio/f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/security/Picture1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/security/Picture2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/security/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/bot-logo-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/facebook-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/instagram-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/instagram-logo-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/linkedin-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/linkedin-logo-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/telegram-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/telegram-logo-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/telegram-logo-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/twitter-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/twitter-logo-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/socialMedia/youtube-logo-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/play-button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/staking-landing-video-section-cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/staking-landing-webinar-presenter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/staking-landing-webinar-section-cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/staking-landing-webinar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/staking-landing-what-is-staking-img-desktop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/staking-landing/staking-landing-what-is-staking-img-mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/BAYAD_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/BAYAD_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/img/verification-example-photos/NABAYAD_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/0x.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/100k_floki.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/1b_babydoge.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/1inch-network.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/1m_btt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/1m_nft.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/aave.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/algorand.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/ape-coin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/api3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/aptos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/aragon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/arbitrum.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/avalanche.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/axie-infinity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/balancer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/banks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/basic-attention-token.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/binance-coin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/bitcoin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/bitcoincash.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/blur.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/busd.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/cardano.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/celer-network.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/chainlink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/changelogs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/chiliz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/civic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/compound.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/convex-finance.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/cosmos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/curve.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/dai.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/dao-maker.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/decentraland.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/dogecoin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/dydx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/egala.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/enjin-coin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/eos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/ethereum-name-service.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/ethereum.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/ethereumclassic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/fantom.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/filecoin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/flare.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/flow.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/golem.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/harmony.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/hedera.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/holidays.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/immutablex.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/landings/staking.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/landings/yield-farming.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/lidodao.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/litecoin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/livepeer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/loopring.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/maker.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/mask-network.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/matic.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/monero.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/multiversx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/near.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/numeraire.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/polkadot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/quant.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/ripple.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/sandbox.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/shiba.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/smooth-love-potion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/solana.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/stellar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/stepn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/storj.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/sushi-swap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/synthetix.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/tether.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/the-graph.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/threshold.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/tron.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/uniswap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/usd-coin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/wrapped-bitcoin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/json/yearn-finance.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/structuredData/contactus.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/structuredData/index.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_alertBox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_articlePage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_balanceTable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_cancelOrderButtons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_customSelectBox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_customSlider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_ticketing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/components/_tour.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_animations.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_container.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_general.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_share.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/general/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/mixins/_dir.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/mixins/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/mixins/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/mixins/_rotate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/mixins/_shimmer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/mixins/_texts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/themes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_border.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_checkbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_fontSize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_google.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_panel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_progressBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_radioButton.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_scrollBar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/styles/utilities/texts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/video/live-video.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/video/smart-verification.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/assets/video/tfa.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/pages/Tfa.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/BaseCaptcha.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/CheckBox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/GoogleRecaptcha.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/GoogleSignIn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/OtpInputs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/SnappfoodArcaptcha.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/SnappfoodCaptcha.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/SnappfoodHcaptcha.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/SubmitButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/components/shared/baseIcon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/market.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/temporary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/lang/en-US/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/mixins/captcha.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/mixins/guest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/mixins/locationChange.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/mixins/notification.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/mixins/pageView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/pages/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/plugins/englishDigit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/plugins/gtm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/plugins/pwa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/scripts/Storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/store/notification.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/configuration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/endpoints/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/endpoints/resolver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/general.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/getMask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/utils/links.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shared/baseIcon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/signup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/plugins/focus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/plugins/routers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/plugins/submitButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/endpoints/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/endpoints/resolver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/general.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/components/nuxt-build-indicator.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/components/nuxt-error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/components/nuxt-error.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/loading.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/loading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/mixins/fetch.server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/mixins/fetch.server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/routes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.nuxt/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.nuxt/views/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -632,8 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Class API Component" />
-        <option value="Vue Options API Component" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Vue Options API Component" />
       </list>
     </option>
   </component>
@@ -669,7 +69,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/Frontend/package.json" />
+    <dismissed value="$PROJECT_DIR$/frontend/package.json" />
   </component>
   <component name="ProjectId" id="2SRAOhFe6WjTI9Bvl28rJs5GaHV" />
   <component name="ProjectLevelVcsManager">
@@ -683,10 +83,11 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "alireza",
-    "last_opened_file_path": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/Frontend",
+    "last_opened_file_path": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/frontend/node_modules",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -704,6 +105,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/node_modules" />
       <recent name="$PROJECT_DIR$/Frontend" />
       <recent name="$PROJECT_DIR$/Frontend/utils" />
       <recent name="$PROJECT_DIR$/Frontend/assets/styles" />
@@ -720,7 +122,10 @@
       <updated>1689098989555</updated>
       <workItem from="1689098993952" duration="13239000" />
       <workItem from="1689139099221" duration="1989000" />
-      <workItem from="1689144484525" duration="7070000" />
+      <workItem from="1689144484525" duration="7535000" />
+      <workItem from="1689237553076" duration="5217000" />
+      <workItem from="1689242852631" duration="641000" />
+      <workItem from="1689247027213" duration="10149000" />
     </task>
     <servers />
   </component>
