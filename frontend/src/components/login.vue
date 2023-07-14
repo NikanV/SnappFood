@@ -60,10 +60,7 @@
             tabindex="3"> btn
         </submit-button>
         <p>
-          <router-link to="/signup">signup</router-link>
-        </p>
-        <p>
-          <router-link to="/forgot-password">forgot password</router-link>
+         don't have an account? <router-link to="/signup">signup</router-link>
         </p>
       </div>
 

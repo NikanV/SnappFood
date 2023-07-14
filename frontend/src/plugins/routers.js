@@ -3,7 +3,6 @@ import Home from "@/components/home.vue"
 import Signup from "@/components/signup"
 import Login from "@/components/login"
 import Profile from "@/components/profile"
-import ForgotPassword from "@/components/forgotPassword"
 const routes = [
     {
         name:"HomePage",
@@ -17,10 +16,6 @@ const routes = [
         name:"LoginPage",
         component:Login,
         path:"/login"
-    },{
-        name:"ForgotPasswordPage",
-        component:ForgotPassword,
-        path:"/forgot-password"
     },{
         name:"ProfilePage",
         component:Profile,
