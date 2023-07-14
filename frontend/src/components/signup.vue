@@ -154,14 +154,17 @@ export default {
   methods: {
     async submit() {
       //  todo: handle signup logic
-      let res = await axios.post("http://localhost:3000/users", {
-        username: this.username,
-        password: this.password
-      })
-      if (res.status === 201){
-        localStorage.setItem('user-info',JSON.stringify(res.data))
-        await this.$router.push({name: 'LoginPage'})
-      }
+      // let res = await axios.post("http://localhost:3000/users", {
+      //   username: this.username,
+      //   password: this.password
+      // })
+      // if (res.status === 201){
+      //   localStorage.setItem('user-info',JSON.stringify(res.data))
+      //   await this.$router.push({name: 'LoginPage'})
+      // }
+
+      await this.$router.push({name: 'LoginPage'})
+
     },
     setUsername(domain) {
       this.username = `${this.emailUserPart}${domain}`

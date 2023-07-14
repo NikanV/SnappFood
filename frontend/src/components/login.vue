@@ -60,7 +60,8 @@
             tabindex="3"> btn
         </submit-button>
         <p>
-         don't have an account? <router-link to="/signup">signup</router-link>
+          don't have an account?
+          <router-link to="/signup">signup</router-link>
         </p>
       </div>
 
@@ -95,9 +96,11 @@ export default {
   methods: {
     async submit() {
       // todo: implement login logic
-      let res = await axios.get(`http://localhost:3000/users?username=${this.username}&password=${this.password}`)
-      if (res.status === 201)
-        await this.$router.push({name: 'ProfilePage'})
+      // let res = await axios.get(`http://localhost:3000/users?username=${this.username}&password=${this.password}`)
+      // if (res.status === 201)
+      //   await this.$router.push({name: 'ProfilePage'})
+      await this.$router.push({name: 'ProfilePage'})
+
     },
   },
   isMobileActive() {

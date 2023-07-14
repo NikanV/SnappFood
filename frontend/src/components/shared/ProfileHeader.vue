@@ -21,7 +21,6 @@ export default{
     logout(){
       //todo: implement logout logic
       this.$router.push({name: 'LoginPage'})
-
     }
   }
 }

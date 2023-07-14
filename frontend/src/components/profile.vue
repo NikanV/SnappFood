@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ProfileHeader from "@/components/ProfileHeader";
+import ProfileHeader from "@/components/shared/ProfileHeader.vue";
 
 export default {
   name: "ProfilePage",
