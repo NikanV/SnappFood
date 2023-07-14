@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b137270-9cb3-4013-996b-61ced702f543" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/styles/general/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/OrderFood.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/cart.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/customerProfile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/restaurantList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/RestaurantPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/favorites.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/orders.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/settings.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shared/Headers.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shared/sidebar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AddRestaurant.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/OrderFood.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/cart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/customerProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/customerProfile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/profile.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/shared/ProfileHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/shared/ProfileHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/restaurantList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/restaurantList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/signup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/signup.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/plugins/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/plugins/routers.js" afterDir="false" />
     </list>
@@ -147,6 +148,7 @@
       <workItem from="1689247027213" duration="15049000" />
       <workItem from="1689317058025" duration="7643000" />
       <workItem from="1689343658753" duration="5635000" />
+      <workItem from="1689359576449" duration="3623000" />
     </task>
     <servers />
   </component>

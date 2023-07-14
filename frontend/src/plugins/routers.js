@@ -2,10 +2,13 @@ import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/components/home.vue"
 import Signup from "@/components/signup"
 import Login from "@/components/login"
-import OrderFood from "@/components/OrderFood";
 import CustomerProfile from "@/components/customerProfile"
 import Cart from "@/components/cart"
 import RestaurantList from "@/components/restaurantList"
+import Settings from "@/components/settings.vue";
+import Favorites from "@/components/favorites.vue";
+import Orders from "@/components/orders.vue";
+import RestaurantPage from "@/components/RestaurantPage.vue";
 const routes = [
     {
         name:"HomePage",
@@ -20,13 +23,9 @@ const routes = [
         component:Login,
         path:"/login"
     },{
-        name:"OrderFoodPage",
-        component:OrderFood,
-        path:"/order-food"
-    },{
         name:"CustomerProfilePage",
         component:CustomerProfile,
-        path:"/customer-profile"
+        path:"/profile"
     },{
         name:"CartPage",
         component:Cart,
@@ -35,7 +34,10 @@ const routes = [
         name:"RestaurantListPage",
         component:RestaurantList,
         path:"/restaurants"
-    },
+    },{ path: '/profile/settings', component: Settings },
+    { path: '/profile/favorites', component: Favorites },
+    { path: '/profile/orders', component: Orders },
+    { path: '/profile/orders', component: RestaurantPage },
 ]
 
 const router = createRouter({
