@@ -118,6 +118,7 @@
         <submit-button
             :is-submitting="isSubmitting"
             type="submit"
+            :is-disabled="disableSignup"
             tabindex="4"> signup
         </submit-button>
         <p>already have an account?
@@ -146,6 +147,7 @@ export default {
       username: '',
       password: '',
       password2: '',
+      disableSignup: true,
       isPasswordHidden: true,
       emailSuggestion: ['@gmail.com', '@yahoo.com', '@hotmail.com', '@outlook.com', '@ymail.com', '@live.com', '@protonmail.com', '@proton.me', '@icloud.com', '@chmail.ir'],
       isUsernameFocus: false,

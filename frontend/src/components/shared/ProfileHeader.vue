@@ -2,9 +2,8 @@
   <h1>Hello {{username}}</h1>
   <div>
     <a href="/profile">Profile</a>
-    <a href="/add-restaurant">Add Restaurant</a>
-    <a href="#">Update Restaurant</a>
     <a @click="logout" href="#">Logout</a>
+    <a href="/cart">Card</a>
   </div>
 </template>
 
@@ -14,7 +13,7 @@ export default{
   name: "ProfileHeader",
   data(){
     return{
-      username:'user'
+      username:''
     }
   },
   methods:{

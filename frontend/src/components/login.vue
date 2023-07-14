@@ -11,17 +11,16 @@
               id="email-mobile-input"
               v-model="username"
               v-focus
-              name="username"
-              list="useremail"
-              placeholder="username"
               aria-describedby="sign-in-username"
-              tabindex="1"
               autocomplete="email"
+              list="useremail"
+              name="username"
+              placeholder="username"
+              tabindex="1"
           />
         </div>
         <p v-show="username.$dirty || invalidUsername">
-          <span v-if="!username.required">username required</span>
-          <span v-if="invalidUsername">invalid username</span>
+          <span v-if="invalidUsername & username.length>0">invalid username</span>
         </p>
       </div>
 
@@ -32,11 +31,11 @@
           <input
               id="password-input"
               v-model="password"
-              name="password"
               :type="isPasswordHidden ? 'password' : 'text'"
-              tabindex="2"
-              placeholder="password"
               autocomplete="email"
+              name="password"
+              placeholder="password"
+              tabindex="2"
           />
           <span @click="isPasswordHidden = !isPasswordHidden">
                 <base-icon
@@ -47,7 +46,7 @@
         </div>
         <p v-show="password.$dirty || invalidPassword">
           <span v-if="password.required">password required</span>
-          <span v-if="invalidPassword">wrong password</span>
+          <span v-if="invalidPassword & password.length>0">wrong password</span>
 
         </p>
       </div>
@@ -55,9 +54,10 @@
 
       <div>
         <submit-button
+            :is-disabled="disableLogin"
             :is-submitting="isSubmitting"
-            type="submit"
-            tabindex="3"> login
+            tabindex="3"
+            type="submit"> login
         </submit-button>
         <p>
           don't have an account?
@@ -86,12 +86,14 @@ export default {
     return {
       username: '',
       password: '',
-      invalidUsername: false,
-      invalidPassword: false,
+      invalidUsername: true,
+      invalidPassword: true,
+      disableLogin: true,
       isPasswordHidden: true,
       isSubmitting: false,
     }
   },
+  computed: {},
   methods: {
     async submit() {
       // todo: implement login logic
