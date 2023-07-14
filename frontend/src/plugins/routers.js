@@ -3,6 +3,7 @@ import Home from "@/components/home.vue"
 import Signup from "@/components/signup"
 import Login from "@/components/login"
 import Profile from "@/components/profile"
+import AddRestaurant from "@/components/AddRestaurant"
 const routes = [
     {
         name:"HomePage",
@@ -20,7 +21,12 @@ const routes = [
         name:"ProfilePage",
         component:Profile,
         path:"/profile"
+    },{
+        name:"AddRestaurantPage",
+        component:AddRestaurant,
+        path:"/add-restaurant"
     },
+
 ]
 
 const router = createRouter({

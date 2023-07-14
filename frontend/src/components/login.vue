@@ -74,7 +74,6 @@
 import BaseIcon from "@/components/shared/baseIcon"
 import SubmitButton from "@/components/shared/submitButton"
 import {loginMethods} from "@/utils/configs"
-import axios from "axios";
 
 export default {
   name: "LoginPage",

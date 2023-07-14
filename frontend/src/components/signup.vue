@@ -132,7 +132,6 @@
 import BaseIcon from "@/components/shared/baseIcon"
 import SubmitButton from "@/components/shared/submitButton.vue";
 import {signupMethods} from '@/utils/configs'
-import axios from "axios";
 
 export default {
   name: "SignupPage",
