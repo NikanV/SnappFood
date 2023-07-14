@@ -5,10 +5,7 @@
 
 
       <div>
-        <label
-            for="email-mobile-input">
-          input email or mobile
-        </label>
+        <label for="email-mobile-input">username</label>
         <div>
           <input
               id="email-mobile-input"
@@ -16,28 +13,21 @@
               v-focus
               name="username"
               list="useremail"
+              placeholder="username"
               aria-describedby="sign-in-username"
               tabindex="1"
               autocomplete="email"
-
           />
         </div>
-        <p v-show="username.$dirty">
-          <span v-if="!username.required">
-            username required
-              </span>
-          <span v-if="!username.pattern">
-            wrong username pattern
-              </span>
+        <p v-show="username.$dirty || invalidUsername">
+          <span v-if="!username.required">username required</span>
+          <span v-if="invalidUsername">invalid username</span>
         </p>
       </div>
 
 
       <div>
-        <label
-            for="password-input">
-          input password
-        </label>
+        <label for="password-input">password</label>
         <div>
           <input
               id="password-input"
@@ -45,19 +35,20 @@
               name="password"
               :type="isPasswordHidden ? 'password' : 'text'"
               tabindex="2"
-              autocomplete="current-password"
+              placeholder="password"
+              autocomplete="email"
           />
-          <span
-              @click="isPasswordHidden = !isPasswordHidden">
+          <span @click="isPasswordHidden = !isPasswordHidden">
                 <base-icon
                     :icon-name="isPasswordHidden ? 'visibility': 'visibility_off'"
                     icon-color="#A3A5A8"
                     size="large"/>
           </span>
         </div>
-        <p
-            v-show="password.$dirty">
+        <p v-show="password.$dirty || invalidPassword">
           <span v-if="password.required">password required</span>
+          <span v-if="invalidPassword">wrong password</span>
+
         </p>
       </div>
 
@@ -68,7 +59,12 @@
             type="submit"
             tabindex="3"> btn
         </submit-button>
-
+        <p>
+          <router-link to="/signup">signup</router-link>
+        </p>
+        <p>
+          <router-link to="/forgot-password">forgot password</router-link>
+        </p>
       </div>
 
     </div>
@@ -80,6 +76,7 @@
 import BaseIcon from "@/components/shared/baseIcon"
 import SubmitButton from "@/components/shared/submitButton"
 import {loginMethods} from "@/utils/configs"
+import axios from "axios";
 
 export default {
   name: "LoginPage",
@@ -92,15 +89,18 @@ export default {
     return {
       username: '',
       password: '',
-      email: '',
+      invalidUsername: false,
+      invalidPassword: false,
       isPasswordHidden: true,
       isSubmitting: false,
     }
   },
   methods: {
-    submit() {
-      //  todo: handle login logic
-      this.$router.push({name: 'ProfilePage'})
+    async submit() {
+      // todo: implement login logic
+      let res = await axios.get(`http://localhost:3000/users?username=${this.username}&password=${this.password}`)
+      if (res.status === 201)
+        await this.$router.push({name: 'ProfilePage'})
     },
   },
   isMobileActive() {

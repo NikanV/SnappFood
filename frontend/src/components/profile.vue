@@ -1,14 +1,20 @@
-<script>
-import {defineComponent} from 'vue'
 
-export default defineComponent({
-  name: "ProfilePage"
-})
-</script>
 
 <template>
-welcome to profile page
+  <ProfileHeader/>
+  <h1>welcome to profile page</h1>
 </template>
+
+<script>
+import ProfileHeader from "@/components/ProfileHeader";
+
+export default {
+  name: "ProfilePage",
+  components:{
+    ProfileHeader
+  }
+}
+</script>
 
 <style scoped>
 

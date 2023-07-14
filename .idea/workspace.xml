@@ -5,9 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b137270-9cb3-4013-996b-61ced702f543" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt-build-indicator.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt-child.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt-error.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt-link.client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt-link.server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt-loading.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/components/nuxt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_120x120.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_144x144.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_152x152.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_192x192.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_384x384.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_512x512.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/icon_64x64.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_ipad_1536x2048.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_ipadpro10_1668x2224.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_ipadpro12_2048x2732.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_ipadpro9_1536x2048.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_iphone6_50x1334.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_iphoneplus_1080x1920.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_iphonese_640x1136.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_iphonex_1125x2436.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_iphonexr_828x1792.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/icons/splash_iphonexsmax_1242x2688.da29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/dist/client/manifest.061727ba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/empty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/firebase/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/firebase/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/firebase/service.messaging.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/google-analytics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/loading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/markdownit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/mixins/fetch.client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/mixins/fetch.server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-highcharts/components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-highcharts/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/head-meta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/plugin.main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/plugin.routing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/plugin.utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/nuxt-i18n/utils-common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/pwa/icon.plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/pwa/meta.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/pwa/meta.plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/pwa/meta.utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/recaptcha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/recaptcha.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/router.scrollBehavior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/sentry.client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/sentry.server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/views/app.template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/views/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.nuxt/workbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProfileHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/shared/HybridLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/profile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/signup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/signup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/plugins/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/plugins/routers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +144,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "alireza",
-    "last_opened_file_path": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/frontend/node_modules",
+    "last_opened_file_path": "/home/alireza/Developer/Web-Programming/Proj/SnappFood/frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,11 +162,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/node_modules" />
       <recent name="$PROJECT_DIR$/Frontend" />
       <recent name="$PROJECT_DIR$/Frontend/utils" />
       <recent name="$PROJECT_DIR$/Frontend/assets/styles" />
-      <recent name="$PROJECT_DIR$/Frontend/node_modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/components/shared" />
@@ -133,6 +203,7 @@
       <workItem from="1689237553076" duration="5217000" />
       <workItem from="1689242852631" duration="641000" />
       <workItem from="1689247027213" duration="15049000" />
+      <workItem from="1689317058025" duration="5416000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,1368 @@
+[
+  {
+    "name": "about___fa",
+    "path": "/about",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/about.vue",
+    "chunkName": "pages/about",
+    "url": "/about"
+  },
+  {
+    "name": "application___fa",
+    "path": "/application",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/application.vue",
+    "chunkName": "pages/application",
+    "url": "/application"
+  },
+  {
+    "name": "calculator___fa",
+    "path": "/calculator",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/calculator.vue",
+    "chunkName": "pages/calculator",
+    "url": "/calculator"
+  },
+  {
+    "name": "changes___fa",
+    "path": "/changes",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/changes.vue",
+    "chunkName": "pages/changes",
+    "url": "/changes"
+  },
+  {
+    "name": "contact___fa",
+    "path": "/contact",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/contact-us.vue",
+    "url": "/contact"
+  },
+  {
+    "name": "contact-us___fa",
+    "path": "/contact-us",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/contact-us.vue",
+    "chunkName": "pages/contact-us",
+    "url": "/contact-us"
+  },
+  {
+    "name": "current-prices___fa",
+    "path": "/current-prices",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/current-prices.vue",
+    "chunkName": "pages/current-prices",
+    "url": "/current-prices"
+  },
+  {
+    "name": "index___en",
+    "path": "/en",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/en"
+  },
+  {
+    "name": "faq___fa",
+    "path": "/faq",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/faq.vue",
+    "chunkName": "pages/faq",
+    "url": "/faq"
+  },
+  {
+    "name": "features-history___fa",
+    "path": "/features-history",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/features-history.vue",
+    "chunkName": "pages/features-history",
+    "url": "/features-history"
+  },
+  {
+    "name": "feedbacks-and-suggestions___fa",
+    "path": "/feedbacks-and-suggestions",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/feedbacks-and-suggestions.vue",
+    "chunkName": "pages/feedbacks-and-suggestions",
+    "url": "/feedbacks-and-suggestions"
+  },
+  {
+    "name": "forget-password___fa",
+    "path": "/forget-password",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/forget-password.vue",
+    "chunkName": "pages/forget-password",
+    "url": "/forget-password"
+  },
+  {
+    "name": "forget-tfa___fa",
+    "path": "/forget-tfa",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/forget-tfa.vue",
+    "chunkName": "pages/forget-tfa",
+    "url": "/forget-tfa"
+  },
+  {
+    "name": "giftcard___fa",
+    "path": "/giftcard",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/giftcard/index.vue",
+    "chunkName": "pages/giftcard/index",
+    "url": "/giftcard"
+  },
+  {
+    "name": "jobs___fa",
+    "path": "/jobs",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/jobs.vue",
+    "chunkName": "pages/jobs",
+    "url": "/jobs"
+  },
+  {
+    "name": "liquidity-pool-terms___fa",
+    "path": "/liquidity-pool-terms",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/liquidity-pool-terms.vue",
+    "chunkName": "pages/liquidity-pool-terms",
+    "url": "/liquidity-pool-terms"
+  },
+  {
+    "name": "login___fa",
+    "path": "/login",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/login.vue",
+    "chunkName": "pages/login",
+    "url": "/login"
+  },
+  {
+    "name": "nobitex-introduction___fa",
+    "path": "/nobitex-introduction",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/nobitex-introduction.vue",
+    "chunkName": "pages/nobitex-introduction",
+    "url": "/nobitex-introduction"
+  },
+  {
+    "name": "panel___fa",
+    "path": "/panel",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/index.vue",
+    "chunkName": "pages/panel/index",
+    "url": "/panel"
+  },
+  {
+    "name": "porsline___fa",
+    "path": "/porsline",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/porsline.vue",
+    "chunkName": "pages/porsline",
+    "url": "/porsline"
+  },
+  {
+    "name": "position-help___fa",
+    "path": "/position-help",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/position-help.vue",
+    "chunkName": "pages/position-help",
+    "url": "/position-help"
+  },
+  {
+    "name": "position-terms___fa",
+    "path": "/position-terms",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/position-terms.vue",
+    "chunkName": "pages/position-terms",
+    "url": "/position-terms"
+  },
+  {
+    "name": "prices___fa",
+    "path": "/prices",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/current-prices.vue",
+    "url": "/prices"
+  },
+  {
+    "name": "pricing___fa",
+    "path": "/pricing",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/pricing.vue",
+    "chunkName": "pages/pricing",
+    "url": "/pricing"
+  },
+  {
+    "name": "referral___fa",
+    "path": "/referral",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/referral.vue",
+    "chunkName": "pages/referral",
+    "url": "/referral"
+  },
+  {
+    "name": "reset-password___fa",
+    "path": "/reset-password",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/reset-password.vue",
+    "chunkName": "pages/reset-password",
+    "url": "/reset-password"
+  },
+  {
+    "name": "security___fa",
+    "path": "/security",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/security/index.vue",
+    "chunkName": "pages/security/index",
+    "url": "/security"
+  },
+  {
+    "name": "signup___fa",
+    "path": "/signup",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/signup.vue",
+    "chunkName": "pages/signup",
+    "url": "/signup"
+  },
+  {
+    "name": "about___en",
+    "path": "/en/about",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/about.vue",
+    "chunkName": "pages/about",
+    "url": "/en/about"
+  },
+  {
+    "name": "application___en",
+    "path": "/en/application",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/application.vue",
+    "chunkName": "pages/application",
+    "url": "/en/application"
+  },
+  {
+    "name": "calculator___en",
+    "path": "/en/calculator",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/calculator.vue",
+    "chunkName": "pages/calculator",
+    "url": "/en/calculator"
+  },
+  {
+    "name": "changes___en",
+    "path": "/en/changes",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/changes.vue",
+    "chunkName": "pages/changes",
+    "url": "/en/changes"
+  },
+  {
+    "name": "contact___en",
+    "path": "/en/contact",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/contact-us.vue",
+    "url": "/en/contact"
+  },
+  {
+    "name": "contact-us___en",
+    "path": "/en/contact-us",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/contact-us.vue",
+    "chunkName": "pages/contact-us",
+    "url": "/en/contact-us"
+  },
+  {
+    "name": "current-prices___en",
+    "path": "/en/current-prices",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/current-prices.vue",
+    "chunkName": "pages/current-prices",
+    "url": "/en/current-prices"
+  },
+  {
+    "name": "faq___en",
+    "path": "/en/faq",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/faq.vue",
+    "chunkName": "pages/faq",
+    "url": "/en/faq"
+  },
+  {
+    "name": "features-history___en",
+    "path": "/en/features-history",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/features-history.vue",
+    "chunkName": "pages/features-history",
+    "url": "/en/features-history"
+  },
+  {
+    "name": "feedbacks-and-suggestions___en",
+    "path": "/en/feedbacks-and-suggestions",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/feedbacks-and-suggestions.vue",
+    "chunkName": "pages/feedbacks-and-suggestions",
+    "url": "/en/feedbacks-and-suggestions"
+  },
+  {
+    "name": "forget-password___en",
+    "path": "/en/forget-password",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/forget-password.vue",
+    "chunkName": "pages/forget-password",
+    "url": "/en/forget-password"
+  },
+  {
+    "name": "forget-tfa___en",
+    "path": "/en/forget-tfa",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/forget-tfa.vue",
+    "chunkName": "pages/forget-tfa",
+    "url": "/en/forget-tfa"
+  },
+  {
+    "name": "giftcard___en",
+    "path": "/en/giftcard",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/giftcard/index.vue",
+    "chunkName": "pages/giftcard/index",
+    "url": "/en/giftcard"
+  },
+  {
+    "name": "jobs___en",
+    "path": "/en/jobs",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/jobs.vue",
+    "chunkName": "pages/jobs",
+    "url": "/en/jobs"
+  },
+  {
+    "name": "liquidity-pool-terms___en",
+    "path": "/en/liquidity-pool-terms",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/liquidity-pool-terms.vue",
+    "chunkName": "pages/liquidity-pool-terms",
+    "url": "/en/liquidity-pool-terms"
+  },
+  {
+    "name": "login___en",
+    "path": "/en/login",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/login.vue",
+    "chunkName": "pages/login",
+    "url": "/en/login"
+  },
+  {
+    "name": "nobitex-introduction___en",
+    "path": "/en/nobitex-introduction",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/nobitex-introduction.vue",
+    "chunkName": "pages/nobitex-introduction",
+    "url": "/en/nobitex-introduction"
+  },
+  {
+    "name": "panel___en",
+    "path": "/en/panel",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/index.vue",
+    "chunkName": "pages/panel/index",
+    "url": "/en/panel"
+  },
+  {
+    "name": "porsline___en",
+    "path": "/en/porsline",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/porsline.vue",
+    "chunkName": "pages/porsline",
+    "url": "/en/porsline"
+  },
+  {
+    "name": "position-help___en",
+    "path": "/en/position-help",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/position-help.vue",
+    "chunkName": "pages/position-help",
+    "url": "/en/position-help"
+  },
+  {
+    "name": "position-terms___en",
+    "path": "/en/position-terms",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/position-terms.vue",
+    "chunkName": "pages/position-terms",
+    "url": "/en/position-terms"
+  },
+  {
+    "name": "prices___en",
+    "path": "/en/prices",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/current-prices.vue",
+    "url": "/en/prices"
+  },
+  {
+    "name": "pricing___en",
+    "path": "/en/pricing",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/pricing.vue",
+    "chunkName": "pages/pricing",
+    "url": "/en/pricing"
+  },
+  {
+    "name": "referral___en",
+    "path": "/en/referral",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/referral.vue",
+    "chunkName": "pages/referral",
+    "url": "/en/referral"
+  },
+  {
+    "name": "reset-password___en",
+    "path": "/en/reset-password",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/reset-password.vue",
+    "chunkName": "pages/reset-password",
+    "url": "/en/reset-password"
+  },
+  {
+    "name": "security___en",
+    "path": "/en/security",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/security/index.vue",
+    "chunkName": "pages/security/index",
+    "url": "/en/security"
+  },
+  {
+    "name": "signup___en",
+    "path": "/en/signup",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/signup.vue",
+    "chunkName": "pages/signup",
+    "url": "/en/signup"
+  },
+  {
+    "name": "help-giftcard___fa",
+    "path": "/help/giftcard",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/help/giftcard.vue",
+    "chunkName": "pages/help/giftcard",
+    "url": "/help/giftcard"
+  },
+  {
+    "name": "news-tfa___fa",
+    "path": "/news/tfa",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/news/tfa.vue",
+    "chunkName": "pages/news/tfa",
+    "url": "/news/tfa"
+  },
+  {
+    "name": "panel-balance___fa",
+    "path": "/panel/balance",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/index.vue",
+    "chunkName": "pages/panel/balance/index",
+    "url": "/panel/balance"
+  },
+  {
+    "name": "panel-convert___fa",
+    "path": "/panel/convert",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/convert/index.vue",
+    "chunkName": "pages/panel/convert/index",
+    "url": "/panel/convert"
+  },
+  {
+    "name": "panel-liquidity-pool___fa",
+    "path": "/panel/liquidity-pool",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/liquidity-pool/index.vue",
+    "chunkName": "pages/panel/liquidity-pool/index",
+    "url": "/panel/liquidity-pool"
+  },
+  {
+    "name": "panel-market-order___fa",
+    "path": "/panel/market-order",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/market-order.vue",
+    "chunkName": "pages/panel/market-order",
+    "url": "/panel/market-order"
+  },
+  {
+    "name": "panel-nobitex-facility___fa",
+    "path": "/panel/nobitex-facility",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/nobitex-facility.vue",
+    "chunkName": "pages/panel/nobitex-facility",
+    "url": "/panel/nobitex-facility"
+  },
+  {
+    "name": "panel-portfolio___fa",
+    "path": "/panel/portfolio",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/portfolio.vue",
+    "chunkName": "pages/panel/portfolio",
+    "url": "/panel/portfolio"
+  },
+  {
+    "name": "panel-prices___fa",
+    "path": "/panel/prices",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/prices.vue",
+    "chunkName": "pages/panel/prices",
+    "url": "/panel/prices"
+  },
+  {
+    "name": "panel-profile___fa",
+    "path": "/panel/profile",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/index.vue",
+    "chunkName": "pages/panel/profile/index",
+    "url": "/panel/profile"
+  },
+  {
+    "name": "panel-stake___fa",
+    "path": "/panel/stake",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/stake/index.vue",
+    "chunkName": "pages/panel/stake/index",
+    "url": "/panel/stake"
+  },
+  {
+    "name": "panel-ticketing___fa",
+    "path": "/panel/ticketing",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/ticketing/index.vue",
+    "chunkName": "pages/panel/ticketing/index",
+    "url": "/panel/ticketing"
+  },
+  {
+    "name": "panel-under-development___fa",
+    "path": "/panel/under-development",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/under-development.vue",
+    "chunkName": "pages/panel/under-development",
+    "url": "/panel/under-development"
+  },
+  {
+    "name": "panel-verification___fa",
+    "path": "/panel/verification",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/index.vue",
+    "chunkName": "pages/panel/verification/index",
+    "url": "/panel/verification"
+  },
+  {
+    "name": "panel-yield-farming___fa",
+    "path": "/panel/yield-farming",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/yield-farming/index.vue",
+    "chunkName": "pages/panel/yield-farming/index",
+    "url": "/panel/yield-farming"
+  },
+  {
+    "name": "policies-markets___fa",
+    "path": "/policies/markets",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/markets.vue",
+    "chunkName": "pages/policies/markets",
+    "url": "/policies/markets"
+  },
+  {
+    "name": "policies-privacy___fa",
+    "path": "/policies/privacy",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/privacy.vue",
+    "chunkName": "pages/policies/privacy",
+    "url": "/policies/privacy"
+  },
+  {
+    "name": "policies-referral___fa",
+    "path": "/policies/referral",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/referral.vue",
+    "chunkName": "pages/policies/referral",
+    "url": "/policies/referral"
+  },
+  {
+    "name": "policies-terms___fa",
+    "path": "/policies/terms",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/terms.vue",
+    "chunkName": "pages/policies/terms",
+    "url": "/policies/terms"
+  },
+  {
+    "name": "policies-trader-plan___fa",
+    "path": "/policies/trader-plan",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/trader-plan.vue",
+    "chunkName": "pages/policies/trader-plan",
+    "url": "/policies/trader-plan"
+  },
+  {
+    "name": "policies-user-levels___fa",
+    "path": "/policies/user-levels",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/user-levels.vue",
+    "chunkName": "pages/policies/user-levels",
+    "url": "/policies/user-levels"
+  },
+  {
+    "name": "product-portfolio___fa",
+    "path": "/product/portfolio",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/portfolio.vue",
+    "chunkName": "pages/product/portfolio",
+    "url": "/product/portfolio"
+  },
+  {
+    "name": "why/security___fa",
+    "path": "/why/security",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/security/index.vue",
+    "url": "/why/security"
+  },
+  {
+    "name": "help-giftcard___en",
+    "path": "/en/help/giftcard",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/help/giftcard.vue",
+    "chunkName": "pages/help/giftcard",
+    "url": "/en/help/giftcard"
+  },
+  {
+    "name": "news-tfa___en",
+    "path": "/en/news/tfa",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/news/tfa.vue",
+    "chunkName": "pages/news/tfa",
+    "url": "/en/news/tfa"
+  },
+  {
+    "name": "panel-balance___en",
+    "path": "/en/panel/balance",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/index.vue",
+    "chunkName": "pages/panel/balance/index",
+    "url": "/en/panel/balance"
+  },
+  {
+    "name": "panel-convert___en",
+    "path": "/en/panel/convert",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/convert/index.vue",
+    "chunkName": "pages/panel/convert/index",
+    "url": "/en/panel/convert"
+  },
+  {
+    "name": "panel-liquidity-pool___en",
+    "path": "/en/panel/liquidity-pool",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/liquidity-pool/index.vue",
+    "chunkName": "pages/panel/liquidity-pool/index",
+    "url": "/en/panel/liquidity-pool"
+  },
+  {
+    "name": "panel-market-order___en",
+    "path": "/en/panel/market-order",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/market-order.vue",
+    "chunkName": "pages/panel/market-order",
+    "url": "/en/panel/market-order"
+  },
+  {
+    "name": "panel-nobitex-facility___en",
+    "path": "/en/panel/nobitex-facility",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/nobitex-facility.vue",
+    "chunkName": "pages/panel/nobitex-facility",
+    "url": "/en/panel/nobitex-facility"
+  },
+  {
+    "name": "panel-portfolio___en",
+    "path": "/en/panel/portfolio",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/portfolio.vue",
+    "chunkName": "pages/panel/portfolio",
+    "url": "/en/panel/portfolio"
+  },
+  {
+    "name": "panel-prices___en",
+    "path": "/en/panel/prices",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/prices.vue",
+    "chunkName": "pages/panel/prices",
+    "url": "/en/panel/prices"
+  },
+  {
+    "name": "panel-profile___en",
+    "path": "/en/panel/profile",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/index.vue",
+    "chunkName": "pages/panel/profile/index",
+    "url": "/en/panel/profile"
+  },
+  {
+    "name": "panel-stake___en",
+    "path": "/en/panel/stake",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/stake/index.vue",
+    "chunkName": "pages/panel/stake/index",
+    "url": "/en/panel/stake"
+  },
+  {
+    "name": "panel-ticketing___en",
+    "path": "/en/panel/ticketing",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/ticketing/index.vue",
+    "chunkName": "pages/panel/ticketing/index",
+    "url": "/en/panel/ticketing"
+  },
+  {
+    "name": "panel-under-development___en",
+    "path": "/en/panel/under-development",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/under-development.vue",
+    "chunkName": "pages/panel/under-development",
+    "url": "/en/panel/under-development"
+  },
+  {
+    "name": "panel-verification___en",
+    "path": "/en/panel/verification",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/index.vue",
+    "chunkName": "pages/panel/verification/index",
+    "url": "/en/panel/verification"
+  },
+  {
+    "name": "panel-yield-farming___en",
+    "path": "/en/panel/yield-farming",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/yield-farming/index.vue",
+    "chunkName": "pages/panel/yield-farming/index",
+    "url": "/en/panel/yield-farming"
+  },
+  {
+    "name": "policies-markets___en",
+    "path": "/en/policies/markets",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/markets.vue",
+    "chunkName": "pages/policies/markets",
+    "url": "/en/policies/markets"
+  },
+  {
+    "name": "policies-privacy___en",
+    "path": "/en/policies/privacy",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/privacy.vue",
+    "chunkName": "pages/policies/privacy",
+    "url": "/en/policies/privacy"
+  },
+  {
+    "name": "policies-referral___en",
+    "path": "/en/policies/referral",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/referral.vue",
+    "chunkName": "pages/policies/referral",
+    "url": "/en/policies/referral"
+  },
+  {
+    "name": "policies-terms___en",
+    "path": "/en/policies/terms",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/terms.vue",
+    "chunkName": "pages/policies/terms",
+    "url": "/en/policies/terms"
+  },
+  {
+    "name": "policies-trader-plan___en",
+    "path": "/en/policies/trader-plan",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/trader-plan.vue",
+    "chunkName": "pages/policies/trader-plan",
+    "url": "/en/policies/trader-plan"
+  },
+  {
+    "name": "policies-user-levels___en",
+    "path": "/en/policies/user-levels",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/policies/user-levels.vue",
+    "chunkName": "pages/policies/user-levels",
+    "url": "/en/policies/user-levels"
+  },
+  {
+    "name": "product-portfolio___en",
+    "path": "/en/product/portfolio",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/portfolio.vue",
+    "chunkName": "pages/product/portfolio",
+    "url": "/en/product/portfolio"
+  },
+  {
+    "name": "why/security___en",
+    "path": "/en/why/security",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/security/index.vue",
+    "url": "/en/why/security"
+  },
+  {
+    "name": "panel-balance-convert___fa",
+    "path": "/panel/balance/convert",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/convert.vue",
+    "chunkName": "pages/panel/balance/convert",
+    "url": "/panel/balance/convert"
+  },
+  {
+    "name": "panel-balance-transfer___fa",
+    "path": "/panel/balance/transfer",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/transfer.vue",
+    "chunkName": "pages/panel/balance/transfer",
+    "url": "/panel/balance/transfer"
+  },
+  {
+    "name": "panel-convert-history___fa",
+    "path": "/panel/convert/history",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/convert/history.vue",
+    "chunkName": "pages/panel/convert/history",
+    "url": "/panel/convert/history"
+  },
+  {
+    "name": "panel-deposit-id___fa",
+    "path": "/panel/deposit/id",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/deposit/id.vue",
+    "chunkName": "pages/panel/deposit/id",
+    "url": "/panel/deposit/id"
+  },
+  {
+    "name": "panel-profile-beta___fa",
+    "path": "/panel/profile/beta",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/beta.vue",
+    "chunkName": "pages/panel/profile/beta",
+    "url": "/panel/profile/beta"
+  },
+  {
+    "name": "panel-profile-discounts___fa",
+    "path": "/panel/profile/discounts",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/discounts.vue",
+    "chunkName": "pages/panel/profile/discounts",
+    "url": "/panel/profile/discounts"
+  },
+  {
+    "name": "panel-profile-phone-number___fa",
+    "path": "/panel/profile/phone-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/phone-number.vue",
+    "chunkName": "pages/panel/profile/phone-number",
+    "url": "/panel/profile/phone-number"
+  },
+  {
+    "name": "panel-profile-plans___fa",
+    "path": "/panel/profile/plans",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/plans.vue",
+    "chunkName": "pages/panel/profile/plans",
+    "url": "/panel/profile/plans"
+  },
+  {
+    "name": "panel-profile-security___fa",
+    "path": "/panel/profile/security",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/index.vue",
+    "chunkName": "pages/panel/profile/security/index",
+    "url": "/panel/profile/security"
+  },
+  {
+    "name": "panel-profile-settings___fa",
+    "path": "/panel/profile/settings",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/settings.vue",
+    "chunkName": "pages/panel/profile/settings",
+    "url": "/panel/profile/settings"
+  },
+  {
+    "name": "panel-ticketing-create___fa",
+    "path": "/panel/ticketing/create",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/ticketing/create.vue",
+    "chunkName": "pages/panel/ticketing/create",
+    "url": "/panel/ticketing/create"
+  },
+  {
+    "name": "panel-verification-bank-info___fa",
+    "path": "/panel/verification/bank-info",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/bank-info.vue",
+    "chunkName": "pages/panel/verification/bank-info",
+    "url": "/panel/verification/bank-info"
+  },
+  {
+    "name": "panel-verification-contact-info___fa",
+    "path": "/panel/verification/contact-info",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/contact-info.vue",
+    "chunkName": "pages/panel/verification/contact-info",
+    "url": "/panel/verification/contact-info"
+  },
+  {
+    "name": "panel-verification-email___fa",
+    "path": "/panel/verification/email",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/email.vue",
+    "chunkName": "pages/panel/verification/email",
+    "url": "/panel/verification/email"
+  },
+  {
+    "name": "panel-verification-identity-info___fa",
+    "path": "/panel/verification/identity-info",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/identity-info.vue",
+    "chunkName": "pages/panel/verification/identity-info",
+    "url": "/panel/verification/identity-info"
+  },
+  {
+    "name": "panel-verification-landline-confirmation___fa",
+    "path": "/panel/verification/landline-confirmation",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/landline-confirmation.vue",
+    "chunkName": "pages/panel/verification/landline-confirmation",
+    "url": "/panel/verification/landline-confirmation"
+  },
+  {
+    "name": "panel-verification-mobile-number___fa",
+    "path": "/panel/verification/mobile-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/mobile-number.vue",
+    "chunkName": "pages/panel/verification/mobile-number",
+    "url": "/panel/verification/mobile-number"
+  },
+  {
+    "name": "panel-verification-selfie___fa",
+    "path": "/panel/verification/selfie",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/selfie.vue",
+    "chunkName": "pages/panel/verification/selfie",
+    "url": "/panel/verification/selfie"
+  },
+  {
+    "name": "panel-verification-smart-verification___fa",
+    "path": "/panel/verification/smart-verification",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/smart-verification.vue",
+    "chunkName": "pages/panel/verification/smart-verification",
+    "url": "/panel/verification/smart-verification"
+  },
+  {
+    "name": "product-android-3.1___fa",
+    "path": "/product/android/3.1",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.1.vue",
+    "chunkName": "pages/product/android/3.1",
+    "url": "/product/android/3.1"
+  },
+  {
+    "name": "product-android-3.2___fa",
+    "path": "/product/android/3.2",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.2.vue",
+    "chunkName": "pages/product/android/3.2",
+    "url": "/product/android/3.2"
+  },
+  {
+    "name": "product-android-3.3___fa",
+    "path": "/product/android/3.3",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.3.vue",
+    "chunkName": "pages/product/android/3.3",
+    "url": "/product/android/3.3"
+  },
+  {
+    "name": "product-android-3.5___fa",
+    "path": "/product/android/3.5",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.5.vue",
+    "chunkName": "pages/product/android/3.5",
+    "url": "/product/android/3.5"
+  },
+  {
+    "name": "security-wallets-cold-storage___fa",
+    "path": "/security/wallets/cold-storage",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/security/wallets/cold-storage.vue",
+    "chunkName": "pages/security/wallets/cold-storage",
+    "url": "/security/wallets/cold-storage"
+  },
+  {
+    "name": "panel-balance-convert___en",
+    "path": "/en/panel/balance/convert",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/convert.vue",
+    "chunkName": "pages/panel/balance/convert",
+    "url": "/en/panel/balance/convert"
+  },
+  {
+    "name": "panel-balance-transfer___en",
+    "path": "/en/panel/balance/transfer",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/transfer.vue",
+    "chunkName": "pages/panel/balance/transfer",
+    "url": "/en/panel/balance/transfer"
+  },
+  {
+    "name": "panel-convert-history___en",
+    "path": "/en/panel/convert/history",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/convert/history.vue",
+    "chunkName": "pages/panel/convert/history",
+    "url": "/en/panel/convert/history"
+  },
+  {
+    "name": "panel-deposit-id___en",
+    "path": "/en/panel/deposit/id",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/deposit/id.vue",
+    "chunkName": "pages/panel/deposit/id",
+    "url": "/en/panel/deposit/id"
+  },
+  {
+    "name": "panel-profile-beta___en",
+    "path": "/en/panel/profile/beta",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/beta.vue",
+    "chunkName": "pages/panel/profile/beta",
+    "url": "/en/panel/profile/beta"
+  },
+  {
+    "name": "panel-profile-discounts___en",
+    "path": "/en/panel/profile/discounts",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/discounts.vue",
+    "chunkName": "pages/panel/profile/discounts",
+    "url": "/en/panel/profile/discounts"
+  },
+  {
+    "name": "panel-profile-phone-number___en",
+    "path": "/en/panel/profile/phone-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/phone-number.vue",
+    "chunkName": "pages/panel/profile/phone-number",
+    "url": "/en/panel/profile/phone-number"
+  },
+  {
+    "name": "panel-profile-plans___en",
+    "path": "/en/panel/profile/plans",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/plans.vue",
+    "chunkName": "pages/panel/profile/plans",
+    "url": "/en/panel/profile/plans"
+  },
+  {
+    "name": "panel-profile-security___en",
+    "path": "/en/panel/profile/security",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/index.vue",
+    "chunkName": "pages/panel/profile/security/index",
+    "url": "/en/panel/profile/security"
+  },
+  {
+    "name": "panel-profile-settings___en",
+    "path": "/en/panel/profile/settings",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/settings.vue",
+    "chunkName": "pages/panel/profile/settings",
+    "url": "/en/panel/profile/settings"
+  },
+  {
+    "name": "panel-ticketing-create___en",
+    "path": "/en/panel/ticketing/create",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/ticketing/create.vue",
+    "chunkName": "pages/panel/ticketing/create",
+    "url": "/en/panel/ticketing/create"
+  },
+  {
+    "name": "panel-verification-bank-info___en",
+    "path": "/en/panel/verification/bank-info",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/bank-info.vue",
+    "chunkName": "pages/panel/verification/bank-info",
+    "url": "/en/panel/verification/bank-info"
+  },
+  {
+    "name": "panel-verification-contact-info___en",
+    "path": "/en/panel/verification/contact-info",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/contact-info.vue",
+    "chunkName": "pages/panel/verification/contact-info",
+    "url": "/en/panel/verification/contact-info"
+  },
+  {
+    "name": "panel-verification-email___en",
+    "path": "/en/panel/verification/email",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/email.vue",
+    "chunkName": "pages/panel/verification/email",
+    "url": "/en/panel/verification/email"
+  },
+  {
+    "name": "panel-verification-identity-info___en",
+    "path": "/en/panel/verification/identity-info",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/identity-info.vue",
+    "chunkName": "pages/panel/verification/identity-info",
+    "url": "/en/panel/verification/identity-info"
+  },
+  {
+    "name": "panel-verification-landline-confirmation___en",
+    "path": "/en/panel/verification/landline-confirmation",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/landline-confirmation.vue",
+    "chunkName": "pages/panel/verification/landline-confirmation",
+    "url": "/en/panel/verification/landline-confirmation"
+  },
+  {
+    "name": "panel-verification-mobile-number___en",
+    "path": "/en/panel/verification/mobile-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/mobile-number.vue",
+    "chunkName": "pages/panel/verification/mobile-number",
+    "url": "/en/panel/verification/mobile-number"
+  },
+  {
+    "name": "panel-verification-selfie___en",
+    "path": "/en/panel/verification/selfie",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/selfie.vue",
+    "chunkName": "pages/panel/verification/selfie",
+    "url": "/en/panel/verification/selfie"
+  },
+  {
+    "name": "panel-verification-smart-verification___en",
+    "path": "/en/panel/verification/smart-verification",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/verification/smart-verification.vue",
+    "chunkName": "pages/panel/verification/smart-verification",
+    "url": "/en/panel/verification/smart-verification"
+  },
+  {
+    "name": "product-android-3.1___en",
+    "path": "/en/product/android/3.1",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.1.vue",
+    "chunkName": "pages/product/android/3.1",
+    "url": "/en/product/android/3.1"
+  },
+  {
+    "name": "product-android-3.2___en",
+    "path": "/en/product/android/3.2",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.2.vue",
+    "chunkName": "pages/product/android/3.2",
+    "url": "/en/product/android/3.2"
+  },
+  {
+    "name": "product-android-3.3___en",
+    "path": "/en/product/android/3.3",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.3.vue",
+    "chunkName": "pages/product/android/3.3",
+    "url": "/en/product/android/3.3"
+  },
+  {
+    "name": "product-android-3.5___en",
+    "path": "/en/product/android/3.5",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/product/android/3.5.vue",
+    "chunkName": "pages/product/android/3.5",
+    "url": "/en/product/android/3.5"
+  },
+  {
+    "name": "security-wallets-cold-storage___en",
+    "path": "/en/security/wallets/cold-storage",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/security/wallets/cold-storage.vue",
+    "chunkName": "pages/security/wallets/cold-storage",
+    "url": "/en/security/wallets/cold-storage"
+  },
+  {
+    "name": "panel-profile-security-address-book___fa",
+    "path": "/panel/profile/security/address-book",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/address-book.vue",
+    "chunkName": "pages/panel/profile/security/address-book",
+    "url": "/panel/profile/security/address-book"
+  },
+  {
+    "name": "panel-profile-security-change-password___fa",
+    "path": "/panel/profile/security/change-password",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/change-password.vue",
+    "chunkName": "pages/panel/profile/security/change-password",
+    "url": "/panel/profile/security/change-password"
+  },
+  {
+    "name": "panel-profile-security-logins___fa",
+    "path": "/panel/profile/security/logins",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/logins.vue",
+    "chunkName": "pages/panel/profile/security/logins",
+    "url": "/panel/profile/security/logins"
+  },
+  {
+    "name": "panel-profile-security-sessions___fa",
+    "path": "/panel/profile/security/sessions",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/sessions.vue",
+    "chunkName": "pages/panel/profile/security/sessions",
+    "url": "/panel/profile/security/sessions"
+  },
+  {
+    "name": "panel-profile-security-tfa___fa",
+    "path": "/panel/profile/security/tfa",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/tfa.vue",
+    "chunkName": "pages/panel/profile/security/tfa",
+    "url": "/panel/profile/security/tfa"
+  },
+  {
+    "name": "panel-profile-security-address-book___en",
+    "path": "/en/panel/profile/security/address-book",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/address-book.vue",
+    "chunkName": "pages/panel/profile/security/address-book",
+    "url": "/en/panel/profile/security/address-book"
+  },
+  {
+    "name": "panel-profile-security-change-password___en",
+    "path": "/en/panel/profile/security/change-password",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/change-password.vue",
+    "chunkName": "pages/panel/profile/security/change-password",
+    "url": "/en/panel/profile/security/change-password"
+  },
+  {
+    "name": "panel-profile-security-logins___en",
+    "path": "/en/panel/profile/security/logins",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/logins.vue",
+    "chunkName": "pages/panel/profile/security/logins",
+    "url": "/en/panel/profile/security/logins"
+  },
+  {
+    "name": "panel-profile-security-sessions___en",
+    "path": "/en/panel/profile/security/sessions",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/sessions.vue",
+    "chunkName": "pages/panel/profile/security/sessions",
+    "url": "/en/panel/profile/security/sessions"
+  },
+  {
+    "name": "panel-profile-security-tfa___en",
+    "path": "/en/panel/profile/security/tfa",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/security/tfa.vue",
+    "chunkName": "pages/panel/profile/security/tfa",
+    "url": "/en/panel/profile/security/tfa"
+  },
+  {
+    "name": "panel-profile-bank-info-add-card-number___fa",
+    "path": "/panel/profile/bank-info/add/card-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/bank-info/add/card-number.vue",
+    "chunkName": "pages/panel/profile/bank-info/add/card-number",
+    "url": "/panel/profile/bank-info/add/card-number"
+  },
+  {
+    "name": "panel-profile-bank-info-add-sheba-number___fa",
+    "path": "/panel/profile/bank-info/add/sheba-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/bank-info/add/sheba-number.vue",
+    "chunkName": "pages/panel/profile/bank-info/add/sheba-number",
+    "url": "/panel/profile/bank-info/add/sheba-number"
+  },
+  {
+    "name": "panel-profile-bank-info-add-card-number___en",
+    "path": "/en/panel/profile/bank-info/add/card-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/bank-info/add/card-number.vue",
+    "chunkName": "pages/panel/profile/bank-info/add/card-number",
+    "url": "/en/panel/profile/bank-info/add/card-number"
+  },
+  {
+    "name": "panel-profile-bank-info-add-sheba-number___en",
+    "path": "/en/panel/profile/bank-info/add/sheba-number",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/bank-info/add/sheba-number.vue",
+    "chunkName": "pages/panel/profile/bank-info/add/sheba-number",
+    "url": "/en/panel/profile/bank-info/add/sheba-number"
+  },
+  {
+    "name": "panel-balance-deposit-currency___en",
+    "path": "/en/panel/balance/deposit/:currency?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/deposit/_currency.vue",
+    "chunkName": "pages/panel/balance/deposit/_currency"
+  },
+  {
+    "name": "panel-balance-withdraw-currency___en",
+    "path": "/en/panel/balance/withdraw/:currency?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/withdraw/_currency.vue",
+    "chunkName": "pages/panel/balance/withdraw/_currency"
+  },
+  {
+    "name": "position___en",
+    "path": "/en/panel/exchange/position/:position",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/exchange/_exchange.vue"
+  },
+  {
+    "name": "panel-profile-bank-info-activeBankInfo___en",
+    "path": "/en/panel/profile/bank-info/:activeBankInfo?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/bank-info/_activeBankInfo.vue",
+    "chunkName": "pages/panel/profile/bank-info/_activeBankInfo"
+  },
+  {
+    "name": "monthly-report-1401-month___en",
+    "path": "/en/monthly-report/1401/:month?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/monthly-report/1401/_month.vue",
+    "chunkName": "pages/monthly-report/1401/_month"
+  },
+  {
+    "name": "panel-balance-tradeType___en",
+    "path": "/en/panel/balance/:tradeType",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/_tradeType/index.vue",
+    "chunkName": "pages/panel/balance/_tradeType/index"
+  },
+  {
+    "name": "panel-exchange-exchange___en",
+    "path": "/en/panel/exchange/:exchange?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/exchange/_exchange.vue",
+    "chunkName": "pages/panel/exchange/_exchange"
+  },
+  {
+    "name": "exchange___en",
+    "path": "/en/panel/exchange/:market",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/exchange/_exchange.vue"
+  },
+  {
+    "name": "panel-liquidity-pool-slug___en",
+    "path": "/en/panel/liquidity-pool/:slug?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/liquidity-pool/_slug.vue",
+    "chunkName": "pages/panel/liquidity-pool/_slug"
+  },
+  {
+    "name": "panel-orders-activeOrder___en",
+    "path": "/en/panel/orders/:activeOrder?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/orders/_activeOrder.vue",
+    "chunkName": "pages/panel/orders/_activeOrder"
+  },
+  {
+    "name": "panel-price-alerts-market___en",
+    "path": "/en/panel/price-alerts/:market?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/price-alerts/_market.vue",
+    "chunkName": "pages/panel/price-alerts/_market"
+  },
+  {
+    "name": "panel-profile-messages___en",
+    "path": "/en/panel/profile/:messages",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/_messages.vue",
+    "chunkName": "pages/panel/profile/_messages"
+  },
+  {
+    "name": "panel-stake-slug___en",
+    "path": "/en/panel/stake/:slug",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/stake/_slug.vue",
+    "chunkName": "pages/panel/stake/_slug"
+  },
+  {
+    "name": "panel-ticketing-ticket___en",
+    "path": "/en/panel/ticketing/:ticket",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/ticketing/_ticket.vue",
+    "chunkName": "pages/panel/ticketing/_ticket"
+  },
+  {
+    "name": "panel-turnover-activeTurnover___en",
+    "path": "/en/panel/turnover/:activeTurnover?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/turnover/_activeTurnover.vue",
+    "chunkName": "pages/panel/turnover/_activeTurnover"
+  },
+  {
+    "name": "panel-yield-farming-slug___en",
+    "path": "/en/panel/yield-farming/:slug?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/yield-farming/_slug.vue",
+    "chunkName": "pages/panel/yield-farming/_slug"
+  },
+  {
+    "name": "panel-balance-deposit-currency___fa",
+    "path": "/panel/balance/deposit/:currency?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/deposit/_currency.vue",
+    "chunkName": "pages/panel/balance/deposit/_currency"
+  },
+  {
+    "name": "panel-balance-withdraw-currency___fa",
+    "path": "/panel/balance/withdraw/:currency?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/withdraw/_currency.vue",
+    "chunkName": "pages/panel/balance/withdraw/_currency"
+  },
+  {
+    "name": "position___fa",
+    "path": "/panel/exchange/position/:position",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/exchange/_exchange.vue"
+  },
+  {
+    "name": "panel-profile-bank-info-activeBankInfo___fa",
+    "path": "/panel/profile/bank-info/:activeBankInfo?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/bank-info/_activeBankInfo.vue",
+    "chunkName": "pages/panel/profile/bank-info/_activeBankInfo"
+  },
+  {
+    "name": "annual-report-year___en",
+    "path": "/en/annual-report/:year?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/annual-report/_year.vue",
+    "chunkName": "pages/annual-report/_year"
+  },
+  {
+    "name": "nobifi-title___en",
+    "path": "/en/nobifi/:title",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/nobifi/_title/index.vue",
+    "chunkName": "pages/nobifi/_title/index"
+  },
+  {
+    "name": "monthly-report-1401-month___fa",
+    "path": "/monthly-report/1401/:month?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/monthly-report/1401/_month.vue",
+    "chunkName": "pages/monthly-report/1401/_month"
+  },
+  {
+    "name": "panel-balance-tradeType___fa",
+    "path": "/panel/balance/:tradeType",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/balance/_tradeType/index.vue",
+    "chunkName": "pages/panel/balance/_tradeType/index"
+  },
+  {
+    "name": "panel-exchange-exchange___fa",
+    "path": "/panel/exchange/:exchange?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/exchange/_exchange.vue",
+    "chunkName": "pages/panel/exchange/_exchange"
+  },
+  {
+    "name": "exchange___fa",
+    "path": "/panel/exchange/:market",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/exchange/_exchange.vue"
+  },
+  {
+    "name": "panel-liquidity-pool-slug___fa",
+    "path": "/panel/liquidity-pool/:slug?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/liquidity-pool/_slug.vue",
+    "chunkName": "pages/panel/liquidity-pool/_slug"
+  },
+  {
+    "name": "panel-orders-activeOrder___fa",
+    "path": "/panel/orders/:activeOrder?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/orders/_activeOrder.vue",
+    "chunkName": "pages/panel/orders/_activeOrder"
+  },
+  {
+    "name": "panel-price-alerts-market___fa",
+    "path": "/panel/price-alerts/:market?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/price-alerts/_market.vue",
+    "chunkName": "pages/panel/price-alerts/_market"
+  },
+  {
+    "name": "panel-profile-messages___fa",
+    "path": "/panel/profile/:messages",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/profile/_messages.vue",
+    "chunkName": "pages/panel/profile/_messages"
+  },
+  {
+    "name": "panel-stake-slug___fa",
+    "path": "/panel/stake/:slug",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/stake/_slug.vue",
+    "chunkName": "pages/panel/stake/_slug"
+  },
+  {
+    "name": "panel-ticketing-ticket___fa",
+    "path": "/panel/ticketing/:ticket",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/ticketing/_ticket.vue",
+    "chunkName": "pages/panel/ticketing/_ticket"
+  },
+  {
+    "name": "panel-turnover-activeTurnover___fa",
+    "path": "/panel/turnover/:activeTurnover?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/turnover/_activeTurnover.vue",
+    "chunkName": "pages/panel/turnover/_activeTurnover"
+  },
+  {
+    "name": "panel-yield-farming-slug___fa",
+    "path": "/panel/yield-farming/:slug?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/panel/yield-farming/_slug.vue",
+    "chunkName": "pages/panel/yield-farming/_slug"
+  },
+  {
+    "name": "annual-report-year___fa",
+    "path": "/annual-report/:year?",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/annual-report/_year.vue",
+    "chunkName": "pages/annual-report/_year"
+  },
+  {
+    "name": "currency___en",
+    "path": "/en/:currency",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/_currency/index.vue",
+    "chunkName": "pages/_currency/index"
+  },
+  {
+    "name": "nobifi-title___fa",
+    "path": "/nobifi/:title",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/nobifi/_title/index.vue",
+    "chunkName": "pages/nobifi/_title/index"
+  },
+  {
+    "name": "index___fa",
+    "path": "/",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/"
+  },
+  {
+    "name": "currency___fa",
+    "path": "/:currency",
+    "component": "/home/alireza/Developer/Nobitex/site-master/pages/_currency/index.vue",
+    "chunkName": "pages/_currency/index"
+  }
+]

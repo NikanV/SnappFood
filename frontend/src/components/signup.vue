@@ -3,12 +3,9 @@
   <form @submit.prevent="submit">
     <div>
 
-
+      <!--enter username which is either mobile or email-->
       <div>
-        <label
-            for="email-mobile-input">
-          input email or mobile
-        </label>
+        <label for="email-mobile-input"> input email or mobile </label>
         <div>
           <input
               id="email-mobile-input"
@@ -18,72 +15,112 @@
               autofocus
               list="useremail"
               tabindex="1"
+              placeholder="username"
               autocomplete="off"
               @focus="isUsernameFocus=true"
               @blur="isUsernameFocus=false"
           />
         </div>
-        <p v-show=" username.$dirty">
-          <span v-if="!username.required">dirty username</span>
-          <span v-if="!username.pattern">wrong pattern</span>
-        </p>
-        <ul v-show="showSuggests" class="position-absolute suggestion p-0" dir="ltr">
-          <li v-for="(item,index) in emailArray" :key="index" @mousedown="setUsername(item)">
-            <span id="sp">{{ emailUserPart }}</span>{{ item }}
-          </li>
-        </ul>
+        <div>
+          <p v-show=" username.$dirty">
+            <span v-if="!username.required">dirty username</span>
+            <span v-if="!username.pattern">wrong pattern</span>
+          </p>
+          <ul v-show="showSuggests" dir="ltr">
+            <li v-for="(item,index) in emailArray" :key="index" @mousedown="setUsername(item)">
+              <span id="sp">{{ emailUserPart }}</span>{{ item }}
+            </li>
+          </ul>
+        </div>
       </div>
 
-
+      <!--enter password-->
       <div>
-        <label
-            for="password-input">
-          input password
-        </label>
+        <div>
+          <label for="password-input"> enter password </label>
+        </div>
         <div>
           <input
               id="password-input"
               ref="passwordRef"
               v-model="password"
               title="password"
+              placeholder="password"
               :type="isPasswordHidden ? 'password' : 'text'"
               tabindex="2"
               autocomplete="new-password"
           />
-          <span
-              @click="isPasswordHidden = !isPasswordHidden">
+          <span @click="isPasswordHidden = !isPasswordHidden">
                 <base-icon
                     :icon-name="isPasswordHidden ? 'visibility': 'visibility_off'"
                     icon-color="#A3A5A8"
                     size="large"/>
             </span>
         </div>
-        <p
-            v-show="password.$dirty">
-          <span v-if="password.required" class="text-danger">password required</span>
-        </p>
-        <ul
-            v-show="password.$dirty">
-          <li
-              v-for="requirement of passwordRequirements"
-              :key="requirement.caption"
-              class="text-subtitle">
-            <base-icon
-                :icon-name="requirement.isMet ? 'tick' : 'close'"
-                :icon-color="requirement.isMet ? '#15D1C6' : '#FC3C55'"/>
-            {{ requirement.caption }}
-          </li>
-        </ul>
+        <div>
+          <p v-show="password.$dirty">
+            <span v-if="password.required">password required</span>
+          </p>
+          <ul v-show="password.$dirty">
+            <li v-for="requirement of passwordRequirements"
+                :key="requirement.caption">
+              <base-icon
+                  :icon-name="requirement.isMet ? 'tick' : 'close'"
+                  :icon-color="requirement.isMet ? '#15D1C6' : '#FC3C55'"
+              />
+              {{ requirement.caption }}
+            </li>
+          </ul>
+        </div>
       </div>
 
-
+      <!--password conformation-->
+      <div>
+        <div>
+          <label for="password2-input"> re-enter password </label>
+        </div>
+        <div>
+          <input
+              id="password2-input"
+              ref="passwordRef"
+              v-model="password2"
+              title="password"
+              placeholder="password"
+              :type="isPasswordHidden ? 'password' : 'text'"
+              tabindex="3"
+              autocomplete="new-password"
+          />
+          <span @click="isPasswordHidden = !isPasswordHidden">
+                <base-icon
+                    :icon-name="isPasswordHidden ? 'visibility': 'visibility_off'"
+                    icon-color="#A3A5A8"
+                    size="large"/>
+            </span>
+        </div>
+        <div>
+          <p v-show="password2.$dirty">
+            <span v-if="password2.required">password conf required</span>
+          </p>
+          <ul
+              v-show="password2.$dirty">
+            <li v-for="requirement2 of password2Requirements"
+                :key="requirement2.caption">
+              <base-icon
+                  :icon-name="requirement2.isMet2 ? 'tick' : 'close'"
+                  :icon-color="requirement2.isMet2 ? '#15D1C6' : '#FC3C55'"/>
+              {{ requirement2.caption2 }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--submit button-->
       <div>
         <submit-button
             :is-submitting="isSubmitting"
             type="submit"
-            tabindex="3"> btn
+            tabindex="4"> signup
         </submit-button>
-
+        <p>already have an account? <router-link to="/login">login</router-link></p>
       </div>
 
     </div>
@@ -95,6 +132,7 @@
 import BaseIcon from "@/components/shared/baseIcon"
 import SubmitButton from "@/components/shared/submitButton.vue";
 import {signupMethods} from '@/utils/configs'
+import axios from "axios";
 
 export default {
   name: "SignupPage",
@@ -106,7 +144,7 @@ export default {
     return {
       username: '',
       password: '',
-      email: '',
+      password2: '',
       isPasswordHidden: true,
       emailSuggestion: ['@gmail.com', '@yahoo.com', '@hotmail.com', '@outlook.com', '@ymail.com', '@live.com', '@protonmail.com', '@proton.me', '@icloud.com', '@chmail.ir'],
       isUsernameFocus: false,
@@ -114,9 +152,16 @@ export default {
     }
   },
   methods: {
-    submit() {
+    async submit() {
       //  todo: handle signup logic
-      this.$router.push({name: 'LoginPage'})
+      let res = await axios.post("http://localhost:3000/users", {
+        username: this.username,
+        password: this.password
+      })
+      if (res.status === 201){
+        localStorage.setItem('user-info',JSON.stringify(res.data))
+        await this.$router.push({name: 'LoginPage'})
+      }
     },
     setUsername(domain) {
       this.username = `${this.emailUserPart}${domain}`
@@ -158,11 +203,33 @@ export default {
         }
       ]
     },
+    password2Requirements() {
+      return [
+        {
+          caption2: 'atLeastOneLetter',
+          isMet2: /.*?[A-Za-z]/.test(this.password2)
+        },
+        {
+          caption2: 'atLeastOneNumber',
+          isMet2: /.*[0-9].*/.test(this.password2)
+        },
+        {
+          caption2: 'minEightChar',
+          isMet2: this.password2.length >= 8
+        }
+      ]
+    },
+
     isPasswordRequirementsMet() {
       return this.passwordRequirements.every(item => item.isMet)
     }, isMobileActive() {
       return signupMethods.mobile
     }
+  },
+  mounted() {
+    let user = localStorage.getItem('user-info')
+    if (!user)
+      this.$router.push("signup")
   }
 }
 </script>
