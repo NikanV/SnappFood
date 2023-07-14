@@ -26,9 +26,9 @@
             <span v-if="!username.required">dirty username</span>
             <span v-if="!username.pattern">wrong pattern</span>
           </p>
-          <ul v-show="showSuggests" dir="ltr">
+          <ul v-show="showSuggests" class="position-absolute suggestion p-0" dir="ltr">
             <li v-for="(item,index) in emailArray" :key="index" @mousedown="setUsername(item)">
-              <span id="sp">{{ emailUserPart }}</span>{{ item }}
+              <span id="sp" class="text-subtitle">{{ emailUserPart }}</span>{{ item }}
             </li>
           </ul>
         </div>
@@ -120,7 +120,9 @@
             type="submit"
             tabindex="4"> signup
         </submit-button>
-        <p>already have an account? <router-link to="/login">login</router-link></p>
+        <p>already have an account?
+          <router-link to="/login">login</router-link>
+        </p>
       </div>
 
     </div>
@@ -237,5 +239,30 @@ export default {
 </script>
 
 <style scoped>
+.suggestion {
+  top: 65px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+  overflow: hidden;
+  overflow-y: auto;
+  background: white;
+  z-index: 101;
+  list-style: none;
 
+  li {
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+}
+
+.text-subtitle:hover {
+  color: var(--text-primary) !important;
+}
 </style>

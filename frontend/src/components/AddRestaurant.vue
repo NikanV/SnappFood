@@ -1,11 +1,13 @@
 <template>
-  <h1>hello</h1>
+  <ProfileHeader/>
+  <h1>add restaurant</h1>
 </template>
 
 <script>
-
+import ProfileHeader from "@/components/shared/ProfileHeader"
 export default {
   name: "AddRestaurant",
+  components:{ProfileHeader},
   data() {
     return {}
   },

@@ -1,8 +1,8 @@
 <template>
-  <h1>welcome {{username}}</h1>
+  <h1>Hello {{username}}</h1>
   <div>
-    <a href="/profile">Home</a>
-    <a href="#">Add Restaurant</a>
+    <a href="/profile">Profile</a>
+    <a href="/add-restaurant">Add Restaurant</a>
     <a href="#">Update Restaurant</a>
     <a @click="logout" href="#">Logout</a>
   </div>
@@ -14,7 +14,7 @@ export default{
   name: "ProfileHeader",
   data(){
     return{
-      username:''
+      username:'user'
     }
   },
   methods:{

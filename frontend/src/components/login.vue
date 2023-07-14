@@ -57,7 +57,7 @@
         <submit-button
             :is-submitting="isSubmitting"
             type="submit"
-            tabindex="3"> btn
+            tabindex="3"> login
         </submit-button>
         <p>
           don't have an account?
