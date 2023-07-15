@@ -99,8 +99,8 @@
 <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
-import Parse from 'parse/dist/parse.min';
-
+import Parse from 'parse';
+// import {Parse} from "parse-server";
 export default {
   name: "SignupPage",
   components: {
@@ -148,6 +148,7 @@ export default {
           console.log('User signed up', userResult);
           await this.$router.push({name: "LoginPage"});
         } catch (error) {
+          alert(error)
           console.error('Error while signing up user', error);
         }
       }
@@ -175,8 +176,8 @@ export default {
     },
   },
   mounted() {
-    let user = localStorage.getItem("user-info");
-    if (!user) this.$router.push("signup");
+    let user = localStorage.getItem("userid");
+    if (!user) this.$router.push("/signup");
   },
 };
 </script>

@@ -27,7 +27,7 @@
                 name="password"
                 placeholder="Password"
                 tabindex="2"
-                @input="event => this.invalidPassword = false"
+                @input="resetInvalidPass"
             />
             <span @click="isPasswordHidden = !isPasswordHidden">
               <base-icon
@@ -37,8 +37,7 @@
               />
             </span>
           </div>
-          <p v-show="password.$dirty || invalidPassword">
-            <span v-if="password.required">Password required</span>
+          <p v-show="invalidPassword">
             <span v-if="invalidPassword && password.length > 0">Invalid username or password</span>
           </p>
         </div>
@@ -68,7 +67,7 @@
 <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
-import Parse from 'parse/dist/parse.min.js';
+import Parse from 'parse';
 
 export default {
   name: "LoginPage",
@@ -91,20 +90,21 @@ export default {
     async submit() {
       try {
         // Pass the username and password to logIn function
-        let user = await Parse.User.logIn(this.username, this.password);
-        // Do stuff after successful login
-        console.log('Logged in user', user);
-        localStorage.setItem("userId", user.id)
-        await this.$router.push({ name: "ProfilePage" });
+        await Parse.User.logIn(this.username, this.password).then(user => {
+          localStorage.setItem("userid", user.id)
+          if (user.id)
+            this.$router.push({name: "ProfilePage"});
+        })
       } catch (error) {
-        console.error('Error while logging in user', error);
+        alert(error)
         this.invalidPassword = true
       }
     },
+    resetInvalidPass() {
+      this.invalidPassword = false
+    }
   },
-  computed: {
-
-  },
+  computed: {},
 };
 </script>
 

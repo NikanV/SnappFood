@@ -2,7 +2,7 @@ import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/components/home.vue"
 import Signup from "@/components/signup"
 import Login from "@/components/login"
-import CustomerProfile from "@/components/profile.vue"
+import Profile from "@/components/profile.vue"
 import Cart from "@/components/cart"
 import RestaurantList from "@/components/restaurantList"
 import Settings from "@/components/settings.vue";
@@ -11,16 +11,17 @@ import Orders from "@/components/orders.vue";
 import RestaurantPage from "@/components/restaurantPage.vue";
 
 const routes = [
-    {path: "/", component: Home, name:'HomePage'},
-    {path: "/signup", component: Signup, name:'SignupPage'},
-    {path: "/login", component: Login, name:'LoginPage'},
-    {path: "/profile", component: CustomerProfile, name:'ProfilePage'},
-    {path: "/cart", component: Cart, name:'CartPage'},
-    {path: "/restaurants", component: RestaurantList, name:'RestaurantListPage'},
-    {path: '/profile/settings', component: Settings, name:'Settings'},
-    {path: '/profile/favorites', component: Favorites, name:'Favourites'},
-    {path: '/profile/orders', component: Orders, name:'Orders'},
-    {path: '/restaurants/selected-restaurant', component: RestaurantPage, name:'RestaurantPage'},
+    {path: "/", component: Home, name: 'HomePage'},
+    {path: "/signup", component: localStorage.getItem('userid') ? Profile : Signup, name: 'SignupPage'},
+    // {path: "/login", component: localStorage.getItem('userid') ? Profile : Login, name: 'LoginPage',},
+    {path: "/login", component: /*localStorage.getItem('userid')!=null ? Profile :*/ Login, name: 'LoginPage',},
+    {path: "/profile", component: localStorage.getItem('userid') ? Profile : Login, name: 'ProfilePage'},
+    {path: "/cart", component: localStorage.getItem('userid') ? Cart : Login, name: 'CartPage'},
+    {path: "/restaurants", component: RestaurantList, name: 'RestaurantListPage'},
+    {path: '/settings', component: localStorage.getItem('userid') ? Settings : Login, name: 'Settings'},
+    {path: '/favorites', component: localStorage.getItem('userid') ? Favorites : Login, name: 'Favourites'},
+    {path: '/orders', component: localStorage.getItem('userid') ? Orders : Login, name: 'Orders'},
+    {path: '/restaurants/selected-restaurant', component: localStorage.getItem('resid') ? RestaurantPage : RestaurantList, name: 'RestaurantPage'},
 ]
 
 const router = createRouter({

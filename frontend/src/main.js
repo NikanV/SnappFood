@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 
 import router from "@/plugins/routers";
-import Parse from 'parse/dist/parse.min.js';
+import Parse from 'parse';
 
 const app = createApp(App)
 app.use(router)

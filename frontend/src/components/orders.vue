@@ -1,6 +1,6 @@
 <template>
   <div class="orders">
-    <h2>Orders</h2>
+    <h2>Orders for {{ username }}</h2>
     <div v-if="orders.length === 0">
       You don't have any orders yet.
     </div>
@@ -21,26 +21,54 @@
 </template>
 
 <script>
+import Parse from "parse";
+
 export default {
-  name:'OrdersPage',
+  name: 'OrdersPage',
   data() {
     return {
+      username: '',
+      email: '',
       orders: [
         {
-          id: 1,
-          restaurant: 'Restaurant A',
-          status: 'Delivered',
-          food:'tasty item 1',
+          id: undefined,
+          restaurant: '',
+          status: '',
+          food:'',
         },
-        {
-          id: 2,
-          restaurant: 'Restaurant B',
-          status: 'In Progress',
-          // Add other order properties as needed
-        },
+        // {
+
+        //   id: 2,
+        //   restaurant: 'Restaurant B',
+        //   status: 'In Progress',
+        //   // Add other order properties as needed
+        // },
       ],
     };
   },
+  methods: {
+    async getUserCred() {
+      try {
+        const userId = localStorage.getItem('userid');
+        const query = new Parse.Query(Parse.User);
+        const user = await query.get(userId);
+        this.username = user.get('username');
+        this.email = user.get('email');
+        let strings = user.get('orders');
+        for (let str of strings) {
+          let split = str.split("$");
+          this.orders.push({id: split[0], restaurant: split[1], status: split[2], food: split[3]});
+        }
+
+      } catch (error) {
+        console.log('Error retrieving user:', error);
+        throw error;
+      }
+    },
+  },
+  mounted() {
+    this.getUserCred()
+  }
 };
 </script>
 

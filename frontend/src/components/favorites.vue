@@ -1,6 +1,6 @@
 <template>
   <div class="favorites">
-    <h2>Favorites</h2>
+    <h2>Favorites for {{username}}</h2>
     <div v-if="favoriteRestaurants.length === 0">
       You don't have any favorite restaurants yet.
     </div>
@@ -21,26 +21,47 @@
 </template>
 
 <script>
+import Parse from "parse";
+
 export default {
   name:'FavouritesPage',
   data() {
     return {
+      username:'',
+      email:'',
       favoriteRestaurants: [
         {
-          id: 1,
-          name: 'Restaurant A',
-          address: '123 Main St',
-          image: '/path/to/restaurantA.jpg',
+          id: undefined,
+          name: '',
+          address: '',
+          image: '',
         },
-        // {
-        //   id: 2,
-        //   name: 'Restaurant B',
-        //   address: '456 Elm St',
-        //   image: '/path/to/restaurantB.jpg',
-        // },
       ],
     };
   },
+  methods:{
+    async getUserCred() {
+      try {
+        const userId = localStorage.getItem('userid');
+        const query = new Parse.Query(Parse.User);
+        const user = await query.get(userId);
+        this.username = user.get('username');
+        this.email = user.get('email');
+        let strings = user.get('faveRestaurants');
+        for (let str of strings) {
+          let split = str.split("$");
+          this.favoriteRestaurants.push({id: split[0], name: split[1], address: split[2], image: split[3]});
+        }
+
+      } catch (error) {
+        console.log('Error retrieving user:', error);
+        throw error;
+      }
+    },
+  },
+  mounted() {
+    this.getUserCred()
+  }
 };
 </script>
 

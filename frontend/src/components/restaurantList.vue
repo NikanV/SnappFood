@@ -27,18 +27,11 @@ export default {
     return {
       restaurants: [
         {
-          id: 1,
-          name: 'Restaurant A',
-          foodType: 'iranian',
-          image: '/path/to/restaurantA.jpg',
+          id: undefined,
+          name: '',
+          foodType: '',
+          image: '',
         },
-        // {
-        //   id: 2,
-        //   name: 'Restaurant B',
-        //   foodType: 'Mexican',
-        //   image: '/path/to/restaurantB.jpg',
-        // },
-        // Add more restaurants as needed
       ],
     };
   },

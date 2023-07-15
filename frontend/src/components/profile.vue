@@ -3,8 +3,8 @@
   <div class="profile-menu">
     <div class="profile-menu__header">
       <div class="profile-menu__info">
-        <h3>{{ user.name }}</h3>
-        <p>{{ user.email }}</p>
+        <h3>{{ this.username }}</h3>
+        <p>{{this.email }}</p>
       </div>
     </div>
     <div class="profile-menu__options">
@@ -33,27 +33,43 @@
 
 <script>
 import HeaderBar from "@/components/shared/Headers.vue";
+import Parse from "parse";
 
 export default {
   name: 'ProfilePage',
   components: {HeaderBar},
   data() {
     return {
-      user: {
-        name: 'name',
-        email: 'email',
-      },
+      username:'',
+      email:'',
     };
   },
   methods: {
     navigateTo(route) {
-      this.$router.push(`/profile/${route}`);
+      this.$router.push(`/${route}`);
     },
     logout() {
-      localStorage.setItem("userId", null)
+      localStorage.setItem('userid', null)
       this.$router.push({name: "LoginPage"})
     },
+    async getUserCred() {
+      try {
+        const userId = localStorage.getItem('userid');
+        const query = new Parse.Query(Parse.User);
+        const user = await query.get(userId);
+        this.username = user.get('username');
+        this.email = user.get('email');
+      } catch (error) {
+        console.log('Error retrieving user:', error);
+        throw error;
+      }
+    }
   },
+  mounted() {
+    this.getUserCred()
+  },
+  computed: {
+  }
 };
 </script>
 
