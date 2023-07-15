@@ -13,26 +13,32 @@
       <h2 class="featured-restaurants__title">Featured Restaurants</h2>
       <div class="featured-restaurants__list">
         <div v-for="restaurant in featuredRestaurants" :key="restaurant.id" class="featured-restaurants__item">
-          <img :src="restaurant.image" :alt="restaurant.name" class="featured-restaurants__image" />
-          <div class="featured-restaurants__info">
-            <h3>{{ restaurant.name }}</h3>
-            <p>{{ restaurant.foods }}</p>
+          <div @click="selectRest(restaurant.id)">
+            <img :src="restaurant.image" :alt="restaurant.name" class="featured-restaurants__image"/>
+            <div class="featured-restaurants__info">
+              <h3>{{ restaurant.name }}</h3>
+              <p>{{ restaurant.foods }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="goback">
-      <button @click="this.$router.go(-1)">Back</button>
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
     </div>
   </div>
 
 </template>
 
 <script>
+import SubmitButton from "@/components/shared/submitButton.vue";
+
 export default {
-  name:'HomePage',
+  name: 'HomePage',
+  components: {SubmitButton},
   data() {
     return {
+      selectedRestId: 0,
       featuredRestaurants: [
         {
           id: 1,
@@ -40,16 +46,35 @@ export default {
           foods: 'Italian',
           image: '/path/to/restaurantA.jpg',
         },
-        // {
-        //   id: 2,
-        //   name: 'Restaurant B',
-        //   foods: 'Mexican',
-        //   image: '/path/to/restaurantB.jpg',
-        // },
+        {
+          id: 2,
+          name: 'Restaurant B',
+          foods: 'Mexican',
+          image: '/path/to/restaurantB.jpg',
+        },
+        {
+          id: 2,
+          name: 'Restaurant C',
+          foods: 'Mexican',
+          image: '/path/to/restaurantB.jpg',
+        },
+        {
+          id: 2,
+          name: 'Restaurant D',
+          foods: 'Mexican',
+          image: '/path/to/restaurantB.jpg',
+        },
         // // Add more featured restaurants as needed
       ],
     };
   },
+  methods: {
+    selectRest(id) {
+      //   todo: selected id = id
+      alert(id)
+      this.$router.push({name: "RestaurantPage"})
+    }
+  }
 };
 </script>
 

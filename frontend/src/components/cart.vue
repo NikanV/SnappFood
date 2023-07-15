@@ -11,23 +11,26 @@
           <p>Price: ${{ item.price }}</p>
         </div>
         <div class="cart__item-actions">
-          <button @click="removeItem(item.id)">Remove</button>
+          <submit-button @click="removeItem(item.id)">Remove</submit-button>
         </div>
       </div>
       <div class="cart__total">
         <p>Total: ${{ getTotalPrice() }}</p>
-        <button @click="checkout">Checkout</button>
+        <submit-button @click="checkout">Checkout</submit-button>
       </div>
     </div>
     <div class="goback">
-      <button @click="this.$router.go(-1)">Back</button>
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
     </div>
   </div>
 </template>
 
 <script>
+import SubmitButton from "@/components/shared/submitButton.vue";
+
 export default {
   name: 'CartPage',
+  components: {SubmitButton},
   data() {
     return {
       cartItems: [
@@ -77,7 +80,7 @@ export default {
   font-size: 18px;
 }
 
-.cart__item-actions button {
+.cart__item-actions submit-button {
   padding: 8px 16px;
   background-color: #dc3545;
   color: #fff;
