@@ -1,6 +1,6 @@
 <template>
   <div class="auth-links">
-    <router-link to="/login" class="auth-links__link">Login</router-link>
+    <router-link to="/login" class="text-3xl font-bold underline">Login</router-link>
     <router-link to="/signup" class="auth-links__link">Sign Up</router-link>
   </div>
   <div class="home">
