@@ -9,7 +9,7 @@
         <img :src="restaurant.image" :alt="restaurant.name" class="restaurant-item__image" />
         <div class="restaurant-item__info">
           <h3>{{ restaurant.name }}</h3>
-          <p>{{ restaurant.cuisine }}</p>
+          <p>{{ restaurant.foodType }}</p>
         </div>
         <router-link :to="'/restaurants/' + restaurant.id" class="restaurant-item__link">View Details</router-link>
       </div>
@@ -26,16 +26,16 @@ export default {
   data() {
     return {
       restaurants: [
-        // {
-        //   id: 1,
-        //   name: 'Restaurant A',
-        //   cuisine: 'Italian',
-        //   image: '/path/to/restaurantA.jpg',
-        // },
+        {
+          id: 1,
+          name: 'Restaurant A',
+          foodType: 'iranian',
+          image: '/path/to/restaurantA.jpg',
+        },
         // {
         //   id: 2,
         //   name: 'Restaurant B',
-        //   cuisine: 'Mexican',
+        //   foodType: 'Mexican',
         //   image: '/path/to/restaurantB.jpg',
         // },
         // Add more restaurants as needed

@@ -30,7 +30,9 @@ export default {
   name: 'CartPage',
   data() {
     return {
-      cartItems: [],
+      cartItems: [
+        {id: 1, name: "food1", price: 10}
+      ],
     };
   },
   methods: {

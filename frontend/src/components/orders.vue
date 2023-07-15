@@ -31,7 +31,6 @@ export default {
           restaurant: 'Restaurant A',
           status: 'Delivered',
           food:'tasty item 1',
-          // Add other order properties as needed
         },
         {
           id: 2,

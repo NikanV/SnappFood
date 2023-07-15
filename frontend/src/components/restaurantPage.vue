@@ -34,15 +34,15 @@ export default {
   data() {
     return {
       restaurant: {
-        name: '',
-        image: '',
-        description: '',
+        name: 'r1',
+        image: 'r1 img',
+        description: 'r1 des',
         menu: [
           {
-            // id: ,
-            // name: '',
-            // description: '',
-            // price:,
+            id: 1,
+            name: 'm1',
+            description: 'm1 des',
+            price:5,
           },
         ],
       },

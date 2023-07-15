@@ -50,8 +50,7 @@ export default {
       this.$router.push(`/profile/${route}`);
     },
     logout() {
-      // Implement your logout functionality here
-      // For example, clearing session, redirecting to login, etc.
+    //   todo: implement logout
     },
   },
 };

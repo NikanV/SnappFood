@@ -4,15 +4,15 @@
     <form @submit="updateSettings">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" v-model="user.name" />
+        <input type="text" id="name" v-model="user.name" placeholder="username"/>
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" v-model="user.email" />
+        <input type="email" id="email" v-model="user.email" placeholder="email" />
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" id="password" v-model="user.password" />
+        <input type="password" id="password" v-model="user.password" placeholder="password"/>
       </div>
       <div class="form-group">
         <button type="submit">Save</button>
@@ -30,16 +30,15 @@ export default {
   data() {
     return {
       user: {
-        name: 'John Doe',
-        email: 'johndoe@example.com',
+        name: '',
+        email: '',
         password: '',
       },
     };
   },
   methods: {
     updateSettings() {
-      // Implement the logic to update user settings
-      // For example, make an API call to save the updated settings
+      // todo: update settngs
       console.log('Settings updated:', this.user);
     },
   },

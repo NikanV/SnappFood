@@ -26,12 +26,12 @@ export default {
   data() {
     return {
       favoriteRestaurants: [
-        // {
-        //   id: 1,
-        //   name: 'Restaurant A',
-        //   address: '123 Main St',
-        //   image: '/path/to/restaurantA.jpg',
-        // },
+        {
+          id: 1,
+          name: 'Restaurant A',
+          address: '123 Main St',
+          image: '/path/to/restaurantA.jpg',
+        },
         // {
         //   id: 2,
         //   name: 'Restaurant B',

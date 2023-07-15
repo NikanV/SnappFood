@@ -35,12 +35,12 @@ export default {
   data() {
     return {
       featuredRestaurants: [
-        // {
-        //   id: 1,
-        //   name: 'Restaurant A',
-        //   cuisine: 'Italian',
-        //   image: '/path/to/restaurantA.jpg',
-        // },
+        {
+          id: 1,
+          name: 'Restaurant A',
+          cuisine: 'Italian',
+          image: '/path/to/restaurantA.jpg',
+        },
         // {
         //   id: 2,
         //   name: 'Restaurant B',
