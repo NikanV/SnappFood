@@ -1,176 +1,66 @@
 <template>
-  <div class="auth-links">
-    <router-link to="/login" class="text-3xl font-bold underline">Login</router-link>
-    <router-link to="/signup" class="auth-links__link">Sign Up</router-link>
-  </div>
-  <div class="home">
-    <div class="hero">
-      <h1 class="hero__title">Order food from Snappfood</h1>
-      <router-link to="/restaurants" class="hero__button">Explore Restaurants</router-link>
-    </div>
-
-    <div class="featured-restaurants">
-      <h2 class="featured-restaurants__title">Featured Restaurants</h2>
-      <div class="featured-restaurants__list">
-        <div v-for="restaurant in featuredRestaurants" :key="restaurant.id" class="featured-restaurants__item">
-          <div @click="selectRest(restaurant.id)">
-            <img :src="restaurant.image" :alt="restaurant.name" class="featured-restaurants__image"/>
-            <div class="featured-restaurants__info">
-              <h3>{{ restaurant.name }}</h3>
-              <p>{{ restaurant.foods }}</p>
+  <body class="font-serif " style="" >
+    <!-- <img src="../assets/img/food.webp" class=" top-0 left-0 w-full h-full object-cover opacity-40 z-0" alt="Background Image"> -->
+  <div class="md:flex flex-col min-h-screen z-10">
+    <div class="grid md:grid-cols-5 flex-grow">
+      <div class="md:col-span-1 md:flex md:justify-center bg-red-100">
+          <nav>
+            <div class="flex justify-between items-center navBar hover:text-red-800 tracking-widest">
+              <h1 class="navBar  p-4 border-b border-gray-600">
+                SnapFood
+              </h1>
+              <div class="px-4 cursor-pointer md:hidden" id="burger">
+                <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </div>
             </div>
+            <ul class="text-center navBar mt-6 hidden md:block" id="menu">
+              <li class="text-gray-700 font-bold py-1">
+                <a href="#" class="block px-4 flex justify-center">
+                  <span>Home</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </a>
+              </li>
+              <li class="py-1">
+                <a href="#" class="block px-4 flex justify-center">
+                  <span>About</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                </a>
+              </li>
+              <li class="py-1">
+                <a href="#" class="block px-4 flex justify-center">
+                  <span>Contact</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="md:col-span-4">
+        <main class="px-16 py-6 ">
+          <div class="flex justify-center md:justify-end mb-3">
+              <router-link to="/login" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ">Log in</router-link>
+              <router-link to="/signup" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2">Sign up</router-link>
           </div>
+          <div id="home" class="h-5/6 justify-center">
+              <h1 class="title1 mt-40">Order food from Snappfood</h1>
+              <router-link to="/restaurants" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2">Explore Restaurants</router-link>
+          </div>
+        </main>
         </div>
       </div>
     </div>
-    <div class="goback">
-      <submit-button @click="this.$router.go(-1)">Back</submit-button>
-    </div>
-  </div>
-
+  </body>
 </template>
 
 <script>
-import SubmitButton from "@/components/shared/submitButton.vue";
-
 export default {
   name: 'HomePage',
-  components: {SubmitButton},
   data() {
-    return {
-      selectedRestId: 0,
-      featuredRestaurants: [
-        {
-          id: 1,
-          name: 'Restaurant A',
-          foods: 'Italian',
-          image: '/path/to/restaurantA.jpg',
-        },
-        {
-          id: 2,
-          name: 'Restaurant B',
-          foods: 'Mexican',
-          image: '/path/to/restaurantB.jpg',
-        },
-        {
-          id: 2,
-          name: 'Restaurant C',
-          foods: 'Mexican',
-          image: '/path/to/restaurantB.jpg',
-        },
-        {
-          id: 2,
-          name: 'Restaurant D',
-          foods: 'Mexican',
-          image: '/path/to/restaurantB.jpg',
-        },
-        // // Add more featured restaurants as needed
-      ],
+    return {// // Add more featured restaurants as neede
     };
   },
   methods: {
-    selectRest(id) {
-      //   todo: selected id = id
-      alert(id)
-      this.$router.push({name: "RestaurantPage"})
-    }
   }
 };
 </script>
 
-<style scoped>
-.home {
-  padding: 16px;
-}
-
-.hero__title {
-  font-size: 36px;
-  margin-bottom: 16px;
-}
-
-.hero__description {
-  font-size: 18px;
-  margin-bottom: 32px;
-}
-
-.hero__button {
-  padding: 12px 24px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 18px;
-}
-
-.hero__button:hover {
-  background-color: #0056b3;
-}
-
-.auth-links {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 32px;
-}
-
-.auth-links__link {
-  margin: 0 8px;
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.auth-links__link:hover {
-  background-color: #0056b3;
-}
-
-.featured-restaurants__title {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.featured-restaurants__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.featured-restaurants__item {
-  width: 48%;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  background-color: #f5f5f5;
-  padding: 12px;
-  border-radius: 4px;
-}
-
-.featured-restaurants__image {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 16px;
-}
-
-.featured-restaurants__info h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.featured-restaurants__info p {
-  margin: 0;
-  color: #888;
-}
-
-.goback button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-</style>

@@ -5,8 +5,7 @@
     "scripts": {
         "serve": "vue-cli-service serve --port 4000",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint",
-        "build-css": "tailwindcss build src/assets/styles/input/styles.css -o src/assets/styles/output/styles.css"
+        "lint": "vue-cli-service lint"
     },
     "dependencies": {
         "arcaptcha-vue": "^0.0.8",
