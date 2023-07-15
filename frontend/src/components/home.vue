@@ -5,8 +5,7 @@
   </div>
   <div class="home">
     <div class="hero">
-      <h1 class="hero__title">Delicious Food Delivered to Your Door</h1>
-      <p class="hero__description">Order from your favorite restaurants and enjoy a wide variety of cuisines.</p>
+      <h1 class="hero__title">Order food from Snappfood</h1>
       <router-link to="/restaurants" class="hero__button">Explore Restaurants</router-link>
     </div>
 
@@ -17,7 +16,7 @@
           <img :src="restaurant.image" :alt="restaurant.name" class="featured-restaurants__image" />
           <div class="featured-restaurants__info">
             <h3>{{ restaurant.name }}</h3>
-            <p>{{ restaurant.cuisine }}</p>
+            <p>{{ restaurant.foods }}</p>
           </div>
         </div>
       </div>
@@ -38,13 +37,13 @@ export default {
         {
           id: 1,
           name: 'Restaurant A',
-          cuisine: 'Italian',
+          foods: 'Italian',
           image: '/path/to/restaurantA.jpg',
         },
         // {
         //   id: 2,
         //   name: 'Restaurant B',
-        //   cuisine: 'Mexican',
+        //   foods: 'Mexican',
         //   image: '/path/to/restaurantB.jpg',
         // },
         // // Add more featured restaurants as needed
