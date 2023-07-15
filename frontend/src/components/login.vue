@@ -16,9 +16,6 @@
                 tabindex="1"
             />
           </div>
-          <p v-show="username.$dirty || invalidUsername">
-            <span v-if="invalidUsername && username.length > 0">Invalid username</span>
-          </p>
         </div>
         <div>
           <label for="password-input">Password</label>
@@ -31,6 +28,7 @@
                 name="password"
                 placeholder="Password"
                 tabindex="2"
+                @input="event => this.invalidPassword = false"
             />
             <span @click="isPasswordHidden = !isPasswordHidden">
               <base-icon
@@ -47,7 +45,6 @@
         </div>
         <div class="loginBtn">
           <submit-button
-              :is-disabled="disableLogin"
               :is-submitting="isSubmitting"
               tabindex="3"
               type="submit"
@@ -73,6 +70,7 @@
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
 import { loginMethods } from "@/utils/configs";
+import Parse from 'parse/dist/parse.min.js';
 
 export default {
   name: "LoginPage",
@@ -85,8 +83,7 @@ export default {
     return {
       username: "",
       password: "",
-      invalidUsername: true,
-      invalidPassword: true,
+      invalidPassword: false,
       disableLogin: true,
       isPasswordHidden: true,
       isSubmitting: false,
@@ -94,11 +91,16 @@ export default {
   },
   methods: {
     async submit() {
-      // TODO: Implement login logic
-      // let res = await axios.get(`http://localhost:3000/users?username=${this.username}&password=${this.password}`)
-      // if (res.status === 201)
-      //   await this.$router.push({name: 'ProfilePage'})
-      await this.$router.push({ name: "ProfilePage" });
+      try {
+        // Pass the username and password to logIn function
+        let user = await Parse.User.logIn(this.username, this.password);
+        // Do stuff after successful login
+        console.log('Logged in user', user);
+        await this.$router.push({ name: "ProfilePage" });
+      } catch (error) {
+        console.error('Error while logging in user', error);
+        this.invalidPassword = true
+      }
     },
   },
   computed: {

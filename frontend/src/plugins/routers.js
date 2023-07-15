@@ -11,16 +11,16 @@ import Orders from "@/components/orders.vue";
 import RestaurantPage from "@/components/restaurantPage.vue";
 
 const routes = [
-    {path: "/", component: Home},
-    {path: "/signup", component: Signup},
-    {path: "/login", component: Login},
-    {path: "/profile", component: CustomerProfile},
-    {path: "/cart", component: Cart},
-    {path: "/restaurants", component: RestaurantList},
-    {path: '/profile/settings', component: Settings},
-    {path: '/profile/favorites', component: Favorites},
-    {path: '/profile/orders', component: Orders},
-    {path: '/profile/orders', component: RestaurantPage},
+    {path: "/", component: Home, name:'HomePage'},
+    {path: "/signup", component: Signup, name:'SignupPage'},
+    {path: "/login", component: Login, name:'LoginPage'},
+    {path: "/profile", component: CustomerProfile, name:'ProfilePage'},
+    {path: "/cart", component: Cart, name:'CartPage'},
+    {path: "/restaurants", component: RestaurantList, name:'RestaurantListPage'},
+    {path: '/profile/settings', component: Settings, name:'Settings'},
+    {path: '/profile/favorites', component: Favorites, name:'Favourites'},
+    {path: '/profile/orders', component: Orders, name:'Orders'},
+    {path: '/restaurants/selected-restaurant', component: RestaurantPage, name:'RestaurantPage'},
 ]
 
 const router = createRouter({

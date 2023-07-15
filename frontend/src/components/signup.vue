@@ -109,7 +109,7 @@
           </div>
         </div>
         <div class="signupBtn">
-          <submit-button :is-submitting="isSubmitting" type="submit" :is-disabled="disableSignup" tabindex="4">
+          <submit-button :is-submitting="isSubmitting" type="submit" tabindex="4">
             Signup
           </submit-button>
           <p>Already have an account?
@@ -130,6 +130,7 @@
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
 import {signupMethods} from "@/utils/configs";
+import Parse from 'parse/dist/parse.min.js';
 
 export default {
   name: "SignupPage",
@@ -162,17 +163,18 @@ export default {
   },
   methods: {
     async submit() {
-      // TODO: Handle signup logic
-      // let res = await axios.post("http://localhost:3000/users", {
-      //   username: this.username,
-      //   password: this.password
-      // })
-      // if (res.status === 201){
-      //   localStorage.setItem('user-info',JSON.stringify(res.data))
-      //   await this.$router.push({name: 'LoginPage'})
-      // }
+      const user = new Parse.User();
+      user.set('username', this.emailUserPart);
+      user.set('email', this.username);
+      user.set('password', this.password);
 
-      await this.$router.push({name: "LoginPage"});
+      try {
+          let userResult = await user.signUp();
+          console.log('User signed up', userResult);
+          await this.$router.push({name: "LoginPage"});
+      } catch (error) {
+          console.error('Error while signing up user', error);
+      }
     },
     setUsername(domain) {
       this.username = `${this.emailUserPart}${domain}`;
