@@ -97,8 +97,6 @@
                       Log in
                     </button>
 
-                    <!--Forgot password link-->
-                    <a href="#!">Forgot password?</a>
                   </div>
 
                   <!--Register button-->
@@ -129,7 +127,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
 import { loginMethods } from "@/utils/configs";
@@ -173,4 +171,4 @@ export default {
     },
   },
 };
-</script>
+</script> -->
