@@ -9,6 +9,9 @@ module.exports = {
         extend: {
             fontFamily: {
                 body: ['Playfair Display']
+            },
+            width: {
+                '1000': '1000px',
             }
         },
     },
