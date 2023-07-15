@@ -9,7 +9,6 @@
             <input
                 id="username-input"
                 v-model="username"
-                v-focus
                 autocomplete="username"
                 name="username"
                 placeholder="Username"

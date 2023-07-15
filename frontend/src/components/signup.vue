@@ -9,7 +9,6 @@
             <input
                 id="email-mobile-input"
                 v-model="username"
-                v-focus
                 name="username"
                 autofocus
                 list="useremail"
