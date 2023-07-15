@@ -135,6 +135,10 @@ import SubmitButton from "@/components/shared/submitButton.vue";
 import { loginMethods } from "@/utils/configs";
 import Parse from 'parse/dist/parse.min.js';
 
+import {Input, Ripple, initTE} from "tw-elements"
+
+initTE({Input, Ripple})
+
 export default {
   name: "LoginPage",
   components: {
