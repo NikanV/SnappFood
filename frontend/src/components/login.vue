@@ -40,7 +40,7 @@
           </div>
           <p v-show="password.$dirty || invalidPassword">
             <span v-if="password.required">Password required</span>
-            <span v-if="invalidPassword && password.length > 0">Wrong password</span>
+            <span v-if="invalidPassword && password.length > 0">Invalid username or password</span>
           </p>
         </div>
         <div class="loginBtn">
@@ -96,6 +96,7 @@ export default {
         let user = await Parse.User.logIn(this.username, this.password);
         // Do stuff after successful login
         console.log('Logged in user', user);
+        localStorage.setItem("userId", user.id)
         await this.$router.push({ name: "ProfilePage" });
       } catch (error) {
         console.error('Error while logging in user', error);

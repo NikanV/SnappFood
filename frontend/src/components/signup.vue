@@ -4,7 +4,7 @@
     <form @submit.prevent="submit">
       <div>
         <div>
-          <label for="email-mobile-input">Input Email or Mobile</label>
+          <label for="email-mobile-input">Input Email</label>
           <div>
             <input
                 id="email-mobile-input"
@@ -163,17 +163,21 @@ export default {
   },
   methods: {
     async submit() {
-      const user = new Parse.User();
-      user.set('username', this.emailUserPart);
-      user.set('email', this.username);
-      user.set('password', this.password);
-
-      try {
-          let userResult = await user.signUp();
-          console.log('User signed up', userResult);
-          await this.$router.push({name: "LoginPage"});
-      } catch (error) {
-          console.error('Error while signing up user', error);
+      if (this.password != this.password2) {
+        //TODO set error of invalid password
+      } else {
+        const user = new Parse.User();
+        user.set('username', this.emailUserPart);
+        user.set('email', this.username);
+        user.set('password', this.password);
+  
+        try {
+            let userResult = await user.signUp();
+            console.log('User signed up', userResult);
+            await this.$router.push({name: "LoginPage"});
+        } catch (error) {
+            console.error('Error while signing up user', error);
+        }
       }
     },
     setUsername(domain) {
