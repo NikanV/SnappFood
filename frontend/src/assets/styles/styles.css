@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn {
+    @apply border-2 border-red-600 rounded-full py-2 px-3 uppercase text-xs font-bold tracking-wider cursor-pointer text-red-600;
+}
+
+.title1 {
+    @apply text-5xl mb-3 text-yellow-200;
+}
+
+.navBar {
+    @apply text-xl text-center font-bold text-yellow-100;
+}
+
+.bgHome {
+    background-image: url('../img/food.png');
+    background-color: rgba(0, 0, 0, 0.75);
+}
