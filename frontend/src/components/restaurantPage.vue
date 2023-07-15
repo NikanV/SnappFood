@@ -56,6 +56,7 @@ export default {
     addToCart(food) {
       // todo: complete logic of add to cart
       this.cart.push(food);
+      this.$router.push({ name: "CartPage" });
     },
   },
 };

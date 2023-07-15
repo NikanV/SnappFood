@@ -113,7 +113,7 @@ export default {
   font-size: 16px;
 }
 
-.goback submit-button {
+.goback button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;
