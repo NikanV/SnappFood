@@ -15,18 +15,21 @@
         <input type="password" id="password" v-model="user.password" placeholder="password"/>
       </div>
       <div class="form-group">
-        <button type="submit">Save</button>
+        <submit-button type="submit">Save</submit-button>
       </div>
     </form>
     <div class="goback">
-      <button @click="this.$router.go(-1)">Back</button>
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
     </div>
   </div>
 </template>
 
 <script>
+import SubmitButton from "@/components/shared/submitButton.vue";
+
 export default {
   name:'SettingsPage',
+  components: {SubmitButton},
   data() {
     return {
       user: {
@@ -71,7 +74,7 @@ input {
   border: 1px solid #ccc;
 }
 
-button {
+submit-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;
@@ -80,7 +83,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+submit-button:hover {
   background-color: #0056b3;
 }
 </style>

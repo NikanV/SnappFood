@@ -15,14 +15,17 @@
       </div>
     </div>
     <div class="goback">
-      <button @click="this.$router.go(-1)">Back</button>
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
     </div>
   </div>
 </template>
 
 <script>
+import SubmitButton from "@/components/shared/submitButton.vue";
+
 export default {
   name:'OrdersPage',
+  components: {SubmitButton},
   data() {
     return {
       orders: [
@@ -75,7 +78,7 @@ export default {
   color: #888;
 }
 
-.goback button {
+.goback submit-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;
