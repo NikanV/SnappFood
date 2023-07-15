@@ -1,7 +1,6 @@
 <template>
   <header class="header">
     <div class="header__logo">
-<!--      <img src="/path/to/logo.png" alt="Logo" />-->
       <h1 class="header__title">Snappfood</h1>
     </div>
     <nav class="header__nav">
@@ -11,6 +10,7 @@
         <li><router-link to="/profile/orders">Orders</router-link></li>
         <li><router-link to="/profile/favorites">Favorites</router-link></li>
         <li><router-link to="/profile/settings">Settings</router-link></li>
+        <li><router-link to="/cart">Cart</router-link></li>
       </ul>
     </nav>
   </header>

@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b137270-9cb3-4013-996b-61ced702f543" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+    <list default="true" id="4c2b92c6-beb4-48d1-a8b6-6722fb2fb896" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/shared/Headers.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/shared/Headers.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Vue Class API Component" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="Vue Options API Component" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,12 +26,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="alireza" />
-                    <option name="lastUsedInstant" value="1689405908" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1689406863" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1689405907" />
+                    <option name="branchName" value="alireza" />
+                    <option name="lastUsedInstant" value="1689406847" />
                   </RecentBranch>
                 </list>
               </option>
@@ -53,106 +45,39 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/frontend/package.json" />
-  </component>
-  <component name="ProjectId" id="2SRAOhFe6WjTI9Bvl28rJs5GaHV" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2SbEH6ltraiWgboNU8yvrHeYcFb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;alireza&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alireza/Developer/Web-Programming/Proj/SnappFood/frontend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/alireza/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9161.29/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Class API Component&quot;,
-      &quot;Vue Options API Component&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/home/alireza/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9161.29/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend" />
-      <recent name="$PROJECT_DIR$/frontend/node_modules" />
-      <recent name="$PROJECT_DIR$/Frontend" />
-      <recent name="$PROJECT_DIR$/Frontend/utils" />
-      <recent name="$PROJECT_DIR$/Frontend/assets/styles" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/components/shared" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.build" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b137270-9cb3-4013-996b-61ced702f543" name="Changes" comment="" />
-      <created>1689098989555</created>
+      <changelist id="4c2b92c6-beb4-48d1-a8b6-6722fb2fb896" name="Changes" comment="" />
+      <created>1689406791291</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1689098989555</updated>
-      <workItem from="1689098993952" duration="13239000" />
-      <workItem from="1689139099221" duration="1989000" />
-      <workItem from="1689144484525" duration="7535000" />
-      <workItem from="1689237553076" duration="5217000" />
-      <workItem from="1689242852631" duration="641000" />
-      <workItem from="1689247027213" duration="15049000" />
-      <workItem from="1689317058025" duration="7643000" />
-      <workItem from="1689343658753" duration="5635000" />
-      <workItem from="1689359576449" duration="3623000" />
+      <updated>1689406791291</updated>
+      <workItem from="1689406799104" duration="3065000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

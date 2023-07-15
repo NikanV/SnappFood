@@ -6,23 +6,26 @@
     </div>
     <div v-else>
       <div v-for="restaurant in restaurants" :key="restaurant.id" class="restaurant-item">
-        <img :src="restaurant.image" :alt="restaurant.name" class="restaurant-item__image" />
+        <img :src="restaurant.image" :alt="restaurant.name" class="restaurant-item__image"/>
         <div class="restaurant-item__info">
           <h3>{{ restaurant.name }}</h3>
           <p>{{ restaurant.foodType }}</p>
         </div>
-        <router-link :to="'/restaurants/' + restaurant.id" class="restaurant-item__link">View Details</router-link>
+        <router-link :to="'/restaurants/selected-restaurant'" class="restaurant-item__link">View Details</router-link>
       </div>
     </div>
     <div class="goback">
-      <button @click="this.$router.go(-1)">Back</button>
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
     </div>
   </div>
 </template>
 
 <script>
+import SubmitButton from "@/components/shared/submitButton.vue";
+
 export default {
-  name:'RestaurantsListPage',
+  name: 'RestaurantsListPage',
+  components: {SubmitButton},
   data() {
     return {
       restaurants: [
@@ -95,7 +98,7 @@ export default {
   background-color: #0056b3;
 }
 
-.goback button {
+.goback submit-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;

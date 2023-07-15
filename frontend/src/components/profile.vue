@@ -26,17 +26,18 @@
       </div>
     </div>
     <div class="goback">
-      <button @click="this.$router.go(-1)">Back</button>
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
     </div>
   </div>
 </template>
 
 <script>
 import HeaderBar from "@/components/shared/Headers.vue";
+import SubmitButton from "@/components/shared/submitButton.vue";
 
 export default {
   name: 'ProfilePage',
-  components: {HeaderBar},
+  components: {SubmitButton, HeaderBar},
   data() {
     return {
       user: {
@@ -112,7 +113,7 @@ export default {
   font-size: 16px;
 }
 
-.goback button {
+.goback submit-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;
