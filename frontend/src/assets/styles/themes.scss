@@ -1,0 +1,78 @@
+// Themes (Dark & Light)
+:root {
+  --background-color: #{$grey-100};
+  --background-color-2: #{$grey-200};
+  --card-background-color: #{$white};
+  --dark-tooltip-bg: #{$grey-600};
+  --tab-background-color: #{$grey-300};
+  --text-primary: #{$grey-900};
+  --text-secondary: #{$grey-400};
+  --border-color: #{$grey-300};
+  --box-border-color: #{$grey-300};
+  --hover-color: #{$grey-300};
+  --main-scroll-bar-color: #{$grey-350};
+  --scroll-bar-color: #{$grey-400};
+  --scroll-bar-color-hover: #{$grey-700};
+  --btn-inactive-fill: #{$grey-300};
+  --disabled-background: #{$grey-100};
+  --btn-inactive-color: #{$grey-400};
+  --info-background-color: #{$ultra-light-info};
+  --warning-background-color: #{$ultra-light-warning};
+  --error-background-color: #{$ultra-light-danger};
+  --confirm-background-color: #{$ultra-light-secondary};
+  --shadow-color-1: rgba(20, 21, 26, 0.1);
+  --shadow-color-2: rgba(20, 21, 26, 0.4);
+  --buy-order: #{rgba($light-secondary, 0.2)};
+  --sell-order: #{rgba($light-danger, 0.2)};
+  --table-header-color: #{$light-primary};
+  --table-hover: #f4f4f5;
+  --table-sub-header-color: #{$ultra-light-primary};
+  --table-content-color: #{$white};
+  --card-icon-bg-color: #{$ultra-light-primary};
+  --text-purple: #{$dark-primary};
+  --shade-gray: #{$shade-gray};
+  --side-bar-active-bg: #{$primary};
+  --logout-color: #{$error};
+  ---stepper-color: #{$primary};
+}
+
+[theme="light"] {
+  @extend :root;
+}
+
+[theme="dark"] {
+  --background-color: #{$black};
+  --background-color-2: #{$grey-900};
+  --card-background-color: #{$grey-800};
+  --dark-tooltip-bg: #{$grey-400};
+  --tab-background-color: #{$grey-600};
+  --text-primary: #{$white};
+  --text-secondary: #{$grey-400};
+  --border-color: #{$grey-600};
+  --box-border-color: #{$grey-800};
+  --hover-color: #{$grey-600};
+  --main-scroll-bar-color: #{$grey-150};
+  --scroll-bar-color: #{$grey-600};
+  --scroll-bar-color-hover: #{$grey-400};
+  --btn-inactive-fill: #{$grey-700};
+  --disabled-background: #{$grey-700};
+  --btn-inactive-color: #{$grey-600};
+  --info-background-color: #{$alert-info};
+  --warning-background-color: #{$alert-warning};
+  --error-background-color: #{$alert-danger};
+  --confirm-background-color: #{$alert-secondary};
+  --shadow-color-1: rgba(20, 21, 26, 1);
+  --shadow-color-2: #{$black};
+  --buy-order: #{rgba($secondary, 0.2)};
+  --sell-order: #{rgba($danger, 0.2)};
+  --table-header-color: #{$grey-900};
+  --table-hover: #353841;
+  --table-sub-header-color: #{$grey-800};
+  --table-content-color: #{$grey-700};
+  --card-icon-bg-color: #{$dark-primary};
+  --text-purple: #{$second-primary};
+  --shade-gray: #{$grey-400};
+  --side-bar-active-bg: #{$dark-primary};
+  --logout-color: #{$dark-error};
+  ---stepper-color: #{$second-primary};
+}

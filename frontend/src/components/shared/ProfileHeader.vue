@@ -1,10 +1,9 @@
 <template>
-  <h1>welcome {{username}}</h1>
+  <h1>Hello {{username}}</h1>
   <div>
-    <a href="/profile">Home</a>
-    <a href="#">Add Restaurant</a>
-    <a href="#">Update Restaurant</a>
+    <a href="/profile">Profile</a>
     <a @click="logout" href="#">Logout</a>
+    <a href="/cart">Card</a>
   </div>
 </template>
 
@@ -21,7 +20,6 @@ export default{
     logout(){
       //todo: implement logout logic
       this.$router.push({name: 'LoginPage'})
-
     }
   }
 }
