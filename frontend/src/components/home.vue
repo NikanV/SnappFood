@@ -1,5 +1,5 @@
 <template>
-  <body >
+  <body class= "font-body">
   <div class="md:flex flex-col min-h-screen bgHome bg-no-repeat bg-cover bg-clip-border">
     <div class="grid md:grid-cols-6 flex-grow">
       <div class="md:col-span-1 md:flex md:justify-center " style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
@@ -31,6 +31,18 @@
                   <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 </a>
               </li>
+              <li class=" font-bold py-1">
+                <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
+                  <span>Profile</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
+                </a>
+              </li>
+              <li class=" font-bold py-1">
+                <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
+                  <span>Cart</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -41,7 +53,7 @@
               <router-link to="/signup" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2">Sign up</router-link>
           </div>
           <div id="home" style="background: rgba(222, 218, 218, 0.681);" class=" h-36 justify-center  rounded-2xl">
-              <h1 class="mt-40 pb-5 pt-3 title1">Order food from Snappfood</h1>
+              <h1 class="mt-40 pb-5 pt-3 font-bold text-3xl mb-3 text-black">Order food from Snappfood</h1>
               <router-link to="/restaurants" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2 ">Explore Restaurants</router-link>
           </div>
         </main>
