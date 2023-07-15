@@ -130,48 +130,47 @@
 </template>
 
 <script>
-// import {
-//   Input,
-//   Ripple,
-//   initTE,
-// } from "tw-elements";
-// initTE({ Input, Ripple });
+import BaseIcon from "@/components/shared/baseIcon.vue";
+import SubmitButton from "@/components/shared/submitButton.vue";
+import { loginMethods } from "@/utils/configs";
+import Parse from 'parse/dist/parse.min.js';
 
-// import BaseIcon from "@/components/shared/baseIcon.vue";
-// import SubmitButton from "@/components/shared/submitButton.vue";
-// import { loginMethods } from "@/utils/configs";
-
-// export default {
-//   name: "LoginPage",
-//   components: {
-//     BaseIcon,
-//     SubmitButton,
-//   },
-//   layout: "auth",
-//   data() {
-//     return {
-//       username: "",
-//       password: "",
-//       invalidUsername: true,
-//       invalidPassword: true,
-//       disableLogin: true,
-//       isPasswordHidden: true,
-//       isSubmitting: false,
-//     };
-//   },
-//   methods: {
-//     async submit() {
-//       // TODO: Implement login logic
-//       // let res = await axios.get(`http://localhost:3000/users?username=${this.username}&password=${this.password}`)
-//       // if (res.status === 201)
-//       //   await this.$router.push({name: 'ProfilePage'})
-//       await this.$router.push({ name: "ProfilePage" });
-//     },
-//   },
-//   computed: {
-//     isMobileActive() {
-//       return loginMethods.mobile;
-//     },
-//   },
-// };
+export default {
+  name: "LoginPage",
+  components: {
+    BaseIcon,
+    SubmitButton,
+  },
+  layout: "auth",
+  data() {
+    return {
+      username: "",
+      password: "",
+      invalidPassword: false,
+      disableLogin: true,
+      isPasswordHidden: true,
+      isSubmitting: false,
+    };
+  },
+  methods: {
+    async submit() {
+      try {
+        // Pass the username and password to logIn function
+        let user = await Parse.User.logIn(this.username, this.password);
+        // Do stuff after successful login
+        console.log('Logged in user', user);
+        localStorage.setItem("userId", user.id)
+        await this.$router.push({ name: "ProfilePage" });
+      } catch (error) {
+        console.error('Error while logging in user', error);
+        this.invalidPassword = true
+      }
+    },
+  },
+  computed: {
+    isMobileActive() {
+      return loginMethods.mobile;
+    },
+  },
+};
 </script>

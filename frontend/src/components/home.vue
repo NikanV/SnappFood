@@ -35,7 +35,6 @@
           </nav>
         </div>
         <div class="md:col-span-5">
-          <!-- <img src="../assets/img/food.webp" class=" top-0 left-0 w-full h-full object-cover opacity-40 z-10" alt="Background Image"> -->
         <main class="px-16 py-6 ">
           <div class="flex justify-center md:justify-end mb-3">
               <router-link to="/login" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ">Log in</router-link>
