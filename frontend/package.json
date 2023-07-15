@@ -15,7 +15,8 @@
     "vue-i18n": "^9.2.2",
     "vue-js-modal": "^2.0.1",
     "vue-router": "^4.0.13",
-    "vuelidate": "^0.7.7"
+    "vuelidate": "^0.7.7",
+    "parse": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -1,5 +1,17 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from "@/plugins/routers";
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).use(router).mount('#app')
+import router from "@/plugins/routers";
+import Parse from 'parse/dist/parse.min.js';
+
+const app = createApp(App)
+app.use(router)
+
+Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+// Remember to inform BOTH the Back4App Application ID AND the JavaScript KEY
+Parse.initialize(
+  'Ku7TrM9KSXib41V3rvRiDhB9MHNzCaaxULriWBgd', // This is your Application ID
+  '1ZLScfJrHFwHahoXAf9YBad5LjaH2NeLDqFZh5Co' // This is your Javascript key
+);
+
+app.mount('#app')

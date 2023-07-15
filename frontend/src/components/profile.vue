@@ -51,7 +51,8 @@ export default {
       this.$router.push(`/profile/${route}`);
     },
     logout() {
-    //   todo: implement logout
+      localStorage.setItem("userId", null)
+      this.$router.push({name: "LoginPage"})
     },
   },
 };
