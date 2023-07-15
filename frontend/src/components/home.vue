@@ -41,8 +41,8 @@
               <router-link to="/login" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ">Log in</router-link>
               <router-link to="/signup" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2">Sign up</router-link>
           </div>
-          <div id="home" class="h-36 justify-center dark:bg-neutral-700 ">
-              <h1 class="title1 mt-40 pb-10">Order food from Snappfood</h1>
+          <div id="home" style="background: rgba(222, 218, 218, 0.681);" class=" h-36 justify-center  rounded-2xl">
+              <h1 class="mt-40 pb-5 pt-3 title1">Order food from Snappfood</h1>
               <router-link to="/restaurants" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2 ">Explore Restaurants</router-link>
           </div>
         </main>
