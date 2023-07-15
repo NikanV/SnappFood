@@ -6,14 +6,14 @@
 }
 
 .title1 {
-    @apply text-5xl mb-3;
+    @apply text-5xl mb-3 text-yellow-200;
 }
 
 .navBar {
-    @apply text-xl text-center font-bold;
+    @apply text-xl text-center font-bold text-yellow-100;
 }
 
 .bgHome {
-    background-image: url('../img/food.webp');
+    background-image: url('../img/food.png');
     background-color: rgba(0, 0, 0, 0.75);
 }

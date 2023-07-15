@@ -1,73 +1,38 @@
 <template>
-  <div>
-    <h1>Login</h1>
-    <form @submit.prevent="submit">
-      <div>
-        <div>
-          <label for="username-input">Username</label>
-          <div>
-            <input
-                id="username-input"
-                v-model="username"
-                v-focus
-                autocomplete="username"
-                name="username"
-                placeholder="Username"
-                tabindex="1"
-            />
-          </div>
-          <p v-show="username.$dirty || invalidUsername">
-            <span v-if="invalidUsername && username.length > 0">Invalid username</span>
-          </p>
+  <div class="grid md:grid-cols-6 flex-grow bg-neutral-200 dark:bg-neutral-700">
+    <div class="md:col-span-1 md:flex md:justify-center " style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
+          <nav>
+            <div class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
+              <h1 class="p-4 text-2xl font-bold border-b border-gray-700">
+                SnapFood
+              </h1>
+              <div class="px-4 cursor-pointer md:hidden" id="burger">
+                <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </div>
+            </div>
+            <ul class="text-center navBar mt-6 hidden md:block " id="menu">
+              <li class=" font-bold py-1">
+                <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
+                  <span>Home</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </a>
+              </li>
+              <li class="py-1">
+                <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
+                  <span>About</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                </a>
+              </li>
+              <li class="py-1">
+                <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
+                  <span>Contact</span>
+                  <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div>
-          <label for="password-input">Password</label>
-          <div>
-            <input
-                id="password-input"
-                v-model="password"
-                :type="isPasswordHidden ? 'password' : 'text'"
-                autocomplete="current-password"
-                name="password"
-                placeholder="Password"
-                tabindex="2"
-            />
-            <span @click="isPasswordHidden = !isPasswordHidden">
-              <base-icon
-                  :icon-name="isPasswordHidden ? 'visibility' : 'visibility_off'"
-                  icon-color="#A3A5A8"
-                  size="large"
-              />
-            </span>
-          </div>
-          <p v-show="password.$dirty || invalidPassword">
-            <span v-if="password.required">Password required</span>
-            <span v-if="invalidPassword && password.length > 0">Wrong password</span>
-          </p>
-        </div>
-        <div class="loginBtn">
-          <submit-button
-              :is-disabled="disableLogin"
-              :is-submitting="isSubmitting"
-              tabindex="3"
-              type="submit"
-          >
-            Login
-          </submit-button>
-          <p>
-            Don't have an account?
-            <router-link to="/signup">Signup</router-link>
-          </p>
-          <p>
-            Back to
-            <router-link to="/">home</router-link>
-            page
-          </p>
-        </div>
-      </div>
-    </form>
-  </div>
-  <section class="gradient-form h-full bg-neutral-200 dark:bg-neutral-700">
+  <section class="gradient-form h-full  md:col-span-5">
   <div class="container h-full p-10">
     <div
       class="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
@@ -82,10 +47,10 @@
                 <div class="text-center">
                   <img
                     class="mx-auto w-48"
-                    src="https://tecdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                    src="../assets/img/logo.png"
                     alt="logo" />
                   <h4 class="mb-12 mt-1 pb-1 text-xl font-semibold">
-                    We are The Lotus Team
+                    Good food , Good mood!
                   </h4>
                 </div>
 
@@ -141,7 +106,7 @@
                     <p class="mb-0 mr-2">Don't have an account?</p>
                     <button
                       type="button"
-                      class="inline-block rounded border-2 border-danger px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                      class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500"
                       data-te-ripple-init
                       data-te-ripple-color="light">
                       Register
@@ -152,21 +117,8 @@
             </div>
 
             <!-- Right column container with background and description-->
-            <div
-              class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-              style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)">
-              <div class="px-4 py-6 text-white md:mx-6 md:p-12">
-                <h4 class="mb-6 text-xl font-semibold">
-                  We are more than just a company
-                </h4>
-                <p class="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </p>
-              </div>
+            <div class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none">
+              <img src="../assets/img/ghorme.jpg" class=" object-cover rounded-b-lg lg: w-full h-full lg:rounded-r-lg lg:rounded-bl-none">
             </div>
           </div>
         </div>
@@ -174,9 +126,10 @@
     </div>
   </div>
 </section>
+  </div>
 </template>
 
-<script>
+<!-- <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
 import { loginMethods } from "@/utils/configs";
@@ -214,67 +167,4 @@ export default {
     },
   },
 };
-</script>
-
-<style scoped>
-h1 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-div {
-  margin-bottom: 16px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-p {
-  margin: 4px 0;
-  color: #dc3545;
-}
-
-submit-button {
-  display: block;
-  width: 100%;
-  margin-top: 16px;
-}
-
-p:last-child {
-  text-align: center;
-  margin-top: 16px;
-}
-
-p:last-child router-link {
-  margin-left: 4px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-p:last-child router-link:hover {
-  text-decoration: underline;
-}
-
-.loginBtn button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-</style>
+</script> -->
