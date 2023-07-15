@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c2b92c6-beb4-48d1-a8b6-6722fb2fb896" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/cart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/cart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/favorites.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/favorites.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/orders.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/orders.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/profile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/restaurantList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/restaurantList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/restaurantPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/restaurantPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/shared/Headers.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/shared/Headers.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/plugins/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/plugins/routers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689406791291</updated>
-      <workItem from="1689406799104" duration="2750000" />
+      <workItem from="1689406799104" duration="3065000" />
     </task>
     <servers />
   </component>

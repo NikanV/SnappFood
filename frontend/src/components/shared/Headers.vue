@@ -1,7 +1,6 @@
 <template>
   <header class="header">
     <div class="header__logo">
-<!--      <img src="/path/to/logo.png" alt="Logo" />-->
       <h1 class="header__title">Snappfood</h1>
     </div>
     <nav class="header__nav">
