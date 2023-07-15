@@ -10,21 +10,19 @@
         <div class="favorite-item__info">
           <h3>{{ restaurant.name }}</h3>
           <p>{{ restaurant.address }}</p>
+          <!-- Add other restaurant information here -->
         </div>
       </div>
     </div>
     <div class="goback">
-      <submit-button @click="this.$router.go(-1)">Back</submit-button>
+      <button @click="this.$router.go(-1)">Back</button>
     </div>
   </div>
 </template>
 
 <script>
-import SubmitButton from "@/components/shared/submitButton.vue";
-
 export default {
   name:'FavouritesPage',
-  components: {SubmitButton},
   data() {
     return {
       favoriteRestaurants: [
@@ -85,7 +83,7 @@ export default {
   color: #888;
 }
 
-.goback submit-button {
+.goback button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;

@@ -4,12 +4,11 @@
     <form @submit.prevent="submit">
       <div>
         <div>
-          <label for="email-mobile-input">Input Email or Mobile</label>
+          <label for="email-mobile-input">Input Email</label>
           <div>
             <input
                 id="email-mobile-input"
                 v-model="username"
-                v-focus
                 name="username"
                 autofocus
                 list="useremail"
@@ -46,6 +45,7 @@
                 :type="isPasswordHidden ? 'password' : 'text'"
                 tabindex="2"
                 autocomplete="new-password"
+                @input="passwordsDontMatch = false"
             />
             <span @click="isPasswordHidden = !isPasswordHidden">
               <base-icon
@@ -54,24 +54,6 @@
                   size="large"
               />
             </span>
-          </div>
-          <div>
-            <p v-show="password.$dirty">
-              <span v-if="password.required">Password required</span>
-            </p>
-            <ul v-show="password.$dirty">
-              <li v-for="requirement of passwordRequirements" :key="requirement.caption">
-                <base-icon
-                    :icon-name="requirement.isMet ? 'tick' : 'close'"
-                    :icon-color="requirement.isMet ? '#15D1C6' : '#FC3C55'"
-                />
-                {{ requirement.caption }}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div>
             <label for="password2-input">Re-enter Password</label>
           </div>
           <div>
@@ -84,6 +66,7 @@
                 :type="isPasswordHidden ? 'password' : 'text'"
                 tabindex="3"
                 autocomplete="new-password"
+                @input="passwordsDontMatch = false"
             />
             <span @click="isPasswordHidden = !isPasswordHidden">
               <base-icon
@@ -93,23 +76,10 @@
               />
             </span>
           </div>
-          <div>
-            <p v-show="password2.$dirty">
-              <span v-if="password2.required">Password confirmation required</span>
-            </p>
-            <ul v-show="password2.$dirty">
-              <li v-for="requirement2 of password2Requirements" :key="requirement2.caption">
-                <base-icon
-                    :icon-name="requirement2.isMet2 ? 'tick' : 'close'"
-                    :icon-color="requirement2.isMet2 ? '#15D1C6' : '#FC3C55'"
-                />
-                {{ requirement2.caption2 }}
-              </li>
-            </ul>
-          </div>
+          <p v-show="passwordsDontMatch">passwords don't match</p>
         </div>
         <div class="signupBtn">
-          <submit-button :is-submitting="isSubmitting" type="submit" :is-disabled="disableSignup" tabindex="4">
+          <submit-button :is-submitting="isSubmitting" type="submit" tabindex="4">
             Signup
           </submit-button>
           <p>Already have an account?
@@ -129,7 +99,7 @@
 <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
 import SubmitButton from "@/components/shared/submitButton.vue";
-import {signupMethods} from "@/utils/configs";
+import Parse from 'parse/dist/parse.min';
 
 export default {
   name: "SignupPage",
@@ -143,6 +113,7 @@ export default {
       password: "",
       password2: "",
       disableSignup: true,
+      passwordsDontMatch: false,
       isPasswordHidden: true,
       emailSuggestion: [
         "@gmail.com",
@@ -162,17 +133,24 @@ export default {
   },
   methods: {
     async submit() {
-      // TODO: Handle signup logic
-      // let res = await axios.post("http://localhost:3000/users", {
-      //   username: this.username,
-      //   password: this.password
-      // })
-      // if (res.status === 201){
-      //   localStorage.setItem('user-info',JSON.stringify(res.data))
-      //   await this.$router.push({name: 'LoginPage'})
-      // }
+      if (this.password !== this.password2) {
+        if (this.password.length > 0 && this.password2.length > 0)
+          this.passwordsDontMatch = true
+      } else {
+        this.passwordsDontMatch = false
+        const user = new Parse.User();
+        user.set('username', this.emailUserPart);
+        user.set('email', this.username);
+        user.set('password', this.password);
 
-      await this.$router.push({name: "LoginPage"});
+        try {
+          let userResult = await user.signUp();
+          console.log('User signed up', userResult);
+          await this.$router.push({name: "LoginPage"});
+        } catch (error) {
+          console.error('Error while signing up user', error);
+        }
+      }
     },
     setUsername(domain) {
       this.username = `${this.emailUserPart}${domain}`;
@@ -194,44 +172,6 @@ export default {
     },
     showSuggests() {
       return this.username && this.isUsernameFocus && this.emailArray.length > 0;
-    },
-    passwordRequirements() {
-      return [
-        {
-          caption: "At least one letter",
-          isMet: /.*?[A-Za-z]/.test(this.password),
-        },
-        {
-          caption: "At least one number",
-          isMet: /.*[0-9].*/.test(this.password),
-        },
-        {
-          caption: "Minimum eight characters",
-          isMet: this.password.length >= 8,
-        },
-      ];
-    },
-    password2Requirements() {
-      return [
-        {
-          caption2: "At least one letter",
-          isMet2: /.*?[A-Za-z]/.test(this.password2),
-        },
-        {
-          caption2: "At least one number",
-          isMet2: /.*[0-9].*/.test(this.password2),
-        },
-        {
-          caption2: "Minimum eight characters",
-          isMet2: this.password2.length >= 8,
-        },
-      ];
-    },
-    isPasswordRequirementsMet() {
-      return this.passwordRequirements.every((item) => item.isMet);
-    },
-    isMobileActive() {
-      return signupMethods.mobile;
     },
   },
   mounted() {

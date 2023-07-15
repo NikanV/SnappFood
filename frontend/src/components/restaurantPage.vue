@@ -16,36 +16,33 @@
           <p>{{ food.description }}</p>
           <p>Price: {{ food.price }}</p>
         </div>
-        <SubmitButton :disabled="isNotLoggedIn" v-show="!isNotLoggedIn" @click="addToCart(food)">Add to Cart</SubmitButton>
+        <button @click="addToCart(food)">Add to Cart</button>
       </div>
     </div>
     <div class="goback">
-      <SubmitButton @click="this.$router.go(-1)">Back</SubmitButton>
+      <button @click="this.$router.go(-1)">Back</button>
     </div>
   </div>
 </template>
 
 <script>
 import HeaderBar from "@/components/shared/Headers.vue";
-import SubmitButton from "@/components/shared/submitButton.vue";
 
 export default {
   name:'RestaurantPage',
-  components: {SubmitButton, HeaderBar},
+  components: {HeaderBar},
   data() {
     return {
-      isNotLoggedIn:true,
       restaurant: {
-        is_favourite:false,
-        name: 'restaurant1',
+        name: 'r1',
         image: 'r1 img',
-        description: 'description',
+        description: 'r1 des',
         menu: [
           {
             id: 1,
-            name: 'menu item',
-            description: 'item description',
-            price:10.11,
+            name: 'm1',
+            description: 'm1 des',
+            price:5,
           },
         ],
       },
@@ -106,6 +103,18 @@ export default {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 
