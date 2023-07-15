@@ -6,12 +6,14 @@
     </div>
     <div v-else>
       <div v-for="restaurant in restaurants" :key="restaurant.id" class="restaurant-item">
-        <img :src="restaurant.image" :alt="restaurant.name" class="restaurant-item__image" />
-        <div class="restaurant-item__info">
-          <h3>{{ restaurant.name }}</h3>
-          <p>{{ restaurant.foodType }}</p>
+        <div @click="gotoRest(restaurant.id)">
+          <img :src="restaurant.image" :alt="restaurant.name" class="restaurant-item__image"/>
+          <div class="restaurant-item__info">
+            <h3>{{ restaurant.name }}</h3>
+            <p>{{ restaurant.foodType }}</p>
+            <p>{{ restaurant.contact }}</p>
+          </div>
         </div>
-        <router-link :to="'/restaurants/' + restaurant.id" class="restaurant-item__link">View Details</router-link>
       </div>
     </div>
     <div class="goback">
@@ -21,20 +23,46 @@
 </template>
 
 <script>
+import Parse from "parse";
+
 export default {
-  name:'RestaurantsListPage',
+  name: 'RestaurantsListPage',
   data() {
     return {
-      restaurants: [
-        {
-          id: undefined,
-          name: '',
-          foodType: '',
-          image: '',
-        },
-      ],
+      restaurants: [],
+      resId: undefined,
     };
   },
+  methods: {
+
+    gotoRest(selectedId) {
+      localStorage.setItem("resid", selectedId);
+      this.$router.push({name: "RestaurantPage"})
+    },
+    async getRestCred() {
+      try {
+        new Parse.Query('./Restaurant').find().then(restaurants => {
+          for (let item in restaurants) {
+            alert(item)
+            this.restaurants.push({
+              id: item.get("objectId"),
+              name: item.get('Name'),
+              foodType: item.get('FoodType'),
+              image: item.get("Image"),
+              contact: item.get('contact')
+            })
+            alert(this.restaurants)
+          }
+        });
+      } catch (error) {
+        console.log('Error retrieving user:', error);
+        throw error;
+      }
+    }
+  },
+  mounted() {
+    this.getRestCred()
+  }
 };
 </script>
 
