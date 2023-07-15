@@ -32,7 +32,7 @@ export default {
         {
           id: 1,
           name: 'Restaurant A',
-          foodType: 'type',
+          foodType: 'iranian',
           image: '/path/to/restaurantA.jpg',
         },
         // {
@@ -98,7 +98,7 @@ export default {
   background-color: #0056b3;
 }
 
-.goback button {
+.goback submit-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;

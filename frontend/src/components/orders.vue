@@ -78,7 +78,7 @@ export default {
   color: #888;
 }
 
-.goback button {
+.goback submit-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;

@@ -23,15 +23,19 @@
         </div>
       </div>
     </div>
+    <div class="goback">
+      <submit-button @click="this.$router.go(-1)">Back</submit-button>
+    </div>
   </div>
 
 </template>
 
 <script>
+import SubmitButton from "@/components/shared/submitButton.vue";
 
 export default {
   name: 'HomePage',
-  components: {},
+  components: {SubmitButton},
   data() {
     return {
       selectedRestId: 0,
