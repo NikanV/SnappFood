@@ -177,15 +177,17 @@ export default {
   },
   methods: {
     async submit() {
-      try {
-        // Pass the username and password to logIn function
-        await Parse.User.logIn(this.username, this.password).then(user => {
-          localStorage.setItem("userid", user.id)
-          if (user.id)
-            this.$router.push({name: "ProfilePage"});
-        })
-      } catch (error) {
-        this.invalidPassword = true
+      if (this.username.length > 0 && this.password.length > 0) {
+        try {
+          // Pass the username and password to logIn function
+          await Parse.User.logIn(this.username, this.password).then(user => {
+            localStorage.setItem("userid", user.id)
+            if (user.id)
+              this.$router.push({name: "ProfilePage"});
+          })
+        } catch (error) {
+          this.invalidPassword = true
+        }
       }
     },
     resetInvalidPass() {

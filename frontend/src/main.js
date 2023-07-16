@@ -4,6 +4,7 @@ import App from './App.vue';
 import router from "@/plugins/routers";
 import Parse from 'parse/dist/parse.min.js';
 import styles from './assets/styles/styles.css';
+import { Ripple, Input, initTE } from "tw-elements";
 
 const app = createApp(App)
 app.use(router)
