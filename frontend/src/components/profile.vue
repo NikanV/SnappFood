@@ -33,28 +33,44 @@
 
 <script>
 import HeaderBar from "@/components/shared/Headers.vue";
-import SubmitButton from "@/components/shared/submitButton.vue";
+import Parse from "parse";
 
 export default {
   name: 'ProfilePage',
-  components: {SubmitButton, HeaderBar},
+  components: {HeaderBar},
   data() {
     return {
-      user: {
-        name: 'name',
-        email: 'email',
-      },
+      username:'',
+      email:'',
     };
   },
   methods: {
     navigateTo(route) {
-      this.$router.push(`/profile/${route}`);
+      this.$router.push(`/${route}`);
     },
     logout() {
-      localStorage.setItem("userId", null)
+      alert(`logged out of ${this.username}`)
+      localStorage.removeItem('userid')
       this.$router.push({name: "LoginPage"})
     },
+    async getUserCred() {
+      try {
+        const userId = localStorage.getItem('userid');
+        const query = new Parse.Query(Parse.User);
+        const user = await query.get(userId);
+        this.username = user.get('username');
+        this.email = user.get('email');
+      } catch (error) {
+        console.log('Error retrieving user:', error);
+        throw error;
+      }
+    }
   },
+  mounted() {
+    this.getUserCred()
+  },
+  computed: {
+  }
 };
 </script>
 

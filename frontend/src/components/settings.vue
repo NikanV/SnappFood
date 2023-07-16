@@ -25,24 +25,38 @@
 </template>
 
 <script>
+import Parse from "parse";
 import SubmitButton from "@/components/shared/submitButton.vue";
 
 export default {
-  name:'SettingsPage',
-  components: {SubmitButton},
+  name: 'ResetPasswordPage',
+  components:{
+    SubmitButton
+  },
   data() {
     return {
-      user: {
-        name: '',
-        email: '',
-        password: '',
-      },
+      password: '',
+      password2: '',
+      passwordsDontMatch: false,
     };
   },
   methods: {
-    updateSettings() {
-      // todo: update settngs
-      console.log('Settings updated:', this.user);
+    resetPassword() {
+      if (this.password !== this.password2) {
+        this.passwordsDontMatch = true;
+      } else {
+        this.passwordsDontMatch = false;
+        const user = Parse.User.current();
+        user.set('password', this.password);
+        user.save()
+            .then(() => {
+              localStorage.removeItem('userid')
+              this.$router.push({name: "LoginPage"})
+            })
+            .catch(error => {
+              alert('Error resetting password:' + error.message);
+            });
+      }
     },
   },
 };
