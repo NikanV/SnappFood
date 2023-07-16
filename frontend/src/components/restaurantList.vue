@@ -40,7 +40,7 @@
               </li>
               <li class=" font-bold py-1">
                 <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
-                  <router-link to="/signup">Cart</router-link>
+                  <router-link to="/profile/cart">Cart</router-link>
                   <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
                 </a>
               </li>
@@ -59,7 +59,7 @@
            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
               <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
                 <div class='max-w-md mx-auto'>
-                  <img :src="rest.Image"
+                  <img :src="rest.image"
                        class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                   <div class='p-4 sm:p-6'>
                     <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>{{ rest.name }}</p>
@@ -74,75 +74,6 @@
               </div>
             </div>
           </div>
-
-       <!-- <div
-           class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-         <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
-           <div class='max-w-md mx-auto'>
-             <img src="../assets/img/hotdog.webp"
-                  class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
-             <div class='p-4 sm:p-6'>
-               <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Shila fastFood</p>
-               <p class='text-[#acacae] font-[15px] mt-6'>Ekbatan phase 1 - block 9</p>
-               <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'> -->
-<!--                  view Restaurant-->
-<!--                </a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div-->
-<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
-<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
-<!--            <div class='max-w-md mx-auto'>-->
-<!--              <img src="../assets/img/kebab.jpg"-->
-<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
-<!--              <div class='p-4 sm:p-6'>-->
-<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>kababi Eshtiagh</p>-->
-<!--                <p class='text-[#acacae] font-[15px] mt-6'>bazarche golha - pelak 75 </p>-->
-<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
-<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
-<!--                  view Restaurant-->
-<!--                </a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div-->
-<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
-<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
-<!--            <div class='max-w-md mx-auto'>-->
-<!--              <img src="../assets/img/samboose.jpg"-->
-<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
-<!--              <div class='p-4 sm:p-6'>-->
-<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Samboose Aboodan</p>-->
-<!--                <p class='text-[#acacae] font-[15px] mt-6'>yousef Abad - shahid jahan ara</p>-->
-<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
-<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
-<!--                  view Restaurant-->
-<!--                </a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div-->
-<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
-<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
-<!--            <div class='max-w-md mx-auto'>-->
-<!--              <img src="../assets/img/pasta.webp"-->
-<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
-<!--              <div class='p-4 sm:p-6'>-->
-<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>pasta pablo</p>-->
-<!--                <p class='text-[#acacae] font-[15px] mt-6'>seyed khandan - koocheye 9</p>-->
-<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
-<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
-<!--                  view Restaurant-->
-<!--                </a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div> -->
       </div>
     </div>
   </div>
@@ -162,8 +93,8 @@ export default {
   },
   methods: {
 
-    gotoRest(selectedId) {
-      localStorage.setItem("resid", selectedId);
+    async gotoRest(selectedId) {
+      await localStorage.setItem("resid", selectedId);
       this.$router.push({name: "RestaurantPage"})
     },
 
