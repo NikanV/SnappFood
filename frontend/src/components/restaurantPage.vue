@@ -77,7 +77,7 @@
                     <div class='p-4 sm:p-6'>
                       <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>{{ food.name }}</p>
                       <p class='text-[#b2b2b5] font-[15px] mt-6'>{{ food.description }}</p>
-                      <p class='text-[#b2b2b5] font-[15px] mt-6'>{{ food.price }}</p>
+                      <p class='text-[#b2b2b5] font-[15px] mt-6'>{{ food.price + " T" }}</p>
                       <a target='_blank' @click="addToCart(food.id, food.name, restaurant.name, food.price)"
                          class='block mt-1.5 text-teal-200 w-full cursor-pointer px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                         Order
@@ -121,7 +121,7 @@ export default {
       const query = new Parse.Query(Parse.User);
       const user = await query.get(userId);
       let userCart = user.get("cart")
-      userCart.add(string);
+      userCart.push(string);
       user.set('cart', userCart)
       user.save()
           .then(() => {

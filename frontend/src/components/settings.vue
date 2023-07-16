@@ -12,7 +12,7 @@
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" id="password" v-model="user.password" placeholder="password"/>
+        <input type="password" id="password" placeholder="password"/>
       </div>
       <div class="form-group">
         <submit-button type="submit">Save</submit-button>
@@ -61,43 +61,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.settings {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.settings h2 {
-  margin-bottom: 16px;
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-label {
-  display: block;
-  margin-bottom: 4px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-submit-button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-submit-button:hover {
-  background-color: #0056b3;
-}
-</style>
