@@ -81,11 +81,11 @@
         </nav>
       </div>
       <div class="md:col-span-5  ">
-        <div class="flex bg-white sticky1 justify-evenly">
-          <h1 class=" text-5xl font-bold p-5">shila</h1>
+        <div class="flex bg-gray-800 sticky1 justify-evenly">
+          <h1 class=" text-5xl font-bold p-5 text-red-400">shila</h1>
           <div class="flex">
-            <h1 class=" text-3xl font-bold p-5">32892909</h1>
-            <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            <h1 class=" text-3xl font-bold p-5 text-red-400">32892909</h1>
+            <svg class="w-5 ml-2 text-red-400" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               stroke="currentColor" viewBox="0 0 24 24">
               <path
                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
@@ -95,16 +95,16 @@
         </div>
         <div class="lg:grid grid-cols-3">
           <div
-            class='flex items-center justify-center my-10 from-[#F9F5F3] via-[#F9F5F3] to-[#F9F5F3] bg-gradient-to-br px-2'>
-            <div class='w-full max-w-md  mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+            class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
               <div class='max-w-md mx-auto'>
                 <img src="../assets/img/ghorme.jpg"
                   class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                 <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>mihman restaurant</p>
-                  <p class='text-[#7C7C80] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
+                  <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>
+                  <p class='text-[#b2b2b5] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
                   <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                    class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                    class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                     Order
                   </a>
                 </div>
@@ -112,16 +112,16 @@
             </div>
           </div>
           <div
-            class='flex items-center justify-center my-10 from-[#F9F5F3] via-[#F9F5F3] to-[#F9F5F3] bg-gradient-to-br px-2'>
-            <div class='w-full max-w-md  mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+            class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
               <div class='max-w-md mx-auto'>
-                <img src="../assets/img/hotdog.webp"
+                <img src="../assets/img/ghorme.jpg"
                   class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                 <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>special hotdog</p>
-                  <p class='text-[#7C7C80] font-[15px] mt-6'>125 000 T</p>
+                  <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>
+                  <p class='text-[#b2b2b5] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
                   <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                    class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                    class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                     Order
                   </a>
                 </div>
@@ -129,16 +129,16 @@
             </div>
           </div>
           <div
-            class='flex items-center justify-center my-10 from-[#F9F5F3] via-[#F9F5F3] to-[#F9F5F3] bg-gradient-to-br px-2'>
-            <div class='w-full max-w-md  mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+            class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
               <div class='max-w-md mx-auto'>
-                <img src="../assets/img/kebab.jpg"
+                <img src="../assets/img/ghorme.jpg"
                   class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                 <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>kababi eshtiagh</p>
-                  <p class='text-[#7C7C80] font-[15px] mt-6'>bazarche golha - pelake 23</p>
+                  <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>
+                  <p class='text-[#b2b2b5] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
                   <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                    class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                    class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                     Order
                   </a>
                 </div>
@@ -146,16 +146,16 @@
             </div>
           </div>
           <div
-            class='flex items-center justify-center my-10 from-[#F9F5F3] via-[#F9F5F3] to-[#F9F5F3] bg-gradient-to-br px-2'>
-            <div class='w-full max-w-md  mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+            class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
               <div class='max-w-md mx-auto'>
-                <img src="../assets/img/samboose.jpg"
+                <img src="../assets/img/ghorme.jpg"
                   class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                 <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>Samboose ABADAN</p>
-                  <p class='text-[#7C7C80] font-[15px] mt-6'>yoosefAbad - khiaban jahan ara</p>
+                  <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>
+                  <p class='text-[#b2b2b5] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
                   <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                    class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                    class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                     Order
                   </a>
                 </div>
@@ -163,16 +163,16 @@
             </div>
           </div>
           <div
-            class='flex items-center justify-center my-10 from-[#F9F5F3] via-[#F9F5F3] to-[#F9F5F3] bg-gradient-to-br px-2'>
-            <div class='w-full max-w-md  mx-auto bg-white rounded-3xl shadow-xl overflow-hidden'>
+            class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
               <div class='max-w-md mx-auto'>
-                <img src="../assets/img/pasta.webp"
+                <img src="../assets/img/ghorme.jpg"
                   class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                 <div class='p-4 sm:p-6'>
-                  <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>pasta godfather</p>
-                  <p class='text-[#7C7C80] font-[15px] mt-6'>seyed khandan - kooche ye 9</p>
+                  <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>
+                  <p class='text-[#b2b2b5] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
                   <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                    class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                    class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                     Order
                   </a>
                 </div>

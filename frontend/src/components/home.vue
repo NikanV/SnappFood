@@ -64,14 +64,19 @@
 </template>
 
 <script>
-export default {
-  name: 'HomePage',
-  data() {
-    return {// // Add more featured restaurants as neede
-    };
-  },
-  methods: {
-  }
-};
+const burger = document.querySelector('#burger');
+const menu = document.querySelector('#menu');
+
+
+// export default {
+  
+//   // name: 'HomePage',
+//   // data() {
+//   //   return {// // Add more featured restaurants as neede
+//   //   };
+//   // },
+//   // methods: {
+//   // }
+// };
 </script>
 
