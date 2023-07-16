@@ -155,8 +155,6 @@ import Parse from 'parse';
 
 import {Input, Ripple, initTE} from "tw-elements"
 
-initTE({Input, Ripple})
-
 export default {
   name: "LoginPage",
   components: {
@@ -194,7 +192,10 @@ export default {
     },
     gotoSignupPage() {
       this.$router.push({name: "SignupPage"})
-    }
+    },
+    mounted() {
+      initTE({Input, Ripple})
+    },
   },
   computed: {},
 };
