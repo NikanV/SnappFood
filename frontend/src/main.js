@@ -3,7 +3,7 @@ import App from './App.vue';
 
 import router from "@/plugins/routers";
 import Parse from 'parse/dist/parse.min.js';
-import styles from './assets/styles/styles.css'
+import styles from './assets/styles/styles.css';
 
 const app = createApp(App)
 app.use(router)
