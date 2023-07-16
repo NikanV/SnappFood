@@ -1,5 +1,6 @@
 <template>
-  <div class="grid md:grid-cols-6 flex-grow bg-neutral-200 dark:bg-neutral-700 font-body">
+  <div class="md:flex flex-col min-h-screen bg-neutral-200 dark:bg-neutral-700 font-body">
+  <div class="grid md:grid-cols-6 flex-grow ">
     <div class="md:col-span-1 md:flex md:justify-center " style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
           <nav>
             <div class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
@@ -151,6 +152,7 @@
   </div>
 </section>
   </div>
+</div>
 </template>
 
 <!-- <template>

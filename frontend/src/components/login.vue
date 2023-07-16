@@ -1,4 +1,5 @@
 <template>
+  <div class="md:flex flex-col min-h-screen bg-neutral-200 dark:bg-neutral-700 font-body">
   <div class="grid md:grid-cols-6 flex-grow bg-neutral-200 dark:bg-neutral-700 font-body">
     <div class="md:col-span-1 md:flex md:justify-center " style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
           <nav>
@@ -137,54 +138,14 @@
   </div>
 </section>
   </div>
+</div>
 </template>
 
-<!-- <script>
-import BaseIcon from "@/components/shared/baseIcon.vue";
-import SubmitButton from "@/components/shared/submitButton.vue";
-import { loginMethods } from "@/utils/configs";
-import Parse from 'parse/dist/parse.min.js';
+<!-- 
+<script>
+  import {Input, Ripple, initTE} from "tw-elements"
 
-import {Input, Ripple, initTE} from "tw-elements"
+  initTE({Input, Ripple})
 
-initTE({Input, Ripple})
-
-export default {
-  name: "LoginPage",
-  components: {
-    BaseIcon,
-    SubmitButton,
-  },
-  layout: "auth",
-  data() {
-    return {
-      username: "",
-      password: "",
-      invalidPassword: false,
-      disableLogin: true,
-      isPasswordHidden: true,
-      isSubmitting: false,
-    };
-  },
-  methods: {
-    async submit() {
-      try {
-        // Pass the username and password to logIn function
-        let user = await Parse.User.logIn(this.username, this.password);
-        // Do stuff after successful login
-        console.log('Logged in user', user);
-        localStorage.setItem("userId", user.id)
-        await this.$router.push({ name: "ProfilePage" });
-      } catch (error) {
-        console.error('Error while logging in user', error);
-        this.invalidPassword = true
-      }
-    },
-  },
-  computed: {
-    isMobileActive() {
-      return loginMethods.mobile;
-    },
-  },
-};
 </script> -->
+
