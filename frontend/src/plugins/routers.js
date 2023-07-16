@@ -12,17 +12,17 @@ import RestaurantPage from "@/components/restaurantPage.vue";
 import About from "@/components/about.vue";
 
 const routes = [
-    { path: "/", component: Home, name: 'HomePage' },
-    { path: "/signup", component: Signup, name: 'SignupPage' },
-    { path: "/login", component: Login, name: 'LoginPage' },
-    { path: "/profile", component: Profile, name: 'ProfilePage' },
-    { path: "/cart", component: Cart, name: 'CartPage' },
-    { path: "/restaurants", component: RestaurantList, name: 'RestaurantListPage' },
-    { path: '/profile/settings', component: Settings, name: 'Settings' },
-    { path: '/profile/favorites', component: Favorites, name: 'Favourites' },
-    { path: '/profile/orders', component: Orders, name: 'Orders' },
-    { path: '/restaurants/selected-restaurant', component: RestaurantPage, name: 'RestaurantPage' },
-    { path: '/about', component: About, name: 'aboutPage' },
+    {path: "/", component: Home, name: 'HomePage'},
+    {path: "/about", component: About, name: 'About'},
+    {path: "/signup", component: Signup, name: 'SignupPage'},
+    {path: "/login", component: Login, name: 'LoginPage',},
+    {path: "/profile", component: Profile, name: 'ProfilePage'},
+    {path: "/profile/cart", component: Cart, name: 'CartPage'},
+    {path: "/restaurants", component: RestaurantList, name: 'RestaurantListPage'},
+    {path: '/profile/settings', component: Settings, name: 'Settings'},
+    {path: '/profile/favorites', component: Favorites, name: 'Favourites'},
+    {path: '/profile/orders', component: Orders, name: 'Orders'},
+    {path: '/restaurants/selected-restaurant', component: RestaurantPage, name: 'RestaurantPage'},
 ]
 
 
