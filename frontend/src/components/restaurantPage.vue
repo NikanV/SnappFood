@@ -48,11 +48,11 @@
         </nav>
       </div>
 
-      <div class="md:col-span-5  ">
+      <div class="md:col-span-5">
         <div class="flex bg-gray-800 sticky1 justify-evenly">
           <h1 class=" text-5xl font-bold p-5 text-red-400">{{ restaurant.name }}</h1>
           <div class="flex">
-            <h1 class=" text-3xl font-bold p-5 text-red-400">{{ restaurant.description }}</h1>
+            <h1 class=" text-3xl font-bold p-5 text-red-400">{{ restaurant.contact }}</h1>
             <svg class="w-5 ml-2 text-red-400" fill="none" stroke-linecap="round" stroke-linejoin="round"
                  stroke-width="2"
                  stroke="currentColor" viewBox="0 0 24 24">
@@ -63,14 +63,16 @@
             </svg>
           </div>
         </div>
-        <div class="lg:grid grid-cols-3">
-          <div
-              class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
+
+
+        <div>
               <div v-if="restaurant.menuForRest.length ===0">No food items available at the moment.</div>
-              <div v-else>
-                <div class='max-w-md mx-auto'>
+              <div v-else class="lg:grid grid-cols-3">
                   <div v-for="food in restaurant.menuForRest" :key="food.id">
+                    <div
+                     class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+                     <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
+                       <div class='max-w-md mx-auto'>
                     <img :src="restaurant.image"
                          class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                     <div class='p-4 sm:p-6'>
@@ -78,23 +80,25 @@
                       <p class='text-[#b2b2b5] font-[15px] mt-6'>{{ food.description }}</p>
                       <p class='text-[#b2b2b5] font-[15px] mt-6'>{{ food.price }}</p>
                       <a target='_blank' @click="addToCart(food.id, food.name, restaurant.name, food.price)"
-                         class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                         class='block mt-1.5 text-teal-200 w-full cursor-pointer px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
                         Order
                       </a>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
-          </div>
-          <!--          <div-->
-          <!--            class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
-          <!--            <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
-          <!--              <div class='max-w-md mx-auto'>-->
-          <!--                <img src="../assets/img/ghorme.jpg"-->
-          <!--                  class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
-          <!--                <div class='p-4 sm:p-6'>-->
-          <!--                  <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>-->
+
+
+
+
+                   <!-- <div
+                     class='flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+                     <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
+                       <div class='max-w-md mx-auto'>
+                         <img src="../assets/img/ghorme.jpg"
+                           class="h-[120px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
+                         <div class='p-4 sm:p-6'>
+                           <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p> -->
           <!--                  <p class='text-[#b2b2b5] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>-->
           <!--                  <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
           <!--                    class='block mt-1.5 text-teal-200 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>-->
@@ -157,6 +161,8 @@
           <!--          </div>-->
         </div>
       </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -209,6 +215,7 @@ export default {
         let menu = rest.get('Menu');
         this.restaurant.name = rest.get('Name');
         this.restaurant.image = rest.get('Image');
+        this.restaurant.contact = rest.get('Contacts');
         for (let item in menu) {
           let split = menu[item].split("$")
           this.restaurant.menuForRest.push({

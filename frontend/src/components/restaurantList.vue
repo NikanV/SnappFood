@@ -49,42 +49,43 @@
       </div>
 
 
-      <div class="md:col-span-5 lg:grid grid-cols-2 ">
-        <div
-            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+      <div class="md:col-span-5 ">
           <div v-if="restaurants.length === 0">
             No restaurants available at the moment.
           </div>
-          <div v-else>
+          <div class="lg:grid grid-cols-2" v-else>
             <div v-for="rest in restaurants" :key="rest.id">
+              <div
+           class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
               <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
                 <div class='max-w-md mx-auto'>
-                  <img :src="rest.image"
+                  <img :src="rest.Image"
                        class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
                   <div class='p-4 sm:p-6'>
                     <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>{{ rest.name }}</p>
-                    <p class='text-[#acacae] font-[15px] mt-6'>{{rest.contact}} </p>
+                    <p class='text-[#acacae] font-[15px] mt-6'>{{rest.address}} </p>
                     <a target='_blank' @click="gotoRest(rest.id)"
-                       class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
+                       class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center cursor-pointer text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
                       view Restaurant
                     </a>
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
-        </div>
-<!--        <div-->
-<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
-<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
-<!--            <div class='max-w-md mx-auto'>-->
-<!--              <img src="../assets/img/hotdog.webp"-->
-<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
-<!--              <div class='p-4 sm:p-6'>-->
-<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Shila fastFood</p>-->
-<!--                <p class='text-[#acacae] font-[15px] mt-6'>Ekbatan phase 1 - block 9</p>-->
-<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
-<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
+
+       <!-- <div
+           class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+         <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
+           <div class='max-w-md mx-auto'>
+             <img src="../assets/img/hotdog.webp"
+                  class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
+             <div class='p-4 sm:p-6'>
+               <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Shila fastFood</p>
+               <p class='text-[#acacae] font-[15px] mt-6'>Ekbatan phase 1 - block 9</p>
+               <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
+                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'> -->
 <!--                  view Restaurant-->
 <!--                </a>-->
 <!--              </div>-->
@@ -141,7 +142,7 @@
 <!--              </div>-->
 <!--            </div>-->
 <!--          </div>-->
-<!--        </div>-->
+<!--        </div> -->
       </div>
     </div>
   </div>
@@ -185,7 +186,8 @@ export default {
               name: restaurant.get('Name'),
               foodType: restaurant.get('FoodType'),
               image: restaurant.get("Image"),
-              contact: restaurant.get('contact')
+              contact: restaurant.get('Contact'),
+              address: restaurant.get('Address'),
             })
           });
         })
