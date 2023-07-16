@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/components/home.vue"
 import Signup from "@/components/signup"
 import Login from "@/components/login"
@@ -9,18 +9,20 @@ import Settings from "@/components/settings.vue";
 import Favorites from "@/components/favorites.vue";
 import Orders from "@/components/orders.vue";
 import RestaurantPage from "@/components/restaurantPage.vue";
+import About from "@/components/about.vue";
 
 const routes = [
-    {path: "/", component: Home, name: 'HomePage'},
-    {path: "/signup", component: localStorage.getItem('userid') ? Profile : Signup, name: 'SignupPage'},
-    {path: "/login", component: localStorage.getItem('userid') ? Profile : Login, name: 'LoginPage',},
-    {path: "/profile", component: localStorage.getItem('userid') ? Profile : Login, name: 'ProfilePage'},
-    {path: "/profile/cart", component: localStorage.getItem('userid') ? Cart : Login, name: 'CartPage'},
-    {path: "/restaurants", component: RestaurantList, name: 'RestaurantListPage'},
-    {path: '/profile/settings', component: localStorage.getItem('userid') ? Settings : Login, name: 'Settings'},
-    {path: '/profile/favorites', component: localStorage.getItem('userid') ? Favorites : Login, name: 'Favourites'},
-    {path: '/profile/orders', component: localStorage.getItem('userid') ? Orders : Login, name: 'Orders'},
-    {path: '/restaurants/selected-restaurant', component: localStorage.getItem('resid') ? RestaurantPage : RestaurantList, name: 'RestaurantPage'},
+    { path: "/", component: Home, name: 'HomePage' },
+    { path: "/signup", component: Signup, name: 'SignupPage' },
+    { path: "/login", component: Login, name: 'LoginPage' },
+    { path: "/profile", component: Profile, name: 'ProfilePage' },
+    { path: "/cart", component: Cart, name: 'CartPage' },
+    { path: "/restaurants", component: RestaurantList, name: 'RestaurantListPage' },
+    { path: '/profile/settings', component: Settings, name: 'Settings' },
+    { path: '/profile/favorites', component: Favorites, name: 'Favourites' },
+    { path: '/profile/orders', component: Orders, name: 'Orders' },
+    { path: '/restaurants/selected-restaurant', component: RestaurantPage, name: 'RestaurantPage' },
+    { path: '/about', component: About, name: 'aboutPage' },
 ]
 
 

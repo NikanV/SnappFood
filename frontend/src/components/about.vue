@@ -1,12 +1,13 @@
 <template>
-  <body class= "font-body">
-  <div class="md:flex flex-col min-h-screen bgHome bg-no-repeat bg-cover bg-clip-border">
-    <div class="grid md:grid-cols-6 flex-grow">
-      <div class="md:col-span-1 md:flex md:justify-center " style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
-          <nav>
-            <div class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
-              <h1 class="p-4 text-2xl font-bold border-b border-gray-700">
-                SnappFood
+    <div class="md:flex flex-col min-h-screen bg-neutral-200 dark:bg-neutral-700 font-body">
+        <div class="grid md:grid-cols-6 flex-grow font-body">
+            <div class="md:col-span-1 md:flex md:justify-center "
+                style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
+                <nav>
+                    <div
+                        class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
+                        <h1 class="p-4 text-2xl font-bold border-b border-gray-700">
+                            SnappFood
               </h1>
               <div class="px-4 cursor-pointer md:hidden" id="burger">
                 <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -44,35 +45,35 @@
                 </a>
               </li>
             </ul>
-          </nav>
+            </nav>
         </div>
-        <div class="md:col-span-5">
-        <main class="px-16 py-6 ">
-          <div class="flex justify-center md:justify-end mb-3">
-              <router-link to="/login" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ">Log in</router-link>
-              <router-link to="/signup" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2">Sign up</router-link>
-          </div>
-          <div id="home" style="background: rgba(222, 218, 218, 0.681);" class=" h-36 justify-center  rounded-2xl">
-              <h1 class="mt-40 pb-5 pt-3 font-bold text-3xl mb-3 text-black">Order food from Snappfood</h1>
-              <router-link to="/restaurants" class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500 ml-2 ">Explore Restaurants</router-link>
-          </div>
-        </main>
+        <div class = "md:col-span-5" >
+            <div class="flex items-center space-x-2 text-base justify-center">
+                <h4 class="font-semibold text-slate-200">Contributors</h4>
+                <span class="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700">3</span>
+            </div>
+            <div class="mt-10 mb-10 flex -space-x-2 overflow-hidden mx-auto justify-center">
+                <img class="inline-block h-80 w-80 rounded-full ring-2 ring-orrange"
+                    src="../assets/img/nikan.jpg"
+                    alt="" />
+                <img class="inline-block h-80 w-80 rounded-full ring-2 ring-red"
+                    src="../assets/img/nima.jpg"
+                    alt="" />
+                <img class="inline-block h-80 w-80 rounded-full ring-2 ring-red"
+                    src="../assets/img/kazem.jpg"
+                    alt="" />
+            </div>
+            <div class="flex justify-evenly ml-5">
+            <h1 class="text-slate-200 text-lg font-bold">Nikan Vasei </h1>
+            <h1 class="text-slate-200 text-lg  font-bold">Nima Miri</h1>
+            <h1 class="text-slate-200 text-lg font-bold">alireza Kazemeini</h1>
         </div>
-      </div>
+        </div>
     </div>
-  </body>
-</template>
+</div></template>
 
 <script>
 export default {
-  
-  name: 'HomePage',
-  data() {
-    return {
-    };
-  },
-  methods: {
-  }
-};
+    name: "aboutPage"
+}
 </script>
-

@@ -100,7 +100,6 @@
                       >Password
                     </label>
                   </div>
-
                   <!--Submit button-->
                   <div class="mb-6 pb-1 pt-1 text-center">
                     <button
