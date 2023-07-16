@@ -117,12 +117,13 @@
                   </div>
                   
                   <div class="mb-6 pb-1 pt-1 text-center" v-show="password.$dirty || invalidPassword">
-                    <span class="text-red-600" v-if="invalidPassword && password.length > 0">Invalid username or password</span>
+                    <span class="text-red-600" v-if="invalidPassword && password.length > 0">Invalid username or password!</span>
                   </div>
                   <!--Register button-->
                   <div class="flex items-center justify-between pb-6">
                     <p class="mb-0 mr-2">Don't have an account?</p>
                     <button
+                      @click="gotoSignupPage"
                       type="button"
                       class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500"
                       data-te-ripple-init
@@ -189,6 +190,9 @@ export default {
     },
     resetInvalidPass() {
       this.invalidPassword = false
+    },
+    gotoSignupPage() {
+      this.$router.push({name: "SignupPage"})
     }
   },
   computed: {},

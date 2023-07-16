@@ -5,7 +5,7 @@
           <nav>
             <div class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
               <h1 class="p-4 text-2xl font-bold border-b border-gray-700">
-                SnapFood
+                SnappFood
               </h1>
               <div class="px-4 cursor-pointer md:hidden" id="burger">
                 <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -14,7 +14,7 @@
             <ul class="text-center navBar mt-6 hidden md:block " id="menu">
               <li class=" font-bold py-1">
                 <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
-                  <span>Home</span>
+                  <router-link to="/">Home</router-link>
                   <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                 </a>
               </li>
@@ -32,13 +32,13 @@
               </li>
               <li class=" font-bold py-1">
                 <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
-                  <span>Profile</span>
+                  <router-link to="/signup">Profile</router-link>
                   <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
                 </a>
               </li>
               <li class=" font-bold py-1">
                 <a href="#" class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
-                  <span>Cart</span>
+                  <router-link to="/signup">Cart</router-link>
                   <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
                 </a>
               </li>
@@ -68,13 +68,15 @@
                 </div>
 
                 <form>
-                  <p class="mb-4">create your new account</p>
+                  <p class="mb-4">Create a new account</p>
                   <!--Username input-->
                   <div class="relative mb-4" data-te-input-wrapper-init>
                     <input
                       type="text"
                       class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      id="exampleFormControlInput1"
+                      id="username-id"
+                      v-model="username"
+                      @input="resetInvalidPass"
                       placeholder="Username" />
                     <label
                       for="exampleFormControlInput1"
@@ -88,7 +90,9 @@
                     <input
                       type="password"
                       class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      id="exampleFormControlInput11"
+                      id="password-id"
+                      v-model="password"
+                      @input="resetInvalidPass"
                       placeholder="Password" />
                     <label
                       for="exampleFormControlInput11"
@@ -102,7 +106,9 @@
                     <input
                       type="password"
                       class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      id="reEnterPass"
+                      id="password2-id"
+                      v-model="password2"
+                      @input="resetInvalidPass"
                       placeholder="re enter Password" />
                     <label
                       for="exampleFormControlInput11"
@@ -112,8 +118,9 @@
                   </div>
 
                   <!--Submit button-->
-                  <div class="mb-12 pb-1 pt-1 text-center">
+                  <div class="mb-6 pb-1 pt-1 text-center">
                     <button
+                      @click="submit"
                       class="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
                       type="button"
                       data-te-ripple-init
@@ -125,11 +132,14 @@
                     </button>
 
                   </div>
-
+                  <div class="mb-6 pb-1 pt-1 text-center" v-show="password.$dirty || invalidPassword">
+                    <span class="text-red-600" v-if="invalidPassword && password.length > 0">Passwords don't match!</span>
+                  </div>
                   <!--Register button-->
                   <div class="flex items-center justify-between pb-6">
                     <p class="mb-0 mr-2">Already have an account?</p>
                     <button
+                      @click="gotoLoginPage"
                       type="button"
                       class="btn hover:bg-red-600 hover:text-white transition ease-out duration-500"
                       data-te-ripple-init
@@ -284,22 +294,23 @@
 
 <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
-import SubmitButton from "@/components/shared/submitButton.vue";
-import {signupMethods} from "@/utils/configs";
 import Parse from 'parse/dist/parse.min.js';
+
+import {Input, Ripple, initTE} from "tw-elements"
+import { useRoute } from "vue-router";
+
+initTE({Input, Ripple})
 
 export default {
   name: "SignupPage",
   components: {
     BaseIcon,
-    SubmitButton,
   },
   data() {
     return {
       username: "",
       password: "",
       password2: "",
-      disableSignup: true,
       isPasswordHidden: true,
       emailSuggestion: [
         "@gmail.com",
@@ -315,17 +326,19 @@ export default {
       ],
       isUsernameFocus: false,
       isSubmitting: false,
+      invalidPassword: false,
     };
   },
   methods: {
     async submit() {
       if (this.password != this.password2) {
-        //TODO set error of invalid password
+        this.invalidPassword = true
       } else {
         const user = new Parse.User();
         user.set('username', this.emailUserPart);
         user.set('email', this.username);
         user.set('password', this.password);
+        user.set('credit', 1000);
   
         try {
             let userResult = await user.signUp();
@@ -336,6 +349,9 @@ export default {
         }
       }
     },
+    resetInvalidPass() {
+      this.invalidPassword = false
+    },
     setUsername(domain) {
       this.username = `${this.emailUserPart}${domain}`;
       this.isUsernameFocus = false;
@@ -343,6 +359,9 @@ export default {
         this.$refs.passwordRef?.focus();
       });
     },
+    gotoLoginPage() {
+      this.$router.push({name: "LoginPage"})
+    }
   },
   computed: {
     domain() {
@@ -390,105 +409,8 @@ export default {
       ];
     },
     isPasswordRequirementsMet() {
-      return this.passwordRequirements.every((item) => item.isMet);
+      return this.passwordRequirements.every((item) => item.isMet) && this.password2Requirements.every((item) => item.isMet2);
     },
-    isMobileActive() {
-      return signupMethods.mobile;
-    },
-  },
-  mounted() {
-    let user = localStorage.getItem("user-info");
-    if (!user) this.$router.push("signup");
   },
 };
 </script>
-
-<style scoped>
-h1 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-div {
-  margin-bottom: 16px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-p {
-  margin: 4px 0;
-  color: #dc3545;
-}
-
-submit-button {
-  display: block;
-  width: 100%;
-  margin-top: 16px;
-}
-
-p:last-child {
-  text-align: center;
-  margin-top: 16px;
-}
-
-p:last-child router-link {
-  margin-left: 4px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-p:last-child router-link:hover {
-  text-decoration: underline;
-}
-
-.suggestion {
-  top: 65px;
-  left: 0;
-  right: 0;
-  box-shadow: 0 1px 2px rgb(204, 204, 204);
-  border-radius: 0 1px 2px 2px;
-  overflow: hidden;
-  overflow-y: auto;
-  background: white;
-  z-index: 101;
-  list-style: none;
-}
-
-.suggestion li {
-  padding: 10px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.suggestion li:hover {
-  background-color: var(--hover-color);
-}
-
-.text-subtitle:hover {
-  color: var(--text-primary) !important;
-}
-
-.signupBtn button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-</style>
