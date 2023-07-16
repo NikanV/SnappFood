@@ -143,30 +143,48 @@
 </div>
 </template>
 
-<!-- <script>
+<script>
+import HeaderBar from "@/components/shared/Headers.vue";
+import Parse from "parse";
 
- export default {
-   name: 'ProfilePage',
-   components: {SubmitButton, HeaderBar},
-   data() {
-     return {
-       user: {
-         name: 'name',
-         email: 'email',
-       },
-     };
-   },
-   methods: {
-     navigateTo(route) {
-       this.$router.push(`/profile/${route}`);
-     },
-     logout() {
-       localStorage.setItem("userId", null)
-       this.$router.push({name: "LoginPage"})
-     },
-   },
- };
- </script>
+export default {
+  name: 'ProfilePage',
+  components: {HeaderBar},
+  data() {
+    return {
+      username:'',
+      email:'',
+    };
+  },
+  methods: {
+    navigateTo(route) {
+      this.$router.push(`/${route}`);
+    },
+    logout() {
+      alert(`logged out of ${this.username}`)
+      localStorage.removeItem('userid')
+      this.$router.push({name: "LoginPage"})
+    },
+    async getUserCred() {
+      try {
+        const userId = localStorage.getItem('userid');
+        const query = new Parse.Query(Parse.User);
+        const user = await query.get(userId);
+        this.username = user.get('username');
+        this.email = user.get('email');
+      } catch (error) {
+        console.log('Error retrieving user:', error);
+        throw error;
+      }
+    }
+  },
+  mounted() {
+    this.getUserCred()
+  },
+  computed: {
+  }
+};
+</script>
 
 <style scoped>
 .profile-menu {
@@ -232,4 +250,4 @@
   border-radius: 4px;
   cursor: pointer;
 }
-</style> -->
+</style>

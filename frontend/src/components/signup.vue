@@ -294,7 +294,7 @@
 
 <script>
 import BaseIcon from "@/components/shared/baseIcon.vue";
-import Parse from 'parse/dist/parse.min.js';
+import Parse from 'parse';
 
 import {Input, Ripple, initTE} from "tw-elements"
 import { useRoute } from "vue-router";

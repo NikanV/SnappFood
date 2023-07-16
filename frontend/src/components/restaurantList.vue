@@ -2,10 +2,10 @@
   <div class="md:flex flex-col min-h-screen">
     <div class="grid md:grid-cols-6 flex-grow bg-neutral-700 font-body">
       <div class="md:col-span-1 md:flex md:justify-center "
-        style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
+           style="background: linear-gradient(to left, #ee782481, #d83639a3, #dd3675, #b44593);">
         <nav>
           <div
-            class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
+              class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
             <h1 class="p-4 text-2xl font-bold border-b border-gray-700">
               SnappFood
               </h1>
@@ -47,139 +47,153 @@
             </ul>
         </nav>
       </div>
+
+
       <div class="md:col-span-5 lg:grid grid-cols-2 ">
         <div
-          class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <img src="../assets/img/ghorme.jpg" class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>mihman restaurant</p>
-                <p class='text-[#acacae] font-[15px] mt-6'>shahrake gharbe - koocheye 36 </p>
-                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
-                  view Restaurant
-                </a>
+            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
+          <div v-if="restaurants.length === 0">
+            No restaurants available at the moment.
+          </div>
+          <div v-else>
+            <div v-for="rest in restaurants" :key="rest.id">
+              <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
+                <div class='max-w-md mx-auto'>
+                  <img :src="rest.image"
+                       class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
+                  <div class='p-4 sm:p-6'>
+                    <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>{{ rest.name }}</p>
+                    <p class='text-[#acacae] font-[15px] mt-6'>{{rest.contact}} </p>
+                    <a target='_blank' @click="gotoRest(rest.id)"
+                       class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
+                      view Restaurant
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <img src="../assets/img/hotdog.webp" class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Shila fastFood</p>
-                <p class='text-[#acacae] font-[15px] mt-6'>Ekbatan phase 1 - block 9</p>
-                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
-                  view Restaurant
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <img src="../assets/img/kebab.jpg" class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>kababi Eshtiagh</p>
-                <p class='text-[#acacae] font-[15px] mt-6'>bazarche golha - pelak 75 </p>
-                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
-                  view Restaurant
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <img src="../assets/img/samboose.jpg" class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Samboose Aboodan</p>
-                <p class='text-[#acacae] font-[15px] mt-6'>yousef Abad - shahid jahan ara</p>
-                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
-                  view Restaurant
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>
-          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>
-            <div class='max-w-md mx-auto'>
-              <img src="../assets/img/pasta.webp" class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">
-              <div class='p-4 sm:p-6'>
-                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>pasta pablo</p>
-                <p class='text-[#acacae] font-[15px] mt-6'>seyed khandan - koocheye 9</p>
-                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                  class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>
-                  view Restaurant
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+<!--        <div-->
+<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
+<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
+<!--            <div class='max-w-md mx-auto'>-->
+<!--              <img src="../assets/img/hotdog.webp"-->
+<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
+<!--              <div class='p-4 sm:p-6'>-->
+<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Shila fastFood</p>-->
+<!--                <p class='text-[#acacae] font-[15px] mt-6'>Ekbatan phase 1 - block 9</p>-->
+<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
+<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
+<!--                  view Restaurant-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div-->
+<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
+<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
+<!--            <div class='max-w-md mx-auto'>-->
+<!--              <img src="../assets/img/kebab.jpg"-->
+<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
+<!--              <div class='p-4 sm:p-6'>-->
+<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>kababi Eshtiagh</p>-->
+<!--                <p class='text-[#acacae] font-[15px] mt-6'>bazarche golha - pelak 75 </p>-->
+<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
+<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
+<!--                  view Restaurant-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div-->
+<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
+<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
+<!--            <div class='max-w-md mx-auto'>-->
+<!--              <img src="../assets/img/samboose.jpg"-->
+<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
+<!--              <div class='p-4 sm:p-6'>-->
+<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>Samboose Aboodan</p>-->
+<!--                <p class='text-[#acacae] font-[15px] mt-6'>yousef Abad - shahid jahan ara</p>-->
+<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
+<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
+<!--                  view Restaurant-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div-->
+<!--            class='bg-neutral-700 flex items-center justify-center my-10 bg-gradient-to-br px-2'>-->
+<!--          <div class='w-full max-w-md  mx-auto bg-gray-800 rounded-3xl shadow-xl overflow-hidden'>-->
+<!--            <div class='max-w-md mx-auto'>-->
+<!--              <img src="../assets/img/pasta.webp"-->
+<!--                   class="h-[236px] w-full object-cover rounded-b-lg bg-center lg:rounded-r-lg lg:rounded-bl-none">-->
+<!--              <div class='p-4 sm:p-6'>-->
+<!--                <p class='font-bold text-gray-100 text-[22px] leading-7 mb-1'>pasta pablo</p>-->
+<!--                <p class='text-[#acacae] font-[15px] mt-6'>seyed khandan - koocheye 9</p>-->
+<!--                <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"-->
+<!--                   class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center text-teal-200 capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#dfa677] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-800 focus:ring-opacity-80'>-->
+<!--                  view Restaurant-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </div>
   </div>
 </template>
 
-
-<!-- <template>
-  <div class="restaurants">
-    <h2>Restaurants</h2>
-    <div v-if="restaurants.length === 0">
-      No restaurants available at the moment.
-    </div>
-    <div v-else>
-      <div v-for="restaurant in restaurants" :key="restaurant.id" class="restaurant-item">
-        <img :src="restaurant.image" :alt="restaurant.name" class="restaurant-item__image"/>
-        <div class="restaurant-item__info">
-          <h3>{{ restaurant.name }}</h3>
-          <p>{{ restaurant.foodType }}</p>
-        </div>
-        <router-link :to="'/restaurants/selected-restaurant'" class="restaurant-item__link">View Details</router-link>
-      </div>
-    </div>
-    <div class="goback">
-      <submit-button @click="this.$router.go(-1)">Back</submit-button>
-    </div>
-  </div>
-</template>
 
 <script>
-import SubmitButton from "@/components/shared/submitButton.vue";
+import Parse from "parse";
 
 export default {
   name: 'RestaurantsListPage',
-  components: {SubmitButton},
   data() {
     return {
-      restaurants: [
-        {
-          id: 1,
-          name: 'Restaurant A',
-          foodType: 'iranian',
-          image: '/path/to/restaurantA.jpg',
-        },
-        // {
-        //   id: 2,
-        //   name: 'Restaurant B',
-        //   foodType: 'Mexican',
-        //   image: '/path/to/restaurantB.jpg',
-        // },
-        // Add more restaurants as needed
-      ],
+      restaurants: [],
+      resId: undefined,
     };
   },
-}; -->
+  methods: {
+
+    gotoRest(selectedId) {
+      localStorage.setItem("resid", selectedId);
+      this.$router.push({name: "RestaurantPage"})
+    },
+
+    async getAllRestaurants() {
+      try {
+        const query = new Parse.Query('Restaurant');
+        return await query.find()
+      } catch (error) {
+        console.log('Error retrieving restaurants:', error);
+        throw error;
+      }
+    }
+  },
+  mounted() {
+    this.getAllRestaurants()
+        .then(restaurants => {
+          restaurants.forEach(restaurant => {
+            this.restaurants.push({
+              id: restaurant.id,
+              name: restaurant.get('Name'),
+              foodType: restaurant.get('FoodType'),
+              image: restaurant.get("Image"),
+              contact: restaurant.get('contact')
+            })
+          });
+        })
+        .catch(error => {
+          console.log('Error retrieving restaurants:', error);
+        });
+  }
+};
+</script>
+
 
