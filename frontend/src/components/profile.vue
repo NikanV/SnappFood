@@ -96,9 +96,10 @@
                       type="password"
                       class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       id="oldPass"
+                      v-model="password"
                       placeholder="Old Password" />
                     <label
-                      for="exampleFormControlInput11"
+                      for="oldPass"
                       class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       >Password
                     </label>
@@ -112,7 +113,7 @@
                       id="newPass"
                       placeholder="new Password" />
                     <label
-                      for="exampleFormControlInput11"
+                      for="newPass"
                       class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                       >re-enter Password
                     </label>
@@ -156,6 +157,9 @@ export default {
     return {
       username:'',
       email:'',
+      password: '',
+      password2: '',
+      passwordsDontMatch: false,
     };
   },
   methods: {
@@ -177,7 +181,24 @@ export default {
         console.log('Error retrieving user:', error);
         throw error;
       }
-    }
+    },
+    resetPassword() {
+      if (this.password !== this.password2) {
+        this.passwordsDontMatch = true;
+      } else {
+        this.passwordsDontMatch = false;
+        const user = Parse.User.current();
+        user.set('password', this.password);
+        user.save()
+            .then(() => {
+              localStorage.removeItem('userid')
+              this.$router.push({name: "LoginPage"})
+            })
+            .catch(error => {
+              alert('Error resetting password:' + error.message);
+            });
+      }
+    },
   },
   mounted() {
     if(localStorage.getItem("userid")) {

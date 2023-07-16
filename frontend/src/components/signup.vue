@@ -210,8 +210,12 @@ export default {
         user.set('username', this.emailUserPart);
         user.set('email', this.username);
         user.set('password', this.password);
-        user.set('credit', 1000);
-  
+        user.set('credit',1000)
+        user.set('order',[])
+        user.set('orders',[])
+        user.set('order',[])
+        user.set('cart',[])
+        user.set('faveRestaurants',[])
         try {
             let userResult = await user.signUp();
             console.log('User signed up', userResult);
