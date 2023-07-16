@@ -188,15 +188,15 @@ export default {
         if (this.credit < price)
           alert('cant pay, not enough credit')
         else {
-          let myCart = user.get('orders');
+          let myOrder = user.get('orders');
           let cartItems = this.cartItems
           let item
           for (item in cartItems) {
             let string = `${item.id}$${item.from}$in progress$${item.food}`;
-            myCart.push(string)
+            myOrder.push(string)
           }
           let defecit = this.credit - price
-          user.set('order',myCart);
+          user.set('order',myOrder);
           user.set('cart',[])
           user.set('credit',defecit)
           user.save()
