@@ -32,7 +32,7 @@
             <li class="py-1">
               <a href="#"
                 class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
-                <span>About</span>
+                <span>about us</span>
                 <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path

@@ -7,7 +7,7 @@
           <div
             class="flex justify-between items-center hover:text-red-800 text-4xl tracking-widest transition ease-out duration-500">
             <h1 class="p-4 text-2xl font-bold border-b border-gray-700">
-              SnapFood
+              SnappFood
             </h1>
             <div class="px-4 cursor-pointer md:hidden" id="burger">
               <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -18,7 +18,7 @@
           </div>
           <ul class="text-center navBar mt-6 hidden md:block " id="menu">
             <li class=" font-bold py-1">
-              <a href="#"
+              <a href=""
                 class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
                 <span>Home</span>
                 <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -32,7 +32,7 @@
             <li class="py-1">
               <a href="#"
                 class="pt-5 block px-4 flex justify-center hover:text-blue-200 transition ease-out duration-500">
-                <span>About</span>
+                <span>about us</span>
                 <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path
