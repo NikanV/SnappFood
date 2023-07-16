@@ -29,21 +29,7 @@ export default {
     return {
       username: '',
       email: '',
-      orders: [
-        {
-          id: undefined,
-          restaurant: '',
-          status: '',
-          food:'',
-        },
-        // {
-
-        //   id: 2,
-        //   restaurant: 'Restaurant B',
-        //   status: 'In Progress',
-        //   // Add other order properties as needed
-        // },
-      ],
+      orders: [],
     };
   },
   methods: {

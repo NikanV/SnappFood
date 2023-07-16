@@ -55,7 +55,7 @@ export default {
         user.set('password', this.password);
         user.save()
             .then(() => {
-              localStorage.setItem('userid', null)
+              localStorage.removeItem('userid')
               this.$router.push({name: "LoginPage"})
             })
             .catch(error => {

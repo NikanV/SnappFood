@@ -49,7 +49,8 @@ export default {
       this.$router.push(`/${route}`);
     },
     logout() {
-      localStorage.setItem('userid', null)
+      alert(`logged out of ${this.username}`)
+      localStorage.removeItem('userid')
       this.$router.push({name: "LoginPage"})
     },
     async getUserCred() {
